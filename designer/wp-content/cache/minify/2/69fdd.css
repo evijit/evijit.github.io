@@ -14037,7 +14037,7 @@ div.wpcf7-response-output {
     position: relative;
     padding-left: 70px;
     padding-bottom: 1.875em;
-    margin-bottom: 2.5em;
+    /* margin-bottom: 2.5em; */
     min-height: 58px;
     box-sizing: content-box
 }
