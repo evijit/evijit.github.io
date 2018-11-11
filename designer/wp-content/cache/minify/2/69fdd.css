@@ -6250,7 +6250,7 @@ div.wpcf7 .wpcf7-submit:disabled {
 
 @font-face {
     font-family: 'icomoon';
-    src: url('wp-content/themes/certy/assets/fonts/icomoon/fonts/icomoon.ttf') format('truetype'), url('wp-content/themes/certy/assets/fonts/icomoon/fonts/icomoon.woff') format('woff'), url('wp-content/themes/certy/assets/fonts/icomoon/fonts/icomoon.svg') format('svg');
+    src: url('wp-content/themes/avi/assets/fonts/icomoon/fonts/icomoon.ttf') format('truetype'), url('wp-content/themes/avi/assets/fonts/icomoon/fonts/icomoon.woff') format('woff'), url('wp-content/themes/avi/assets/fonts/icomoon/fonts/icomoon.svg') format('svg');
     font-weight: normal;
     font-style: normal
 }
@@ -10645,7 +10645,7 @@ input[type=submit]:hover {
 .mCSB_scrollTools .mCSB_buttonLeft,
 .mCSB_scrollTools .mCSB_buttonRight,
 .mCSB_scrollTools .mCSB_buttonUp {
-    background-image: url(/wp-content/themes/certy/assets/css/mCSB_buttons.png);
+    background-image: url(/wp-content/themes/avi/assets/css/mCSB_buttons.png);
     background-repeat: no-repeat;
     opacity: .4;
     filter: "alpha(opacity=40)";
@@ -12906,7 +12906,7 @@ div.wpcf7-response-output {
     z-index: -1
 }
 
-.certy_widget_instagram a:hover,
+.avi_widget_instagram a:hover,
 .widget_archive a:hover,
 .widget_categories a:hover,
 .widget_meta a:hover,
@@ -12983,7 +12983,7 @@ div.wpcf7-response-output {
     margin: 0
 }
 
-#crtSideBox .certy_widget_card {
+#crtSideBox .avi_widget_card {
     padding: 0
 }
 
@@ -13049,7 +13049,7 @@ div.wpcf7-response-output {
     right: -3px
 }
 
-#crtSidebar .certy_widget_card {
+#crtSidebar .avi_widget_card {
     margin-bottom: 20px
 }
 
@@ -13337,17 +13337,17 @@ div.wpcf7-response-output {
     box-shadow: rgba(0, 0, 0, .117647) -1px 2px 6px, rgba(0, 0, 0, .117647) -1px 2px 4px
 }
 
-.certy_widget_card .text-muted {
+.avi_widget_card .text-muted {
     font-size: 1.143em
 }
 
-.certy_widget_instagram {
+.avi_widget_instagram {
     max-width: 480px;
     margin-left: auto !important;
     margin-right: auto !important
 }
 
-.certy_widget_instagram li {
+.avi_widget_instagram li {
     width: 33.33%;
     height: 0;
     padding-top: 33.33%;
@@ -13355,7 +13355,7 @@ div.wpcf7-response-output {
     float: left
 }
 
-.certy_widget_instagram a {
+.avi_widget_instagram a {
     top: 1px;
     left: 1px;
     right: 1px;
