@@ -477,6 +477,18 @@
         .btn-secondary {
             color: #fff
         }
+        
+        .egg #two {
+            display: none;
+        }
+        
+        .egg:hover #one {
+            display: none;
+        }
+        
+        .egg:hover #two {
+            display: block
+        }
     </style>
     <style type="text/css">
         .recentcomments a {
@@ -1189,9 +1201,8 @@
                                                         </dl>
                                                         <p>
 
-                                                            One of the most effective tools for reader engagement on online news media is commenting, where news readers post their views as comments against the news articles. Because the readers lack the time to go over an entire article, most of the comments are
-                                                            relevant to only particular sections of an article. In this work, we build a system which can automatically classify comments against relevant sections of an article. To implement that, we develop
-                                                            a deep neural network based mechanism to find comments relevant to any section and a paragraph wise commenting interface to showcase them. We believe that such a data driven commenting system
+                                                            Most of the user comments on online news articles are relevant to only particular sections of an article. In this work, we build a system which can automatically classify and display comments against relevant sections or paragraphs of an article. To implement
+                                                            that, we develop a deep neural network based mechanism to find comments relevant to any section and a paragraph wise commenting interface to showcase them. Such a data driven commenting system
                                                             can help news websites to further increase reader engagement.
                                                         </p>
                                                     </div>
@@ -2245,10 +2256,15 @@
     <footer id="crtFooter" class="crt-container-lg">
         <div class="crt-container">
             <div class="crt-container-sm clear-mrg text-center">
-                <a href="https://avijitghosh82.github.io/particle/">
-                    <p>Avijit Ghosh @ All Rights Reserved 2018</p>
+                <div class="egg">
+                    <p id="one">Avijit Ghosh @ All Rights Reserved 2018</p>
+                    <a id="two" href="https://avijitghosh82.github.io/particle/">
+                        <p> EASTER EGG 🥚 </p>
+                    </a>
+                </div>
                 </a>
             </div>
+
         </div>
     </footer> <button id="crtBtnUp" class="btn btn-icon btn-primary"> <span class="crt-icon crt-icon-arrow-page-up"></span>
         </button><svg id="crtBgShape1" class="hidden-sm hidden-xs" height="519" width="758">
