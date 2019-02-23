@@ -13702,7 +13702,7 @@ div.wpcf7-response-output {
     margin: 0 auto;
     position: relative;
     max-width: 300px;
-    animation: move 0.5s ease-in-out;
+    animation: grow 0.5s ease-in-out;
 }
 
 #pf-popup-wrap {
@@ -13717,12 +13717,20 @@ div.wpcf7-response-output {
     transition: opacity .5s, visibility .5s
 }
 
-@keyframes move {
+@keyframes grow {
     0% {
-        transform: scale(0.1) rotate(0deg);
+        -webkit-transform: scale( 0);
+        -moz-transform: scale( 0);
+        -o-transform: scale( 0);
+        -ms-transform: scale( 0);
+        transform: scale( 0);
     }
     100% {
-        transform: scale(1) rotate(0.1deg);
+        -webkit-transform: scale( 1.0);
+        -moz-transform: scale( 1.0);
+        -o-transform: scale( 1.0);
+        -ms-transform: scale( 1.0);
+        transform: scale( 1.0);
     }
 }
 
