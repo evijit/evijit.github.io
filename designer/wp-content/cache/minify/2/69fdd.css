@@ -13693,6 +13693,18 @@ div.wpcf7-response-output {
     }
 }
 
+.pf-popup {
+    padding: 40px 20px;
+}
+
+.pf-popup-content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 300px;
+    animation: move 0.5s ease-in-out;
+}
+
 #pf-popup-wrap {
     width: 100%;
     position: fixed;
@@ -13703,6 +13715,15 @@ div.wpcf7-response-output {
     overflow-y: auto;
     opacity: 0;
     transition: opacity .5s, visibility .5s
+}
+
+@keyframes move {
+    0% {
+        transform: scale(0.1) rotate(0deg);
+    }
+    100% {
+        transform: scale(1) rotate(0.1deg);
+    }
 }
 
 #pf-popup-wrap.pf-opened,
@@ -13738,17 +13759,6 @@ div.wpcf7-response-output {
 .pf-popup-middle {
     display: table-cell;
     padding: 50px 20px
-}
-
-.pf-popup-content {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    max-width: 300px
-}
-
-.pf-popup {
-    padding: 40px 20px
 }
 
 .pf-grid-item .pf-popup {
