@@ -13702,7 +13702,7 @@ div.wpcf7-response-output {
     margin: 0 auto;
     position: relative;
     max-width: 300px;
-    animation: grow 0.5s ease-out;
+    animation: grow 0.25s ease-out;
 }
 
 #pf-popup-wrap {
