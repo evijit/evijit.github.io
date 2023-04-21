@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper: Queer In AI: A Case Study in Community-Led Participatory AI accepted at ACM FAccT 2023!
+Paper: "Queer In AI: A Case Study in Community-Led Participatory AI" accepted at [ACM FAccT 2023!](https://facctconference.org/2023/index.html)
