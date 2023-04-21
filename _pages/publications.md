@@ -9,7 +9,7 @@ nav_order: 1
 ---
 <!-- _pages/publications.md -->
 
-A list of my papers. [View my Google Scholar Page here.](https://scholar.google.com/citations?user=X9y2jJIAAAAJ)
+A list of my publications. [View my Google Scholar Page here.](https://scholar.google.com/citations?user=X9y2jJIAAAAJ)
 
 <div class="publications">
 
