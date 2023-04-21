@@ -279,6 +279,7 @@ scholar:
   details_layout: bibtex.html
   details_link: Details
 
+
   query: "@*"
 
 badges: # Display different badges for your publications
