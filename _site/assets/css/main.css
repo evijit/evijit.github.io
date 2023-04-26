@@ -142,7 +142,11 @@ table.table a:hover:after :not(.nav-item.dropdown) {
   width: 100%;
 }
 
-figure,
+figure {
+  max-width: 90vw;
+  padding: 10px;
+}
+
 img {
   max-width: 90vw;
 }

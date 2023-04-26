@@ -50,7 +50,11 @@ table.table a {
   }
 }
 
-figure,
+figure {
+  max-width: 90vw;
+  padding: 10px;
+}
+
 img {
   max-width: 90vw;
 }
