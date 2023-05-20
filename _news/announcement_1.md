@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'll be speaking at SXSW 2023 in Austin! Talk title: [Can There Be AI Art Without An Artist?](https://schedule.sxsw.com/2023/events/PP122773)
+I'm speaking at SXSW 2023 in Austin! Talk title: [Can There Be AI Art Without An Artist?](https://schedule.sxsw.com/2023/events/PP122773)
