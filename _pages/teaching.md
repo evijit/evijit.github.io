@@ -16,3 +16,17 @@ In today's world, machine learning (ML) models have proliferated different real-
 #### Requirements: 
 Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 
+####Syllabus:
+
+| Date | Topic | Readings (before class) | Homework (after class)
+|--|--|--|--|
+| **Thur, 9/7** | Introduction to Course | - | - |
+| **Tue, 9/12** | Machine Learning - Refresher | [Machine learning: Trends, perspectives, and prospects](https://www.cs.cmu.edu/~tom/pubs/Science-ML-2015.pdf) | - |
+| **Thur, 9/14** | Setting up ML stack, basic ML coding in class | - | - |
+| **Tue, 9/19** | Algorithmic Fairness - Intro  | [1] [How Big Data Is Unfair](https://medium.com/@mrtz/how-big-data-is-unfair-9aa544d739de) - Moriz Hardt [2] [Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) - Propublica [3] (Optional) [A Survey on Bias and Fairness in Machine Learning](https://arxiv.org/pdf/1908.09635.pdf) | - |
+| **Thur, 9/21** | Bias in the Wild (Coding exercise) | [Can you make AI fairer than a judge? Play our courtroom algorithm game](https://www.technologyreview.com/2019/10/17/75285/ai-fairer-than-judge-criminal-risk-assessment-algorithm/) | - |
+| **Tue, 9/26** | ML Fairness in contexts beyond the US  | - | - |
+| **Thu, 9/28** | Value Sensitive Design (Guest Lecture - Prof. Vance Ricks)  | - | - |
+
+Syllabus will keep being updated through the semester.
+
