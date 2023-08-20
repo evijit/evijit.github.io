@@ -16,7 +16,7 @@ In today's world, machine learning (ML) models have proliferated different real-
 #### Requirements: 
 Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 
-####Syllabus:
+#### Syllabus:
 
 | Date | Topic | Readings (before class) | Homework (after class)
 |--|--|--|--|
