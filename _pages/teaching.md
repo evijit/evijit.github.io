@@ -18,6 +18,7 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 
 #### Syllabus:
 
+{:class="table table-bordered"}
 | Date | Topic | Readings (before class) | Homework (after class)
 |--|--|--|--|
 | **Thur, 9/7** | Introduction to Course | - | - |
