@@ -19,7 +19,7 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 #### Syllabus:
 
 {:class="table table-bordered"}
-| Date | Topic | Readings (before class) | Homework (after class)
+| **Date** | **Topic** | **Readings (before class)** | **Homework (after class)**
 |--|--|--|--|
 | **Thur, 9/7** | Introduction to Course | - | - |
 | **Tue, 9/12** | Machine Learning - Refresher | [Machine learning: Trends, perspectives, and prospects](https://www.cs.cmu.edu/~tom/pubs/Science-ML-2015.pdf) | - |
