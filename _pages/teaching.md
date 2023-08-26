@@ -27,7 +27,7 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 | **Tue, 9/19** | Algorithmic Fairness - Intro  | [1] [How Big Data Is Unfair](https://medium.com/@mrtz/how-big-data-is-unfair-9aa544d739de) - Moriz Hardt <br>[2] [Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) - Propublica <br>[3] (Optional) [A Survey on Bias and Fairness in Machine Learning](https://arxiv.org/pdf/1908.09635.pdf) - Mehrabi et. al | - |
 | **Thur, 9/21** | Bias in the Wild (Coding exercise) | [1] [Can you make AI fairer than a judge? Play our courtroom algorithm game](https://www.technologyreview.com/2019/10/17/75285/ai-fairer-than-judge-criminal-risk-assessment-algorithm/) <br>[2] [Image Cropping on Twitter: Fairness Metrics, their Limitations, and the Importance of Representation, Design, and Agency](https://arxiv.org/pdf/2105.08667.pdf) | - |
 | **Tue, 9/26** | ML Fairness in contexts beyond the US  | - | - |
-| **Thu, 9/28** | Value Sensitive Design (Guest Lecture - Prof. Vance Ricks)  | - | - |
+| **Thu, 9/28** | Value Sensitive Design (Guest Lecture - Prof. Vance Ricks)  | [Introduction to Value Sensitive Design](https://vsd.ccs.neu.edu/introduction/) | - |
 
 Syllabus will keep being updated through the semester.
 
