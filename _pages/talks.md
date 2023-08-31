@@ -9,8 +9,8 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
-- Aug 2023, "Queer Bias Bounty: Considerations for community audits and
-lessons learnt" at the [Centre for Data Ethics and Innovation, UK](https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation)
+- Aug 2023, ["Queer Bias Bounty: Considerations for community audits and
+lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO2B6YdWrYFKEwMaE3cm14/present?slide=id.g275f906db51_0_268) at the [Centre for Data Ethics and Innovation, UK](https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation)
 
 - Apr 2023,  ["Can There be AI Art Without an Artist?"](https://schedule.sxsw.com/2023/events/PP122773) at South by SouthWest (SXSW), Austin, TX, USA
 
