@@ -22,6 +22,8 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Mentions
 
+- Aug 2023, [From Google To Nvidia, Tech Giants Have Hired Red Team Hackers To Break Their AI Models](https://www.forbes.com/sites/rashishrivastava/2023/09/01/ai-red-teams-google-nvidia-microsoft-meta/)
+
 - Aug 2023, [Radio Interview - AirTalk](https://www.kpcc.org/podcast/airtalk/hurricane-hilary-is-barreling-towards-socal-what-can-we-expect) -  LAIST/NPR  
 
 - Aug 2023, [Radio Interview - As It Happens](https://www.cbc.ca/radio/asithappens/the-aih-transcript-for-august-16-2023-1.6939160) - CBC Canada  
