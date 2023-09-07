@@ -1,0 +1,213 @@
+\documentclass[11pt]{article}
+
+\newcommand{\yournames}{[Put your name here]}
+\newcommand{\daynum}{2}
+\newcommand{\hwdue}{Tuesday 9/12/2023 at 9:00 am on Canvas}
+
+\def\comments{0}
+
+%format and packages
+
+%\usepackage{algorithm, algorithmic}
+\usepackage{algpseudocode}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{framed}
+\usepackage{verbatim}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{microtype}
+\usepackage{kpfonts}
+\usepackage{palatino}
+	\DeclareMathAlphabet{\mathtt}{OT1}{cmtt}{m}{n}
+	\SetMathAlphabet{\mathtt}{bold}{OT1}{cmtt}{bx}{n}
+	\DeclareMathAlphabet{\mathsf}{OT1}{cmss}{m}{n}
+	\SetMathAlphabet{\mathsf}{bold}{OT1}{cmss}{bx}{n}
+	\renewcommand*\ttdefault{cmtt}
+	\renewcommand*\sfdefault{cmss}
+	\renewcommand{\baselinestretch}{1.05}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{DarkGreen}{rgb}{0.15,0.5,0.15}
+\definecolor{DarkRed}{rgb}{0.6,0.2,0.2}
+\definecolor{DarkBlue}{rgb}{0.2,0.2,0.6}
+\definecolor{DarkPurple}{rgb}{0.4,0.2,0.4}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+	linktocpage=true,
+	colorlinks=true,				% false: boxed links; true: colored links
+	linkcolor=DarkBlue,		% color of internal links
+	citecolor=DarkBlue,	% color of links to bibliography
+	urlcolor=DarkBlue,		% color of external links
+}
+
+\usepackage[boxruled,vlined,nofillcomment]{algorithm2e}
+	\SetKwProg{Fn}{Function}{\string:}{}
+	\SetKwFor{While}{While}{}{}
+	\SetKwFor{For}{For}{}{}
+	\SetKwIF{If}{ElseIf}{Else}{If}{:}{ElseIf}{Else}{:}
+	\SetKw{Return}{Return}
+	
+
+%enclosure macros
+\newcommand{\paren}[1]{\ensuremath{\left( {#1} \right)}}
+\newcommand{\bracket}[1]{\ensuremath{\left\{ {#1} \right\}}}
+\renewcommand{\sb}[1]{\ensuremath{\left[ {#1} \right\]}}
+\newcommand{\ab}[1]{\ensuremath{\left\langle {#1} \right\rangle}}
+
+%probability macros
+\newcommand{\ex}[2]{{\ifx&#1& \mathbb{E} \else \underset{#1}{\mathbb{E}} \fi \left[#2\right]}}
+\newcommand{\pr}[2]{{\ifx&#1& \mathbb{P} \else \underset{#1}{\mathbb{P}} \fi \left[#2\right]}}
+\newcommand{\var}[2]{{\ifx&#1& \mathrm{Var} \else \underset{#1}{\mathrm{Var}} \fi \left[#2\right]}}
+
+%useful CS macros
+\newcommand{\poly}{\mathrm{poly}}
+\newcommand{\polylog}{\mathrm{polylog}}
+\newcommand{\zo}{\{0,1\}}
+\newcommand{\pmo}{\{\pm1\}}
+\newcommand{\getsr}{\gets_{\mbox{\tiny R}}}
+\newcommand{\card}[1]{\left| #1 \right|}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\negl}{\mathrm{negl}}
+\newcommand{\eps}{\varepsilon}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\newcommand{\eqand}{\qquad \textrm{and} \qquad}
+\newcommand{\ind}[1]{\mathbb{I}\{#1\}}
+\newcommand{\sslash}{\ensuremath{\mathbin{/\mkern-3mu/}}}
+
+%info theory macros
+\newcommand{\SD}{\mathit{SD}}
+\newcommand{\sd}[2]{\SD\left( #1 , #2 \right)}
+\newcommand{\KL}{\mathit{KL}}
+\newcommand{\kl}[2]{\KL\left(#1 \| #2 \right)}
+\newcommand{\CS}{\ensuremath{\chi^2}}
+\newcommand{\cs}[2]{\CS\left(#1 \| #2 \right)}
+\newcommand{\MI}{\mathit{I}}
+\newcommand{\mi}[2]{\MI\left(~#1~;~#2~\right)}
+
+%mathbb
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+%mathcal
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
+
+%theorem macros
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{fact}[thm]{Fact}
+\newtheorem{clm}[thm]{Claim}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{coro}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{conj}[thm]{Conjecture}
+	\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+
+
+\newcommand{\instructor}{Avijit Ghosh}
+
+\theoremstyle{theorem}
+\newtheorem{prob}{Problem}
+\newtheorem{sol}{Solution}
+\newtheorem{ques}{Question}
+\newtheorem{ans}{Answer}
+
+
+\definecolor{cit}{rgb}{0.05,0.2,0.45} 
+\newcommand{\solution}{\medskip\noindent{\color{DarkBlue}\textbf{Solution:}}}
+\newcommand{\response}{\medskip\noindent{\color{DarkBlue}\textbf{Response:}}}
+
+\begin{document}
+{\Large 
+\begin{center}\href{https://evijit.io/teaching/}{CS 4973-05: Responsible Machine Learning
+} --- Fall 2023 --- \instructor \end{center}}
+{\large
+\vspace{10pt}
+\noindent Day~\daynum\  --- Preparation Questions For Class \vspace{2pt}\\
+Due: ~\hwdue}
+
+\bigskip
+{\large
+\noindent Name: \yournames \vspace{2pt}}
+
+\vspace{15pt}
+
+\noindent You may consult any and all resources in answering the questions.  Your goal is to have answers that are ready to be shared with the class (or on a hypothetical job interview) as written.  Your answers should be as concise as possible.  When asked to explain a figure, your response should have the following structure: provide context (state what experiment was being run / state what problem is being solved), state what has been plotted, remark on what we observe from the plots, and interpret the results. \\
+
+\noindent We recommend you use Overleaf for easy editing of this TeX document.\\
+
+\noindent \textbf{Directions:} 
+\noindent Read `\href{https://www.cs.cmu.edu/~tom/pubs/Science-ML-2015.pdf}{Machine learning: Trends,
+perspectives, and prospects}'
+\begin{itemize}
+\item Read the whole paper
+\end{itemize}
+
+\begin{ques} 
+What do the authors mean by learning problem? What are the three paradigms of learning problems? \end{ques}
+
+\response
+
+\begin{ques} 
+Explain Figure 2.  In your explanation, explain how it connects to the claim that `Supervised learning systems generally form their predictions via a learned mapping f(x), which produces an output y for each input x'.  See the preamble above for comments on how to explain a figure.\end{ques}
+
+\response 
+
+Context:
+
+What is plotted:
+
+What we observe:
+
+Interpretation:
+
+
+\begin{ques} 
+What is Big Data? What new challenges has Big Data created as compared to earlier Machine Learning techniques?
+\end{ques}
+
+\response 
+
+\begin{ques} 
+Explain Figure 3.
+\end{ques}
+
+\response 
+
+\begin{ques} 
+If you created a Machine Learning algorithm that teaches a robot to walk by starting with random movements, but learning from failures and falls and eventually beginning to walk normally, what paradigm does this type of learning fall under? Explain why.\end{ques}
+
+\response 
+
+
+\begin{ques} 
+What is differential privacy? Give two different examples of machine learning problems where differential privacy would be a useful technique.\end{ques}
+
+\response 
+
+\begin{ques} 
+Although this paper was written in 2015, the authors presciently suggest that environmental/online data of people could be collected to prevent the spread of a communicable disease during a global pandemic. Based on what you know from COVID-19, do you think their suggested techniques would have been helpful? What are some potential pitfalls? (Hint: Think about privacy and equity concerns in such a data driven approach)\end{ques}
+
+\response 
+
+
+\end{document}
