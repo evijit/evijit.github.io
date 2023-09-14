@@ -23,7 +23,7 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 |--|--|--|--|
 | **Thu, 9/7** | [Introduction to Course](https://evijit.io/materials/Lecture_1_Introduction.pdf) | - | [PDF](https://evijit.io/materials/RML_day2.pdf), [Overleaf](https://www.overleaf.com/read/ftxshfbpkxbk) |
 | **Tue, 9/12** | [Machine Learning - Refresher](https://evijit.io/materials/Lecture_2_ Machine_Learning_Basics.pdf) | [1] [Machine learning: Trends, perspectives, and prospects](https://www.cs.cmu.edu/~tom/pubs/Science-ML-2015.pdf) | - |
-| **Thu, 9/14** | Setting up ML stack, basic ML coding in class | - | - |
+| **Thu, 9/14** | Setting up ML stack, basic ML coding in class | [1] (Optional) [How NLP Cracked Transfer Learning](https://jalammar.github.io/illustrated-bert/) | [Jupyter Notebook](https://evijit.io/materials/ds_intro.ipynb) |
 | **Tue, 9/19** | Algorithmic Fairness - Intro  | [1] [Bias detectives: the researchers striving to make algorithms fair](https://courses.cs.duke.edu/spring20/compsci342/netid/readings/nature-algorithmic-bias.pdf) - R. Courtland <br> [2] (Optional) [A Survey on Bias and Fairness in Machine Learning](https://arxiv.org/pdf/1908.09635.pdf) - Mehrabi et. al | - |
 | **Thu, 9/21** | Bias in the Wild (Coding exercise) | [1] [Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) - Propublica <br> [2] [Image Cropping on Twitter: Fairness Metrics, their Limitations, and the Importance of Representation, Design, and Agency](https://arxiv.org/pdf/2105.08667.pdf) - Yee et. al | - |
 | **Tue, 9/26** | ML Fairness in contexts beyond the US  | [1] [Re-imagining Algorithmic Fairness in India and Beyond](https://arxiv.org/pdf/2101.09995.pdf) - Sambasivan et. al | - |
