@@ -21,7 +21,7 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 {:class="table table-bordered"}
 | **Date** | **Topic** | **Readings (before class)** | **Homework (after class)**
 |--|--|--|--|
-| **Thu, 9/7** | [Introduction to Course](https://evijit.io/materials/Lecture_1_Introduction.pdf) | - | [PDF](https://evijit.io/materials/RML_day2.pdf), [Overleaf](https://www.overleaf.com/read/ftxshfbpkxbk) |
+| **Thu, 9/7** | [Introduction to Course](https://evijit.io/materials/Lecture_1_Introduction.pdf) | - |  [Overleaf](https://www.overleaf.com/read/ftxshfbpkxbk) |
 | **Tue, 9/12** | [Machine Learning - Refresher](https://evijit.io/materials/Lecture_2_ Machine_Learning_Basics.pdf) | [1] [Machine learning: Trends, perspectives, and prospects](https://www.cs.cmu.edu/~tom/pubs/Science-ML-2015.pdf) | - |
 | **Thu, 9/14** | Setting up ML stack, basic ML coding in class | [1] (Optional) [How NLP Cracked Transfer Learning](https://jalammar.github.io/illustrated-bert/) | [Notebook](https://evijit.io/materials/ds_intro.ipynb) |
 | **Tue, 9/19** | [Algorithmic Fairness - Intro](https://evijit.io/materials/Lecture_3_ Algorithmic_Fairness_Basics.pdf)  | [1] [Bias detectives: the researchers striving to make algorithms fair](https://courses.cs.duke.edu/spring20/compsci342/netid/readings/nature-algorithmic-bias.pdf) - R. Courtland <br> [2] (Optional) [A Survey on Bias and Fairness in Machine Learning](https://arxiv.org/pdf/1908.09635.pdf) - Mehrabi et. al |  [Overleaf](https://www.overleaf.com/read/rvdjbyjkktcg)  |
