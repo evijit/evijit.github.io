@@ -29,5 +29,6 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 | **Tue, 9/26** | [ML Fairness in contexts beyond the US](https://evijit.io/materials/Lecture_5_Fairness_in_Other_Cultures.pdf)  | [1] [Re-imagining Algorithmic Fairness in India and Beyond](https://arxiv.org/pdf/2101.09995.pdf) - Sambasivan et. al | - |
 | **Thu, 9/28** | Value Sensitive Design (Guest Lecture - Prof. Vance Ricks)  | [1] [Introduction to Value Sensitive Design](https://northeastern.instructure.com/files/23160452/) | [In Class Activity](https://docs.google.com/document/d/1qi9J7lLVM9AhsJaSpILQNQh4FjRnNLnn/edit?usp=sharing&ouid=104786704786764345519&rtpof=true&sd=true) |
 | **Tue, 10/3** | Model Explainability/Interpretability  | [1] [The Mythos of Model Interpretability](https://arxiv.org/pdf/1606.03490.pdf) | - |
+| **Thu, 10/5** | ML Explainability Coding Class  | - | - |
 
 Syllabus will keep being updated through the semester.
