@@ -31,6 +31,6 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 | **Tue, 10/3** | [Model Explainability/Interpretability](https://evijit.io/materials/Lecture_6_Model_Interpretability.pdf)  | [1] [The Mythos of Model Interpretability](https://arxiv.org/pdf/1606.03490.pdf) | [Overleaf](https://www.overleaf.com/read/fzfbymhmhrjf) |
 | **Thu, 10/5** | ML Explainability Coding Class  | - | [Notebook](https://colab.research.google.com/drive/11d_AnpF6ELJryZaBOwvFYm2xgqL8GiEW) |
 | **Tue, 10/10** | [Algorithm Auditing Overview](https://evijit.io/materials/Lecture_7_Algorithm_Auditing_Overview.pdf)  | [1][An Image of Society: Gender and Racial Representation and Impact in Image Search Results for Occupations](https://dl.acm.org/doi/10.1145/3449100)<br>[2][Bias in Online Freelance Marketplaces: Evidence from TaskRabbit and Fiverr](https://dl.acm.org/doi/pdf/10.1145/2998181.2998327) |  |
-| **Thu, 10/12** | Algorithm Auditing Coding Class  | - |  |
+| **Thu, 10/12** | [Algorithm Auditing Tutorial](https://evijit.io/materials/Lecture_8_Algorithm_Auditing_Tutorial.pdf)  | - | [Notebook](https://colab.research.google.com/drive/1w-BRt1A2MymKFefj98t6Orz59-ntiPBF) |
 
 Syllabus will keep being updated through the semester.
