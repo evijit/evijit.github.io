@@ -30,5 +30,7 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 | **Thu, 9/28** | [Value Sensitive Design (Guest Lecture - Prof. Vance Ricks)](https://evijit.io/materials/Ricks-ResponsibleMachineLearning-F2023) | [1] [Introduction to Value Sensitive Design](https://northeastern.instructure.com/files/23160452/) | [In Class Activity](https://docs.google.com/document/d/1qi9J7lLVM9AhsJaSpILQNQh4FjRnNLnn/edit?usp=sharing&ouid=104786704786764345519&rtpof=true&sd=true) |
 | **Tue, 10/3** | [Model Explainability/Interpretability](https://evijit.io/materials/Lecture_6_Model_Interpretability.pdf)  | [1] [The Mythos of Model Interpretability](https://arxiv.org/pdf/1606.03490.pdf) | [Overleaf](https://www.overleaf.com/read/fzfbymhmhrjf) |
 | **Thu, 10/5** | ML Explainability Coding Class  | - | [Notebook](https://colab.research.google.com/drive/11d_AnpF6ELJryZaBOwvFYm2xgqL8GiEW) |
+| **Tue, 10/10** | [Algorithm Auditing Overview](https://evijit.io/materials/Lecture_7_ Algorithm_Auditing_Overview.pdf)  | [1][An Image of Society: Gender and Racial Representation and Impact in Image Search Results for Occupations](https://dl.acm.org/doi/10.1145/3449100)<br>[2][Bias in Online Freelance Marketplaces: Evidence from TaskRabbit and Fiverr](https://dl.acm.org/doi/pdf/10.1145/2998181.2998327) |  |
+| **Thu, 10/12** | Algorithm Auditing Coding Class  | - |  |
 
 Syllabus will keep being updated through the semester.
