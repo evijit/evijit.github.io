@@ -32,8 +32,8 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 | **Thu, 10/5** | ML Explainability Coding Class  | - | [Notebook](https://colab.research.google.com/drive/11d_AnpF6ELJryZaBOwvFYm2xgqL8GiEW) |
 | **Tue, 10/10** | [Algorithm Auditing Overview](https://evijit.io/materials/Lecture_7_Algorithm_Auditing_Overview.pdf)  | [1] [An Image of Society: Gender and Racial Representation and Impact in Image Search Results for Occupations](https://dl.acm.org/doi/10.1145/3449100)<br>[2] [Bias in Online Freelance Marketplaces: Evidence from TaskRabbit and Fiverr](https://dl.acm.org/doi/pdf/10.1145/2998181.2998327) |  |
 | **Thu, 10/12** | [Algorithm Auditing Tutorial](https://evijit.io/materials/Lecture_8_Algorithm_Auditing_Tutorial.pdf)  | - | [Notebook](https://colab.research.google.com/drive/1w-BRt1A2MymKFefj98t6Orz59-ntiPBF) |
-| **Thu, 10/17** | [Machine Learning Privacy](https://evijit.io/materials/Lecture_9_ML_Privacy.pdf)  |  [1] [An Overview of Privacy in Machine Learning](https://arxiv.org/pdf/2005.08679.pdf) | [Overleaf](https://www.overleaf.com/read/pswsvxrnwggq) |
-| **Thu, 10/19** | AI Safety  | - | [1] [There are two factions working to prevent AI dangers. Here’s why they’re deeply divided.](https://www.vox.com/future-perfect/2022/8/10/23298108/ai-dangers-ethics-alignment-present-future-risk) |
+| **Thu, 10/17** | [Machine Learning Privacy](https://evijit.io/materials/Lecture_9_ML_Privacy.pdf)  | [1] [An Overview of Privacy in Machine Learning](https://arxiv.org/pdf/2005.08679.pdf) | [Overleaf](https://www.overleaf.com/read/pswsvxrnwggq) |
+| **Thu, 10/19** | AI Safety  | [1] [There are two factions working to prevent AI dangers. Here’s why they’re deeply divided.](https://www.vox.com/future-perfect/2022/8/10/23298108/ai-dangers-ethics-alignment-present-future-risk) | - |
 
 
 
