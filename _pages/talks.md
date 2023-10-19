@@ -22,6 +22,8 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Mentions
 
+- Oct 2023, [How Can AI Affect LGBTQIA+ People In India? Three Indian-Origin Queer Researchers Explain](https://www.indiatimes.com/trending/spectrum/how-can-ai-affect-queer-people-in-india-617408.html) - IndiaTimes
+
 - Aug 2023, [From Google To Nvidia, Tech Giants Have Hired Red Team Hackers To Break Their AI Models](https://www.forbes.com/sites/rashishrivastava/2023/09/01/ai-red-teams-google-nvidia-microsoft-meta/) - Forbes
 
 - Aug 2023, [Radio Interview - AirTalk](https://www.kpcc.org/podcast/airtalk/hurricane-hilary-is-barreling-towards-socal-what-can-we-expect) -  LAIST/NPR  
