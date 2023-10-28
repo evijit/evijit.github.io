@@ -9,6 +9,9 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
+- Oct 2023, [Dual Governance:
+The intersection of centralized regulation and crowdsourced safety mechanisms for Generative AI](https://docs.google.com/presentation/d/1NtJA2jShkDZ_GIWHcm0mTiSSkKWawdCYj8oQ1zvjSyg/edit?usp=sharing) at [NSERC CREATE - Responsible Development of Artificial Intelligence](https://www.torontomu.ca/responsible-ai/)
+
 - Aug 2023, ["Queer Bias Bounty: Considerations for community audits and
 lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO2B6YdWrYFKEwMaE3cm14/present?slide=id.g275f906db51_0_268) at the [Centre for Data Ethics and Innovation, UK](https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation)
 
@@ -23,6 +26,8 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 ### Media Mentions
 
 - Oct 2023, [How Can AI Affect LGBTQIA+ People In India? Three Indian-Origin Queer Researchers Explain](https://www.indiatimes.com/trending/spectrum/how-can-ai-affect-queer-people-in-india-617408.html) - IndiaTimes
+
+- Sep 2023, [He hacked AI chatbots to find flaws and vulnerabilities. Now Northeastern’s Avijit Ghosh is writing a report on combating these problems](https://news.northeastern.edu/2023/09/06/ethical-ai-development/) - Northeastern Global
 
 - Aug 2023, [From Google To Nvidia, Tech Giants Have Hired Red Team Hackers To Break Their AI Models](https://www.forbes.com/sites/rashishrivastava/2023/09/01/ai-red-teams-google-nvidia-microsoft-meta/) - Forbes
 
