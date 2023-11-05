@@ -36,7 +36,7 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 | **Thu, 10/19** | [AI Safety](https://evijit.io/materials/Lecture_10_AI_Safety.pdf)  | [1] [There are two factions working to prevent AI dangers. Here’s why they’re deeply divided.](https://www.vox.com/future-perfect/2022/8/10/23298108/ai-dangers-ethics-alignment-present-future-risk) | - |
 | **Tue, 10/24** | [Generative AI Memorization (Guest Lecture - Matthew Jagielski)](https://evijit.io/materials/GenAI_Memorization_Guest_Lecture_Matthew.pdf)  | - | - |
 | **Thu, 10/26** | [MIDTERM](https://evijit.io/materials/CS_4973_Responsible_ML_Midterm.pdf)  | - | - |
-| **Tue, 10/31** | [Algorithmic Debiasing Methods](https://evijit.io/materials/Lecture_12_Algorithmic_Debiasing.pdf)  | - | - |
+| **Tue, 10/31** | [Algorithmic Debiasing Methods](https://evijit.io/materials/Lecture_12_Algorithmic_Debiasing.pdf)  | - | [Overleaf](https://www.overleaf.com/read/dshshdwvpvjn#06c821) |
 
 
 
