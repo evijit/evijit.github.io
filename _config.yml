@@ -72,9 +72,9 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: evijit
 gitlab_username: # your GitLab user name
-twitter_username: evijitghosh
 mastodon_username: hci.social/@evijitghosh
 linkedin_username: evijit
+x_username: evijitghosh
 telegram_username: # your Telegram user name
 scholar_userid: X9y2jJIAAAAJ
 semanticscholar_id: # your Semantic Scholar ID
