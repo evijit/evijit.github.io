@@ -42,8 +42,5 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 | **Thu, 11/9** | [Fair ML in the Real World - Part 2](https://evijit.io/materials/Lecture_14_Real_World_Problems_Part2.pdf)  |  [1][When Fair Classification Meets Noisy Protected Attributes](https://arxiv.org/pdf/2307.03306.pdf) <br> [2][FairCanary: Rapid Continuous Explainable Fairness](https://arxiv.org/pdf/2106.07057.pdf) | [Notebook](https://colab.research.google.com/drive/1nGY70jcrQSESMBV1cfo__WfUNJerU3yb) |
 | **Thu, 11/16** | [Critical Image Synthesis (Guest Lecture: Eryk Salvaggio)](https://docs.google.com/presentation/d/153qJsw7qj9sj_s98h6z58CVHVtptGTge9kmdPvRp-pg/edit?usp=sharing)  | [1] [This is how AI image generators see the world](https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/) <br> [2] [How to read an AI image](https://cyberneticforests.substack.com/p/how-to-read-an-ai-image)  | - |
 | **Tue, 11/21** | [A (very lacking) tech policy primer (Guest Lecture: Johanna Gunawan)](https://evijit.io/materials/Johanna_Gunawan_Policy_Primer.pdf)  |  - | - |
-
-
-
-
-Syllabus will keep being updated through the semester.
+| **Tue, 11/28** | [Lessons learned from running a privacy tech challenge (Guest Lecture: David Buckley)](https://evijit.io/materials/David_Buckley_CDEI_Guest_Lecture.pdf)  |  - | [Overleaf](https://www.overleaf.com/read/bcqpwgkmcbgb#04beb3) |
+| **Thu, 11/30** | [Participatory Methods and Community Actions for Responsible ML](https://evijit.io/materials/Lecture_15_Participatory_Approaches_Community_Action.pdf)  |  - | - |
