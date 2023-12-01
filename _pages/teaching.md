@@ -36,7 +36,7 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 | **Thu, 10/19** | [AI Safety](https://evijit.io/materials/Lecture_10_AI_Safety.pdf)  | [1] [There are two factions working to prevent AI dangers. Here’s why they’re deeply divided.](https://www.vox.com/future-perfect/2022/8/10/23298108/ai-dangers-ethics-alignment-present-future-risk) | - |
 | **Tue, 10/24** | [Generative AI Memorization (Guest Lecture - Matthew Jagielski)](https://evijit.io/materials/GenAI_Memorization_Guest_Lecture_Matthew.pdf)  | - | - |
 | **Thu, 10/26** | [MIDTERM](https://evijit.io/materials/CS_4973_Responsible_ML_Midterm.pdf)  | - | - |
-| **Tue, 10/31** | Term Paper - Midterm Review  | - | - |
+| **Tue, 10/31** | Term Project - Midterm Review  | - | - |
 | **Thu 11/2** | [Algorithmic Debiasing Methods](https://evijit.io/materials/Lecture_12_Algorithmic_Debiasing.pdf)  | - | [Overleaf](https://www.overleaf.com/read/dshshdwvpvjn#06c821) |
 | **Tue, 11/7** | [Fair ML in the Real World - Part 1](https://evijit.io/materials/Lecture_13_Real_World_Problems_Part1.pdf)  |  [1] [When Fair Ranking Meets Uncertain Inference](https://dl.acm.org/doi/pdf/10.1145/3404835.3462850)<br>[2] [Subverting Fair Image Search with Generative Adversarial Perturbations](https://dl.acm.org/doi/pdf/10.1145/3531146.3533128) | - |
 | **Thu, 11/9** | [Fair ML in the Real World - Part 2](https://evijit.io/materials/Lecture_14_Real_World_Problems_Part2.pdf)  |  [1][When Fair Classification Meets Noisy Protected Attributes](https://arxiv.org/pdf/2307.03306.pdf) <br> [2][FairCanary: Rapid Continuous Explainable Fairness](https://arxiv.org/pdf/2106.07057.pdf) | [Notebook](https://colab.research.google.com/drive/1nGY70jcrQSESMBV1cfo__WfUNJerU3yb) |
