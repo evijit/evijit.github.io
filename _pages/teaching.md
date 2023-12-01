@@ -19,7 +19,7 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 #### Syllabus:
 
 {:class="table table-bordered"}
-| **Date** | **Topic** | **Readings (before class)** | **Homework**
+| **Date** | **Topic** | **Readings** | **Homework**
 |--|--|--|--|
 | **Thu, 9/7** | [Introduction to Course](https://evijit.io/materials/Lecture_1_Introduction.pdf) | - | - |
 | **Tue, 9/12** | [Machine Learning - Refresher](https://evijit.io/materials/Lecture_2_ Machine_Learning_Basics.pdf) | [1] [Machine learning: Trends, perspectives, and prospects](https://www.cs.cmu.edu/~tom/pubs/Science-ML-2015.pdf) |  [Overleaf](https://www.overleaf.com/read/ftxshfbpkxbk) |
