@@ -44,3 +44,7 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 | **Tue, 11/21** | [A (very lacking) tech policy primer (Guest Lecture: Johanna Gunawan)](https://evijit.io/materials/Johanna_Gunawan_Policy_Primer.pdf)  |  - | - |
 | **Tue, 11/28** | [Lessons learned from running a privacy tech challenge (Guest Lecture: David Buckley)](https://evijit.io/materials/David_Buckley_CDEI_Guest_Lecture.pdf)  |  - | [Overleaf](https://www.overleaf.com/read/bcqpwgkmcbgb#04beb3) |
 | **Thu, 11/30** | [Participatory Methods and Community Actions for Responsible ML](https://evijit.io/materials/Lecture_15_Participatory_Approaches_Community_Action.pdf)  |  [1] [Bound by the Bounty: Collaboratively Shaping Evaluation Processes for Queer AI Harms](https://arxiv.org/pdf/2307.10223.pdf) <br> [2] [Dual Governance: The intersection of centralized regulation and crowdsourced safety mechanisms for Generative AI](https://arxiv.org/pdf/2308.04448.pdf) | - |
+| **Tue, 12/5** | Reading/Review Day | - | - |
+| **Thu, 12/7** | [FINALS](https://evijit.io/materials/CS_4973_Responsible_ML_Final.pdf)  | - | - |
+| **Tue, 12/12** | Term Project Presentations - Day 1  | - | - |
+| **Thu, 12/14** | Term Project Presentations - Day 2  | - | - |
