@@ -9,7 +9,7 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
-- Jan 2024,AI Vulnerability Reporting Event in the US Congress at [Hackers on the Hill](https://hackersonthehill.org/)
+- Jan 2024, AI Vulnerability Reporting Event in the US Congress at [Hackers on the Hill](https://hackersonthehill.org/)
 
 - Oct 2023, [Dual Governance:
 The intersection of centralized regulation and crowdsourced safety mechanisms for Generative AI](https://docs.google.com/presentation/d/1NtJA2jShkDZ_GIWHcm0mTiSSkKWawdCYj8oQ1zvjSyg/edit?usp=sharing) at [NSERC CREATE - Responsible Development of Artificial Intelligence](https://www.torontomu.ca/responsible-ai/)
