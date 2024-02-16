@@ -9,6 +9,8 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
+- Feb 2024, Technology Impact on Cybersecurity at the Frederick S. Pardee School of Global Studies at Boston University, hosted by [Prof. Jack Weinstein, Lieutenant General, USAF](https://www.bu.edu/pardeeschool/profile/jack-weinstein/)
+
 - Jan 2024, AI Vulnerability Reporting Event in the US Congress at [Hackers on the Hill](https://hackersonthehill.org/)
 
 - Oct 2023, [Dual Governance:
