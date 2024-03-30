@@ -96,7 +96,22 @@
             {% endif %}
             {%- if site.scholar_userid -%}
             <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-            {% endif %}
+            {% endif %}  
             {%- if site.email -%}
             <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope"></i></a>
-            {% endif %}
+            {% endif %} 
+            
+            <!-- <script>
+                $(document).ready(function () {
+                $("a.show-message").on("click", function () {
+                    console.log("clicked");
+                    $(this).next().removeClass("hide");
+                });
+            });
+            </script>
+            {%- if site.email -%}
+            <a href="#" title="email"><i class="fas fa-envelope show-message"></i></a>
+            <div class="modal hide"> My favorite music is nothing</div>
+            {% endif %} -->
+
+           

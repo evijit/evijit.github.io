@@ -29,6 +29,12 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Mentions
 
+- Mar 2024, [As AI tools get smarter, they’re growing more covertly racist, experts find
+](https://www.theguardian.com/technology/2024/mar/16/ai-racism-chatgpt-gemini-bias) - The Guardian
+
+- Mar 2024, [LLMs become more covertly racist with human intervention
+](https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/) - MIT Technology Review
+
 - Oct 2023, [How Can AI Affect LGBTQIA+ People In India? Three Indian-Origin Queer Researchers Explain](https://www.indiatimes.com/trending/spectrum/how-can-ai-affect-queer-people-in-india-617408.html) - IndiaTimes
 
 - Sep 2023, [He hacked AI chatbots to find flaws and vulnerabilities. Now Northeastern’s Avijit Ghosh is writing a report on combating these problems](https://news.northeastern.edu/2023/09/06/ethical-ai-development/) - Northeastern Global

@@ -6,9 +6,9 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Avijit Ghosh
 middle_name:
 last_name:
-email: ghosh.a@northeastern.edu
+email: avijit@huggingface.co
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Research Data Scientist, AdeptID and Lecturer in Computer Science, Northeastern University.
+  Applied Policy Researcher, ML& Society, Hugging Face.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
