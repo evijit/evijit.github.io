@@ -130,12 +130,7 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-<!-- page.html -->
+      <!-- page.html -->
         <div class="post">
 
           <header class="post-header">
@@ -297,7 +292,7 @@
     <footer class="fixed-bottom">
       <div class="container mt-0" style="text-align: center;">
         © Copyright 2024 Avijit Ghosh  . Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-Last updated: March 30, 2024.
+Last updated: March 31, 2024.
       </div>
     </footer>
 
@@ -422,5 +417,40 @@ Last updated: March 30, 2024.
   }
 </script>
 
+    <div id="buttonmodal">
+    <div class="newmodal">
+        <h5>Email Options</h5>
+        <ul>
+        <li>
+<a href="mailto:avijit@huggingface.co" title="email">avijit@huggingface.co</a>(Work Email)</li>
+        <li>
+<a href="mailto:avijitg22@gmail.com%22" title="email">avijitg22@gmail.com</a>(Personal Email)</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    var elements = document.querySelectorAll('a.buttonmodal');
+    elements.forEach(element => {
+        element.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            document.getElementById('buttonmodal').style.display = 'flex';
+        });
+    });
+    document.getElementById('buttonmodal').addEventListener('click', function(event) {
+        if(event.target.closest('.newmodal')) return; 
+        document.getElementById('buttonmodal').style.display = 'none';
+    });
+</script>
+
+<style>
+    #buttonmodal {display: none; position: fixed; background: rgba(0,0,0,0.7); left: 0; top: 0; width: 100%; height: 100vh; justify-content: center; align-items: center; z-index: 99999;}
+    #buttonmodal .newmodal {max-width: 20rem; width: 100%; background: white; border-radius: 5px; padding: 1.75rem 1.25rem; display: flex;}
+    #buttonmodal .newmodal h3 {padding: 0 0 0.5rem;}
+    #buttonmodal .newmodal ul {margin: 0;}
+    #buttonmodal .newmodal ul li {list-style: none; display: block; margin: 0.25rem 0;}
+    #buttonmodal .newmodal ul li a {display: block;}
+</style>
   </body>
 </html>

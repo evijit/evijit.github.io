@@ -132,10 +132,6 @@
     <!-- Content -->
     <div class="container mt-5">
       <!-- about.html -->
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
       <div class="post">
         <header class="post-header">
           <h1 class="post-title" style="margin-bottom: 20px;">
@@ -186,9 +182,9 @@
             <a href="https://www.linkedin.com/in/evijit" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/evijit" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://scholar.google.com/citations?user=X9y2jJIAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-            <a href="mailto:%61%76%69%6A%69%74@%68%75%67%67%69%6E%67%66%61%63%65.%63%6F" title="email"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="buttonmodal" title="email"><i class="fas fa-envelope"></i></a>
              
-            
+
             <!-- <script>
                 $(document).ready(function () {
                 $("a.show-message").on("click", function () {
@@ -196,6 +192,9 @@
                     $(this).next().removeClass("hide");
                 });
             });
+
+            <a href="mailto:%61%76%69%6A%69%74@%68%75%67%67%69%6E%67%66%61%63%65.%63%6F" title="email"><i class="fas fa-envelope buttonmodal"></i></a>
+
             </script><a href="#" title="email"><i class="fas fa-envelope show-message"></i></a>
             <div class="modal hide"> My favorite music is nothing</div>
              -->
@@ -311,15 +310,14 @@
 
         </article>
 
-</div>
-
+      </div>
     </div>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0" style="text-align: center;">
         © Copyright 2024 Avijit Ghosh  . Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-Last updated: March 30, 2024.
+Last updated: March 31, 2024.
       </div>
     </footer>
 
@@ -444,5 +442,40 @@ Last updated: March 30, 2024.
   }
 </script>
 
+    <div id="buttonmodal">
+    <div class="newmodal">
+        <h5>Email Options</h5>
+        <ul>
+        <li>
+<a href="mailto:avijit@huggingface.co" title="email">avijit@huggingface.co</a>(Work Email)</li>
+        <li>
+<a href="mailto:avijitg22@gmail.com%22" title="email">avijitg22@gmail.com</a>(Personal Email)</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    var elements = document.querySelectorAll('a.buttonmodal');
+    elements.forEach(element => {
+        element.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            document.getElementById('buttonmodal').style.display = 'flex';
+        });
+    });
+    document.getElementById('buttonmodal').addEventListener('click', function(event) {
+        if(event.target.closest('.newmodal')) return; 
+        document.getElementById('buttonmodal').style.display = 'none';
+    });
+</script>
+
+<style>
+    #buttonmodal {display: none; position: fixed; background: rgba(0,0,0,0.7); left: 0; top: 0; width: 100%; height: 100vh; justify-content: center; align-items: center; z-index: 99999;}
+    #buttonmodal .newmodal {max-width: 20rem; width: 100%; background: white; border-radius: 5px; padding: 1.75rem 1.25rem; display: flex;}
+    #buttonmodal .newmodal h3 {padding: 0 0 0.5rem;}
+    #buttonmodal .newmodal ul {margin: 0;}
+    #buttonmodal .newmodal ul li {list-style: none; display: block; margin: 0.25rem 0;}
+    #buttonmodal .newmodal ul li a {display: block;}
+</style>
   </body>
 </html>

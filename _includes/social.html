@@ -98,9 +98,9 @@
             <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
             {% endif %}  
             {%- if site.email -%}
-            <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="buttonmodal" title="email"><i class="fas fa-envelope"></i></a>
             {% endif %} 
-            
+
             <!-- <script>
                 $(document).ready(function () {
                 $("a.show-message").on("click", function () {
@@ -108,6 +108,9 @@
                     $(this).next().removeClass("hide");
                 });
             });
+
+            <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope buttonmodal"></i></a>
+
             </script>
             {%- if site.email -%}
             <a href="#" title="email"><i class="fas fa-envelope show-message"></i></a>
