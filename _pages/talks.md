@@ -29,6 +29,8 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Mentions
 
+- May 2024, [Common image search results are overwhelmingly white, a new study finds](https://www.fastcompany.com/91131154/image-search-results-bias-research) - Fast Company
+
 - Mar 2024, [As AI tools get smarter, they’re growing more covertly racist, experts find
 ](https://www.theguardian.com/technology/2024/mar/16/ai-racism-chatgpt-gemini-bias) - The Guardian
 
