@@ -9,6 +9,8 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
+- Jul 2024, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at the [EQUAL lab at MILA](https://mila.quebec/en/responsible-ai)
+
 - Feb 2024, Technology Impact on Cybersecurity at the Frederick S. Pardee School of Global Studies at Boston University, hosted by [Prof. Jack Weinstein, Lieutenant General, USAF](https://www.bu.edu/pardeeschool/profile/jack-weinstein/)
 
 - Jan 2024, AI Vulnerability Reporting Event in the US Congress at [Hackers on the Hill](https://hackersonthehill.org/)
@@ -28,6 +30,8 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 - Nov 2022, "Subverting Fair Image Search with Generative Adversarial Perturbations" as a part of the 'Celebrating Young Researchers' event, [Trustworthy ML Initiative](https://www.trustworthyml.org/)
 
 ### Media Mentions
+
+- Jul 2024, [पूर्वाग्रहों से भरी एआई भारत के लिए चुनौती-अवसर दोनों (AI full of prejudices both a challenge and an opportunity for India)](https://www.bhaskar.com/opinion/news/avijit-ghoshs-column-ai-full-of-bias-is-both-a-challenge-and-an-opportunity-for-india-133333195.html) - Dainik Bhaskar Op-ed
 
 - May 2024, [Common image search results are overwhelmingly white, a new study finds](https://www.fastcompany.com/91131154/image-search-results-bias-research) - Fast Company
 
