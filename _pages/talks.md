@@ -9,6 +9,8 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
+- Jul 2024, [Teaching Responsible AI: Building with open source and Hugging Face 🤗](https://drive.google.com/file/d/10OeLjBLbF3oI6Yy9QaNji-W_lie7IRGp/view) at the [Northeastern University Summer Training Program on Responsible Computing Education](https://cssh.northeastern.edu/ethics/summer-training-program-on-responsible-computing-education/)
+
 - Jul 2024, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at the [EQUAL lab at MILA](https://mila.quebec/en/responsible-ai)
 
 - Feb 2024, Technology Impact on Cybersecurity at the Frederick S. Pardee School of Global Studies at Boston University, hosted by [Prof. Jack Weinstein, Lieutenant General, USAF](https://www.bu.edu/pardeeschool/profile/jack-weinstein/)
@@ -30,6 +32,8 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 - Nov 2022, "Subverting Fair Image Search with Generative Adversarial Perturbations" as a part of the 'Celebrating Young Researchers' event, [Trustworthy ML Initiative](https://www.trustworthyml.org/)
 
 ### Media Mentions
+
+- Aug 2024, [World’s biggest hacker fest spotlights AI’s soaring importance in the high-stakes cybersecurity war—and its vulnerability](https://fortune.com/2024/08/12/defcon-gen-ai-bug-bounty-cybersecurity-vulnerabilities/?987123) - Fortune Magazine
 
 - Jul 2024, [पूर्वाग्रहों से भरी एआई भारत के लिए चुनौती-अवसर दोनों (AI full of prejudices both a challenge and an opportunity for India)](https://www.bhaskar.com/opinion/news/avijit-ghoshs-column-ai-full-of-bias-is-both-a-challenge-and-an-opportunity-for-india-133333195.html) - Dainik Bhaskar Op-ed
 
