@@ -33,6 +33,8 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Mentions
 
+- Aug 2024, [We finally have a definition for open-source AI](https://www.technologyreview.com/2024/08/22/1097224/we-finally-have-a-definition-for-open-source-ai/) - MIT Technology Review
+
 - Aug 2024, [World’s biggest hacker fest spotlights AI’s soaring importance in the high-stakes cybersecurity war—and its vulnerability](https://fortune.com/2024/08/12/defcon-gen-ai-bug-bounty-cybersecurity-vulnerabilities/?987123) - Fortune Magazine
 
 - Jul 2024, [पूर्वाग्रहों से भरी एआई भारत के लिए चुनौती-अवसर दोनों (AI full of prejudices both a challenge and an opportunity for India)](https://www.bhaskar.com/opinion/news/avijit-ghoshs-column-ai-full-of-bias-is-both-a-challenge-and-an-opportunity-for-india-133333195.html) - Dainik Bhaskar Op-ed
