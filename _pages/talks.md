@@ -33,6 +33,10 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Mentions
 
+- Aug 2024, [This Wearable AI Notetaker Will Transcribe Your Meetings — and Someday, Your Entire Life](https://www.wired.com/story/plaud-note-pin-ai-wearable/) - Wired
+
+- Aug 2024, [En Californie, la loi de protection contre l'IA amendée pour apaiser la Silicon Valley (In California, AI protection law amended to appease Silicon Valley)](https://www.lesechos.fr/tech-medias/intelligence-artificielle/en-californie-la-loi-de-protection-contre-lia-amendee-pour-apaiser-la-silicon-valley-2114566) - Les Echos
+
 - Aug 2024, [We finally have a definition for open-source AI](https://www.technologyreview.com/2024/08/22/1097224/we-finally-have-a-definition-for-open-source-ai/) - MIT Technology Review
 
 - Aug 2024, [World’s biggest hacker fest spotlights AI’s soaring importance in the high-stakes cybersecurity war—and its vulnerability](https://fortune.com/2024/08/12/defcon-gen-ai-bug-bounty-cybersecurity-vulnerabilities/?987123) - Fortune Magazine
