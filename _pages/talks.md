@@ -9,6 +9,10 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
+- Oct 2024, Bridging the Gap: Real-World AI Biases and Responsible Governance Frameworks at [Indian Institute of Technology (IIT), Kharagpur](https://cse.iitkgp.ac.in/)
+
+- Sep 2024, ERASED BY AI: Personal Experiences of the Psychological Impact of AI Bias at the [Arthur AI Fest](https://www.arthur.ai/ai-fest)
+
 - Jul 2024, [Teaching Responsible AI: Building with open source and Hugging Face 🤗](https://drive.google.com/file/d/10OeLjBLbF3oI6Yy9QaNji-W_lie7IRGp/view) at the [Northeastern University Summer Training Program on Responsible Computing Education](https://cssh.northeastern.edu/ethics/summer-training-program-on-responsible-computing-education/)
 
 - Jul 2024, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at the [EQUAL lab at MILA](https://mila.quebec/en/responsible-ai)
