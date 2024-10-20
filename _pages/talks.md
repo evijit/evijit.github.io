@@ -37,6 +37,8 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Mentions
 
+- Oct 2024, [These Smart Glasses Will Read Your Emotions and Watch What You Eat](https://www.wired.com/story/emteq-smart-glasses-read-emotions-watch-what-you-eat/) - Wired
+
 - Aug 2024, [This Wearable AI Notetaker Will Transcribe Your Meetings — and Someday, Your Entire Life](https://www.wired.com/story/plaud-note-pin-ai-wearable/) - Wired
 
 - Aug 2024, [En Californie, la loi de protection contre l'IA amendée pour apaiser la Silicon Valley (In California, AI protection law amended to appease Silicon Valley)](https://www.lesechos.fr/tech-medias/intelligence-artificielle/en-californie-la-loi-de-protection-contre-lia-amendee-pour-apaiser-la-silicon-valley-2114566) - Les Echos
