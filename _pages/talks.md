@@ -39,6 +39,8 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Mentions
 
+- Jan 2025, [एआई निजी जिंदगी से लेकर बिजनेस तक को बदल देगा (AI will transform everything from daily life to businesses)](https://evijit.io/assets/img/Epaper_194_2025-01-03_9.jpeg) - Dainik Bhaskar
+
 - Oct 2024, [These Smart Glasses Will Read Your Emotions and Watch What You Eat](https://www.wired.com/story/emteq-smart-glasses-read-emotions-watch-what-you-eat/) - Wired
 
 - Aug 2024, [This Wearable AI Notetaker Will Transcribe Your Meetings — and Someday, Your Entire Life](https://www.wired.com/story/plaud-note-pin-ai-wearable/) - Wired
