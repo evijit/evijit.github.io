@@ -92,7 +92,7 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 ### Leadership
 
 - 2025 - [ACM Conference on Fairness, Accountability, and Transparency](https://facctconference.org/2025/committees) - Registration Chair
-- 2024 - [Evaluating Evaluations: Examining Best Practices for Measuring Broader Impacts of Generative AI - NeurIPS 2024 Workshop](https://evaleval.github.io/) - Core Organizer
+- 2024 - [Evaluating Evaluations: Examining Best Practices for Measuring Broader Impacts of Generative AI - NeurIPS 2024 Workshop](https://evaleval.github.io/) - Lead Organizer
 - 2023 - SIGIR DEI lunch with speaker panel on disability in computing - Organizer
 - 2023 - [FAccT CRAFT Workshop on an India-first Responsible AI research agenda](https://sites.google.com/view/raiindiacraftfacct2023/home) - Organizer
 - 2022 - [FAccT CRAFT Workshop on Humanitarian AI for the Global South](https://www.aqai.xyz/acm-facct-craft-workshop-2023/) - Organizer
