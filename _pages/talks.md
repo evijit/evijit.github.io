@@ -39,6 +39,10 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Mentions
 
+- Jan 2025, [What does OpenAI get from Stargate? A $500 billion chance to build a whole new moat.](https://www.businessinsider.com/openai-stargate-project-moat-deepseek-2025-1) - Business Insider
+
+- Jan 2025, [OpenAI’s Stargate may be tech’s biggest gamble ever, but here’s what’s really at stake](https://fortune.com/2025/01/22/openai-stargate-ai-sam-altman-donald-trump/) - Fortune
+
 - Jan 2025, [एआई निजी जिंदगी से लेकर बिजनेस तक को बदल देगा (AI will transform everything from daily life to businesses)](https://evijit.io/assets/img/Epaper_194_2025-01-03_9.jpeg) - Dainik Bhaskar
 
 - Oct 2024, [These Smart Glasses Will Read Your Emotions and Watch What You Eat](https://www.wired.com/story/emteq-smart-glasses-read-emotions-watch-what-you-eat/) - Wired
