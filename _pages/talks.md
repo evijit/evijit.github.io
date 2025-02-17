@@ -9,6 +9,8 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
+- Feb 2025, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at [The MIT Sloan AI Conference](https://www.mitaimlconference.com/)
+
 - Oct 2024, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at [The Future of Third-Party AI Evaluation Workshop](https://sites.google.com/view/thirdparty-ai-evalulation/home)
 
 - Oct 2024, Bridging the Gap: Real-World AI Biases and Responsible Governance Frameworks at [Indian Institute of Technology (IIT), Kharagpur](https://cse.iitkgp.ac.in/)
