@@ -59,7 +59,7 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 - Jan 2025, [OpenAI’s Stargate may be tech’s biggest gamble ever, but here’s what’s really at stake](https://fortune.com/2025/01/22/openai-stargate-ai-sam-altman-donald-trump/) - Fortune
 
-- Jan 2025, [एआई निजी जिंदगी से लेकर बिजनेस तक को बदल देगा (AI will transform everything from daily life to businesses)](https://evijit.io/assets/img/Epaper_194_2025-01-03_9.jpeg) - Dainik Bhaskar
+- Jan 2025, [एआई निजी जिंदगी से लेकर बिजनेस तक को बदल देगा (AI will transform everything from daily life to businesses)](https://evijit.io/assets/img/Epaper_194_2025-01-03_9.jpeg) - Dainik Bhaskar Column
 
 - Oct 2024, [These Smart Glasses Will Read Your Emotions and Watch What You Eat](https://www.wired.com/story/emteq-smart-glasses-read-emotions-watch-what-you-eat/) - Wired
 
@@ -71,7 +71,7 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 - Aug 2024, [World’s biggest hacker fest spotlights AI’s soaring importance in the high-stakes cybersecurity war—and its vulnerability](https://fortune.com/2024/08/12/defcon-gen-ai-bug-bounty-cybersecurity-vulnerabilities/?987123) - Fortune Magazine
 
-- Jul 2024, [पूर्वाग्रहों से भरी एआई भारत के लिए चुनौती-अवसर दोनों (AI full of prejudices both a challenge and an opportunity for India)](https://evijit.io/assets/img/Epaper_194_2024-07-17_13.jpeg) - Dainik Bhaskar Op-ed
+- Jul 2024, [पूर्वाग्रहों से भरी एआई भारत के लिए चुनौती-अवसर दोनों (AI full of prejudices both a challenge and an opportunity for India)](https://evijit.io/assets/img/Epaper_194_2024-07-17_13.jpeg) - Dainik Bhaskar Column
 
 - May 2024, [Common image search results are overwhelmingly white, a new study finds](https://www.fastcompany.com/91131154/image-search-results-bias-research) - Fast Company
 
