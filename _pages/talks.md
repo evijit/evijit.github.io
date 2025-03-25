@@ -47,6 +47,10 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 - Mar 2025, [Why handing over total control to AI agents would be a huge mistake](https://www.technologyreview.com/2025/03/24/1113647/why-handing-over-total-control-to-ai-agents-would-be-a-huge-mistake/) - MIT Tech Review Op-Ed
 
+- Mar 2025, [Hugging Face submits open-source blueprint, challenging Big Tech in White House AI policy fight](https://venturebeat.com/ai/hugging-face-submits-open-source-blueprint-challenging-big-tech-in-white-house-ai-policy-fight/) - VentureBeat
+
+- Mar 2025, [Researchers Propose a Better Way to Report Dangerous AI Flaws](https://www.wired.com/story/ai-researchers-new-system-report-bugs/) - Wired
+
 - Feb 2025, [Two founders built a jobs board for Al agents. Humans need not apply — but their skills are still required.](https://www.businessinsider.com/ai-agents-jobs-board-ad-replacing-human-skills-2025-2) - Business Insider
 
 - Feb 2025, [Why truly open-source AI remains out of reach](https://www.techcircle.in/2025/02/19/why-truly-open-source-ai-remains-out-of-reach) - TechCircle India
