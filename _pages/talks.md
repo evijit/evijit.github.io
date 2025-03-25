@@ -35,15 +35,21 @@ The intersection of centralized regulation and crowdsourced safety mechanisms fo
 - Aug 2023, ["Queer Bias Bounty: Considerations for community audits and
 lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO2B6YdWrYFKEwMaE3cm14/present?slide=id.g275f906db51_0_268) at the [Centre for Data Ethics and Innovation, UK](https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation)
 
-- Apr 2023,  ["Can There be AI Art Without an Artist?"](https://schedule.sxsw.com/2023/events/PP122773) at South by SouthWest (SXSW), Austin, TX, USA
+- Apr 2023, ["Can There be AI Art Without an Artist?"](https://schedule.sxsw.com/2023/events/PP122773) at South by SouthWest (SXSW), Austin, TX, USA
 
-- Feb 2023,["On the evolving tension between centralized regulation and decentralized development of Text-to-Image Models"](https://kdd.cs.ksu.edu/Workshops/AAAI-2023/#Panel) at AIDBEI at AAAI 2023
+- Feb 2023, ["On the evolving tension between centralized regulation and decentralized development of Text-to-Image Models"](https://kdd.cs.ksu.edu/Workshops/AAAI-2023/#Panel) at AIDBEI at AAAI 2023
 
 - Dec 2022, "Proxies for bias monitoring: Ethics workshop" at the [Centre for Data Ethics and Innovation, UK](https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation)
 
 - Nov 2022, "Subverting Fair Image Search with Generative Adversarial Perturbations" as a part of the 'Celebrating Young Researchers' event, [Trustworthy ML Initiative](https://www.trustworthyml.org/)
 
-### Media Mentions
+### Media Coverage and Op-Eds
+
+- Mar 2025, [Why handing over total control to AI agents would be a huge mistake](https://www.technologyreview.com/2025/03/24/1113647/why-handing-over-total-control-to-ai-agents-would-be-a-huge-mistake/) - MIT Tech Review Op-Ed
+
+- Feb 2025, [Two founders built a jobs board for Al agents. Humans need not apply — but their skills are still required.](https://www.businessinsider.com/ai-agents-jobs-board-ad-replacing-human-skills-2025-2) - Business Insider
+
+- Feb 2025, [Why truly open-source AI remains out of reach](https://www.techcircle.in/2025/02/19/why-truly-open-source-ai-remains-out-of-reach) - TechCircle India
 
 - Jan 2025, [What does OpenAI get from Stargate? A $500 billion chance to build a whole new moat.](https://www.businessinsider.com/openai-stargate-project-moat-deepseek-2025-1) - Business Insider
 
