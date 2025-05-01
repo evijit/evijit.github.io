@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I was quoted on a new article on [Politico: 'California finally beats Big Tech in court'](https://www.politico.com/newsletters/politico-technology-california-decoded-preview/2025/04/18/california-finally-beats-big-tech-in-court-00298056) with my comments about SB 1047 and the need for proportional liability mechanisms.
+I was quoted on a new article on [Politico](https://www.politico.com/newsletters/politico-technology-california-decoded-preview/2025/04/18/california-finally-beats-big-tech-in-court-00298056) with my comments about SB 1047 and the need for proportional liability mechanisms.
