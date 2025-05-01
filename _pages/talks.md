@@ -9,6 +9,8 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
+- Apr 2025, Panel: "Is U.S. Policy Ready for Agentic AI?" at the [Center for Data Innovation](https://datainnovation.org/2025/05/how-americans-feel-about-ai-and-why-it-matters-for-policy/)
+
 - Mar 2025, Panel on Open Source AI Regulation at the [Summit on State AI Legislation (SSAIL)](https://dec.yale.edu/programs/summit-on-state-ai-legislation-ssail) at the Digital Ethics Center, Yale University
 
 - Mar 2025, NLP & Generative AI Panel at the [HBS Tech Conference](https://www.techclubhbs.com/2025-conference)
