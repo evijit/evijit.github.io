@@ -9,6 +9,16 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
+- Apr 2025, Panel: "Is U.S. Policy Ready for Agentic AI?" at the [Center for Data Innovation](https://datainnovation.org/2025/04/is-u-s-policy-ready-for-agentic-ai/)
+
+- Mar 2025, Panel on Open Source AI Regulation at the [Summit on State AI Legislation (SSAIL)](https://dec.yale.edu/programs/summit-on-state-ai-legislation-ssail) at the Digital Ethics Center, Yale University
+
+- Mar 2025, NLP & Generative AI Panel at the [HBS Tech Conference](https://www.techclubhbs.com/2025-conference)
+
+- Feb 2025, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at [The MIT Sloan AI Conference](https://www.mitaimlconference.com/)
+
+- Oct 2024, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at [The Future of Third-Party AI Evaluation Workshop](https://sites.google.com/view/thirdparty-ai-evalulation/home)
+
 - Oct 2024, Bridging the Gap: Real-World AI Biases and Responsible Governance Frameworks at [Indian Institute of Technology (IIT), Kharagpur](https://cse.iitkgp.ac.in/)
 
 - Sep 2024, ERASED BY AI: Personal Experiences of the Psychological Impact of AI Bias at the [Arthur AI Fest](https://www.arthur.ai/ai-fest)
@@ -27,15 +37,33 @@ The intersection of centralized regulation and crowdsourced safety mechanisms fo
 - Aug 2023, ["Queer Bias Bounty: Considerations for community audits and
 lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO2B6YdWrYFKEwMaE3cm14/present?slide=id.g275f906db51_0_268) at the [Centre for Data Ethics and Innovation, UK](https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation)
 
-- Apr 2023,  ["Can There be AI Art Without an Artist?"](https://schedule.sxsw.com/2023/events/PP122773) at South by SouthWest (SXSW), Austin, TX, USA
+- Apr 2023, ["Can There be AI Art Without an Artist?"](https://schedule.sxsw.com/2023/events/PP122773) at South by SouthWest (SXSW), Austin, TX, USA
 
-- Feb 2023,["On the evolving tension between centralized regulation and decentralized development of Text-to-Image Models"](https://kdd.cs.ksu.edu/Workshops/AAAI-2023/#Panel) at AIDBEI at AAAI 2023
+- Feb 2023, ["On the evolving tension between centralized regulation and decentralized development of Text-to-Image Models"](https://kdd.cs.ksu.edu/Workshops/AAAI-2023/#Panel) at AIDBEI at AAAI 2023
 
 - Dec 2022, "Proxies for bias monitoring: Ethics workshop" at the [Centre for Data Ethics and Innovation, UK](https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation)
 
 - Nov 2022, "Subverting Fair Image Search with Generative Adversarial Perturbations" as a part of the 'Celebrating Young Researchers' event, [Trustworthy ML Initiative](https://www.trustworthyml.org/)
 
-### Media Mentions
+### Media Coverage and Op-Eds
+
+- Mar 2025, [Why handing over total control to AI agents would be a huge mistake](https://www.technologyreview.com/2025/03/24/1113647/why-handing-over-total-control-to-ai-agents-would-be-a-huge-mistake/) - MIT Tech Review Op-Ed
+
+- Mar 2025, [Hugging Face submits open-source blueprint, challenging Big Tech in White House AI policy fight](https://venturebeat.com/ai/hugging-face-submits-open-source-blueprint-challenging-big-tech-in-white-house-ai-policy-fight/) - VentureBeat
+
+- Mar 2025, [Researchers Propose a Better Way to Report Dangerous AI Flaws](https://www.wired.com/story/ai-researchers-new-system-report-bugs/) - Wired
+
+- Feb 2025, [Two founders built a jobs board for Al agents. Humans need not apply — but their skills are still required.](https://www.businessinsider.com/ai-agents-jobs-board-ad-replacing-human-skills-2025-2) - Business Insider
+
+- Feb 2025, [Why truly open-source AI remains out of reach](https://www.techcircle.in/2025/02/19/why-truly-open-source-ai-remains-out-of-reach) - TechCircle India
+
+- Jan 2025, [What does OpenAI get from Stargate? A $500 billion chance to build a whole new moat.](https://www.businessinsider.com/openai-stargate-project-moat-deepseek-2025-1) - Business Insider
+
+- Jan 2025, [OpenAI’s Stargate may be tech’s biggest gamble ever, but here’s what’s really at stake](https://fortune.com/2025/01/22/openai-stargate-ai-sam-altman-donald-trump/) - Fortune
+
+- Jan 2025, [एआई निजी जिंदगी से लेकर बिजनेस तक को बदल देगा (AI will transform everything from daily life to businesses)](https://evijit.io/assets/img/Epaper_194_2025-01-03_9.jpeg) - Dainik Bhaskar Column
+
+- Oct 2024, [These Smart Glasses Will Read Your Emotions and Watch What You Eat](https://www.wired.com/story/emteq-smart-glasses-read-emotions-watch-what-you-eat/) - Wired
 
 - Aug 2024, [This Wearable AI Notetaker Will Transcribe Your Meetings — and Someday, Your Entire Life](https://www.wired.com/story/plaud-note-pin-ai-wearable/) - Wired
 
@@ -45,7 +73,7 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 - Aug 2024, [World’s biggest hacker fest spotlights AI’s soaring importance in the high-stakes cybersecurity war—and its vulnerability](https://fortune.com/2024/08/12/defcon-gen-ai-bug-bounty-cybersecurity-vulnerabilities/?987123) - Fortune Magazine
 
-- Jul 2024, [पूर्वाग्रहों से भरी एआई भारत के लिए चुनौती-अवसर दोनों (AI full of prejudices both a challenge and an opportunity for India)](https://www.bhaskar.com/opinion/news/avijit-ghoshs-column-ai-full-of-bias-is-both-a-challenge-and-an-opportunity-for-india-133333195.html) - Dainik Bhaskar Op-ed
+- Jul 2024, [पूर्वाग्रहों से भरी एआई भारत के लिए चुनौती-अवसर दोनों (AI full of prejudices both a challenge and an opportunity for India)](https://evijit.io/assets/img/Epaper_194_2024-07-17_13.jpeg) - Dainik Bhaskar Column
 
 - May 2024, [Common image search results are overwhelmingly white, a new study finds](https://www.fastcompany.com/91131154/image-search-results-bias-research) - Fast Company
 
@@ -85,7 +113,8 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Leadership
 
-- 2024 - [Evaluating Evaluations: Examining Best Practices for Measuring Broader Impacts of Generative AI - NeurIPS 2024 Workshop](https://evaleval.github.io/) - Core Organizer
+- 2025 - [ACM Conference on Fairness, Accountability, and Transparency](https://facctconference.org/2025/committees) - Registration Chair
+- 2024 - [Evaluating Evaluations: Examining Best Practices for Measuring Broader Impacts of Generative AI - NeurIPS 2024 Workshop](https://evaleval.github.io/) - Lead Organizer
 - 2023 - SIGIR DEI lunch with speaker panel on disability in computing - Organizer
 - 2023 - [FAccT CRAFT Workshop on an India-first Responsible AI research agenda](https://sites.google.com/view/raiindiacraftfacct2023/home) - Organizer
 - 2022 - [FAccT CRAFT Workshop on Humanitarian AI for the Global South](https://www.aqai.xyz/acm-facct-craft-workshop-2023/) - Organizer
