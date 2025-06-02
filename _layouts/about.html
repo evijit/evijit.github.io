@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<!-- about.html -->
+      <div class="post">
+        <header class="post-header">
+          <h1 class="post-title" style="margin-bottom: 20px;">
+           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+          </h1>
+        </header>
+
+        <article style="font-size: 0.97em;">
+          {% if page.profile -%}
+            <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}" 
+            style=" margin-top: -20px; padding: 10px;">
+              {%- if page.profile.image %}
+                {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+
+                {% if page.profile.image_circular %}
+                  {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+                {% else %}
+                  {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+                {% endif %}
+
+                {% include figure.html 
+                path=profile_image_path 
+                class=profile_image_class
+                alt=page.profile.image -%}
+              {% endif -%}
+              <!-- <h6 class="desc" style="text-align: center; margin-bottom: 20px;">{{ page.subtitle }}</h6> -->
+              {%- if page.profile.address %}
+              <div class="address" style="font-size: small; text-align: center; margin-top: -10px; margin-bottom: 10px;">
+                {{ page.profile.address }}
+              </div>
+
+              <!-- Social -->
+              {%- if page.social %}
+              <div class="social">
+                <div class="contact-icons" style="font-size:18px; letter-spacing: 3px;">
+                  {% include social.html %}
+                </div>
+
+                <div class="contact-note">
+                  {{ site.contact_note }}
+                </div>
+                
+              </div>
+            {%- endif %}
+
+              {%- endif %}
+            </div>
+          {%- endif %}
+
+          <div class="clearfix" style="text-align: justify">
+            {{ content }}
+          </div>
+
+          <!-- News -->
+          {% if page.news -%}
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
+            {%- include news.html %}
+          {%- endif %}
+
+          <br>
+
+          <!-- Selected papers -->
+          {% if page.selected_papers -%}
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Highlighted Publications</a></h2>
+            {%- include selected_papers.html %}
+          {%- endif %}
+
+          <div class="contact-note" style="text-align: center; font-size: small;">
+            The best way to reach me is via email. I am also frequently active on X/Twitter.
+          </div>
+
+
+        </article>
+
+      </div>
