@@ -2,276 +2,751 @@
   {
     "date": "2025-11-06T21:22:32.775000+00:00",
     "text": "We have a call for posters out! Please submit your extended abstracts, it should be quick and easy. And just like last year, provocative work is especially encouraged as it makes for such interesting conversation \ud83d\ude08",
-    "has_embed": true
+    "reply": null
   },
   {
     "date": "2025-11-02T12:25:33.448000+00:00",
     "text": "This. Copyright is a tool for protection but it\u2019s not everything. In fact, there\u2019s research showing that it is possible to create competitive language models using public domain data only. The proliferation of copyright respecting models would not solve the labor impact policy problem.",
-    "has_embed": true
+    "reply": null
   },
   {
     "date": "2025-11-01T16:46:55.561000+00:00",
     "text": "Going to San Diego for Neurips? We at @eval-eval.bsky.social , along with the UK AISI, are hosting a closed door state of evals workshop at @ucsandiego.bsky.social on Dec 8th. \n\nRequest to join below! :) \n\nevaleval.github.io/events/works...",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-11-01T16:41:17.098000+00:00",
+    "text": "The thing about non survey papers is that they can still be problematic/fake science etc, and arxiv needs a long overdue + moderated comments section",
+    "reply": null
   },
   {
     "date": "2025-10-28T16:33:46.778000+00:00",
     "text": "Datasets are the backbone of AI for Science, and we want to support scientific data natively on Hugging Face. The amazing @lhoestq.hf.co started a discussion on GH for this! Please engage (better still, submit a PR) so we can start supporting your \ud83e\udef5 dataset:\n\ngithub.com/huggingface/...",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-10-24T19:05:49.962000+00:00",
+    "text": "Yes! The Science/Tech/Cyber committee is doing really good work too. Well intentioned folks there trying to actually engage with researchers and industry folks. Love MA",
+    "reply": null
   },
   {
     "date": "2025-10-24T18:32:03.401000+00:00",
     "text": "Random off the cuff observation about American AI: LLM folks seem to be concentrated in SF, but AI4Science folks seem to be concentrated in Boston. Meaning as the former gets oversaturated and the latter is only getting started, I expect Boston to be the next big AI epicenter! \ud83d\udcaa",
-    "has_embed": false
+    "reply": null
   },
   {
     "date": "2025-10-24T16:44:08.203000+00:00",
     "text": "\ud83c\udf1f Weekly AI Evaluation Spotlight \ud83c\udf1f\n\n\ud83e\udd16 Did you know malicious actors can exploit trust in AI leaderboards to promote poisoned models in the community? \n\nThis week's paper \ud83d\udcdc\"Exploiting Leaderboards for Large-Scale Distribution of Malicious Models\" by @iamgroot42.bsky.social explores this!",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-10-20T21:33:36.680000+00:00",
+    "text": "Oof",
+    "reply": null
+  },
+  {
+    "date": "2025-10-20T19:01:32.635000+00:00",
+    "text": "I have started requesting that panel moderators provide a disclaimer at panels I am on that not all my opinions are provided by my employer. HF ppl largely believe in democratization of AI and open source, but we actually have intense healthy debates internally on edge topics! It's great :)",
+    "reply": null
   },
   {
     "date": "2025-10-20T19:01:32.634000+00:00",
     "text": "+1000. I miss life pre-AI hype when the discourse around AI was more scientific and people used to attribute papers and opinions to scientists instead of to their companies. Not all orgs block research papers and sanity check their papers via legal teams, and HF, especially so, is very distributed.",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-10-20T18:45:30.002000+00:00",
+    "text": "Huh, so interesting re: art therapy! \n\nRe: The turning off adult content, this is already what Google does (SafeSearch on, off, or blurred, off by default). I do think it gives back agency to adult users without shaming sexual content from a puritan perspective.",
+    "reply": null
+  },
+  {
+    "date": "2025-10-20T16:15:10.184000+00:00",
+    "text": "This doesn\u2019t quite answer what I\u2019m asking. Currently there\u2019s nothing preventing people from going to AO3, Literotica, etc. should those be banned too? What is it about porn specifically that seems to be the problem (as opposed to harms of personification/emotional attachment)",
+    "reply": null
+  },
+  {
+    "date": "2025-10-20T14:38:22.674000+00:00",
+    "text": "THANK YOU! That's the phrasing I was looking for and yes 100% want to hear from sex work experts on this!",
+    "reply": null
+  },
+  {
+    "date": "2025-10-20T14:17:48.163000+00:00",
+    "text": "Text by itself maybe less so but text in concert with visuals yes I feel",
+    "reply": null
+  },
+  {
+    "date": "2025-10-20T14:17:48.162000+00:00",
+    "text": "Fair, it also more specifically speaks to the need for better verification of the truth. I saw a demo recently where a system was developed to generate a fake nytimes article, complete with branding images, text, and sometimes generated images in the article which all looked believable.",
+    "reply": null
+  },
+  {
+    "date": "2025-10-20T14:04:01.306000+00:00",
+    "text": "But it isn\u2019t clear to me that deepfakes will be allowed or that they\u2019re even talking about non-text material. My read of the tweet was erotica as in fan fiction stories etc, but maybe people are reading this differently",
+    "reply": null
+  },
+  {
+    "date": "2025-10-20T13:46:18.472000+00:00",
+    "text": "Obviously, I don't have full context on what OAI will define as acceptable erotica and might have more refined views then. Still, it is a double standard to have universal content control on a generative model and not on, say, web search.",
+    "reply": null
   },
   {
     "date": "2025-10-20T13:44:42.507000+00:00",
     "text": "Hey, so can someone tell me why ChatGPT generating erotica is bad, any more so than it generating anything else? Obviously anything non-consensual or age-inappropriate is bad, but I don't see why some researchers in my timeline are up in arms about it, while Grok already does this.",
-    "has_embed": false
+    "reply": null
   },
   {
     "date": "2025-10-17T16:56:37.004000+00:00",
     "text": "We're starting a weekly paper spotlight series! Come engage with the posts and let's improve evals together! :) \n\nFirst up: Do Large Language Model Benchmarks Test Reliability?",
-    "has_embed": true
+    "reply": null
   },
   {
     "date": "2025-10-16T19:53:10.786000+00:00",
     "text": "I had never seen people fighting with co-authors via colored latex comments on overleaf in a developing paper draft until today. One of them even pasted a google calendar link saying \"can we hop on a call and hash this out\". Paper writing is actually exciting sometimes!",
-    "has_embed": false
+    "reply": null
+  },
+  {
+    "date": "2025-10-16T16:12:41.166000+00:00",
+    "text": "This! Nvidia\u2019s devrel work is phenomenal",
+    "reply": null
+  },
+  {
+    "date": "2025-10-14T23:59:40.634000+00:00",
+    "text": "Honestly same. It\u2019s hilarious",
+    "reply": null
   },
   {
     "date": "2025-10-12T21:17:47.933000+00:00",
     "text": "Trying to start a new hobby and the internet is useless. Maybe AI will finally kill unstructured information retrieval for good and then we will be forced to call or visit friends for help again",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-10-11T22:59:44.047000+00:00",
+    "text": "The general public doesn\u2019t share any of the nuances of your position, unfortunately, and they\u2019re happy to cite ChatGPT or grok as sources in debates and reports",
+    "reply": null
+  },
+  {
+    "date": "2025-10-09T16:57:18.347000+00:00",
+    "text": "Blog posts (usually) have comment sections though, unlike Arxiv, which allows people to post anything dressed as science (and I love Arxiv to be clear)",
+    "reply": null
   },
   {
     "date": "2025-10-08T20:08:44.750000+00:00",
     "text": "More of such research please! Chatbots are not the future of science, science is",
-    "has_embed": true
+    "reply": null
   },
   {
     "date": "2025-10-08T00:46:29.424000+00:00",
     "text": "Some of these new gpt/claude wrapper startups make me wonder how much the founders are paying themselves in salary because there is no way they expect their horrible idea to actually be sustainably profitable",
-    "has_embed": false
+    "reply": null
+  },
+  {
+    "date": "2025-10-06T16:31:46.802000+00:00",
+    "text": "HF papers link: huggingface.co/papers/2509....",
+    "reply": null
+  },
+  {
+    "date": "2025-10-06T16:28:00.193000+00:00",
+    "text": "Discord Server: discord.com/invite/VYkdE...",
+    "reply": null
+  },
+  {
+    "date": "2025-10-06T16:28:00.192000+00:00",
+    "text": "Hugging Science Initiative:\nhuggingface.co/hugging-scie...",
+    "reply": null
+  },
+  {
+    "date": "2025-10-06T16:28:00.191000+00:00",
+    "text": "Paper: arxiv.org/abs/2509.06580",
+    "reply": null
+  },
+  {
+    "date": "2025-10-06T16:28:00.190000+00:00",
+    "text": "We are launching Hugging Science: A global community addressing these barriers through:\n\u2705 Collaborative challenges targeting upstream problems \n\u2705 Cross-disciplinary education \n\u2705 Recognition for data & infrastructure work \n\u2705 Community-owned infrastructure\n\nAll links follow \ud83e\udd17",
+    "reply": null
+  },
+  {
+    "date": "2025-10-06T16:28:00.189000+00:00",
+    "text": "4. Data and access inequities: Scientific data remain fragmented and difficult to harmonize. Compute and infrastructure gaps, especially in the Global South, extend iteration cycles and limit participation in data-intensive research.",
+    "reply": null
+  },
+  {
+    "date": "2025-10-06T16:28:00.188000+00:00",
+    "text": "3. Collaboration barriers: Machine learning and domain sciences operate with distinct goals and epistemic norms. Without shared success criteria or communication frameworks, many interdisciplinary projects fail before integration.",
+    "reply": null
+  },
+  {
+    "date": "2025-10-06T16:28:00.187000+00:00",
+    "text": "2. Misaligned incentives: Research culture rewards short-term model performance over durable infrastructure. High-quality datasets often have decades of impact, yet curation and maintenance work receive limited institutional recognition.",
+    "reply": null
+  },
+  {
+    "date": "2025-10-06T16:28:00.186000+00:00",
+    "text": "We find 4 main issues in AI4Science:\n\n1. \"AI Scientist\": Framing discovery as a task for autonomous systems overlooks the interpretive and theoretical nature of science. Predictive success can mask conceptual errors, as models may fit data while learning incorrect mechanisms.",
+    "reply": null
   },
   {
     "date": "2025-10-06T16:28:00.185000+00:00",
     "text": "AI for scientific discovery is a social problem: In our new position paper, @cgeorgiaw.bsky.social and I show that culture, incentives, and coordination are the main obstacles to progress, and we are launching the Hugging Science Initiative to address this!",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-10-03T15:37:15.517000+00:00",
+    "text": "Unclear if this is necessarily true, a lot of tech companies are in the anti AI blocklist that people subscribe to without reading the nuances so bsky is less popular in the tech world than it should be (I wish it weren\u2019t so because it\u2019s so much less toxic than X)",
+    "reply": null
   },
   {
     "date": "2025-10-01T17:56:49.436000+00:00",
     "text": "At a panel a couple of weeks ago I exclaimed in despair: \u201cwho decided that the only mode of interacting with AI is via chatbots?\u201d And this trend is relentless still.\n\nwww.theverge.com/news/787076/...",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-10-01T00:23:01.114000+00:00",
+    "text": "Can price fall in meters tho",
+    "reply": null
+  },
+  {
+    "date": "2025-09-30T00:14:56.748000+00:00",
+    "text": "If you go into advanced settings there\u2019s an update to the canvas feature that can directly edit documents and run code, maybe that",
+    "reply": null
   },
   {
     "date": "2025-09-28T21:36:52.223000+00:00",
     "text": "Wife brought her 100 year old film camera to that pirates game from a few weeks ago and she got this shot that's just perfect",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-09-28T17:26:58.387000+00:00",
+    "text": "Maybe if we could more permanently log in to arxiv and indicate our preferences there? I notice that I get logged out very frequently",
+    "reply": null
+  },
+  {
+    "date": "2025-09-28T17:12:18.646000+00:00",
+    "text": "cvpr.thecvf.com/Conferences/....",
+    "reply": null
+  },
+  {
+    "date": "2025-09-28T16:25:22.817000+00:00",
+    "text": "Right, or in other words, experts in a field need to document their tips and tricks so that others can follow. Gell-Mann amnesia otherwise would just decrease productivity: bsky.app/profile/amag...",
+    "reply": null
+  },
+  {
+    "date": "2025-09-28T16:17:49.556000+00:00",
+    "text": "This works great! Wish there was a way to make it work on my phone as well",
+    "reply": null
+  },
+  {
+    "date": "2025-09-28T16:14:53.895000+00:00",
+    "text": "AI x Labor is such a nuanced topic that people refuse to meaningfully engage with. There's a lot to be covered between \"ban AI\" or \"use AI otherwise you're fired\"!",
+    "reply": null
+  },
+  {
+    "date": "2025-09-28T16:12:45.963000+00:00",
+    "text": "For my coding work, diplomatic word choices are less important, but then more important is to constantly remind the model to write unit tests and dummy functions, otherwise you end up with 3000 lines of code without knowing where the bug is. It comes from experience that needs to be shared.",
+    "reply": null
+  },
+  {
+    "date": "2025-09-28T16:10:33.695000+00:00",
+    "text": "[Also, people are not all the same - someone might produce better outputs with excel than with AI, and therefore success metrics should be individualized in the workplace by giving employees more agency within general parameters, but that is a more complex topic for another day].",
+    "reply": null
+  },
+  {
+    "date": "2025-09-28T16:10:12.980000+00:00",
+    "text": "It is extremely context and job dependent - for my own work I generally only use AI for creating the structure of documents but then have to go through stuff line by line as word choices are important in policy docs. For my coding work, less so. \n\nTeams should document best practices over time, imo",
+    "reply": null
+  },
+  {
+    "date": "2025-09-28T16:03:04.567000+00:00",
+    "text": "The missing puzzle piece, imo, is training people to actually understand the limitations of models to use it as a productivity tool; even the CVPR guidelines specifically scope out what level of usage is allowed. One can only hope that there are internal team-level guidelines.",
+    "reply": null
+  },
+  {
+    "date": "2025-09-28T16:03:04.566000+00:00",
+    "text": "I'm worried about vibecoded slop increasing at a far faster rate than the rate at which humans can quality control, especially if the humans at these orgs are being given top-down directives to start with AI. Soon, we will just have models evaluating models with zero oversight.",
+    "reply": null
   },
   {
     "date": "2025-09-28T16:03:04.565000+00:00",
     "text": "So fascinating (not really) to me that company execs and tier 1 AI conferences have gone in completely opposite directions as it relates to AI usage. Surely the best minds actually developing AI models know something about overreliance, productivity, and quality? Surely?",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-09-27T13:55:31.836000+00:00",
+    "text": "arxiv.org/abs/2506.05209 \n\nThere were these models too, I wonder how they stack up",
+    "reply": null
+  },
+  {
+    "date": "2025-09-26T03:56:26.993000+00:00",
+    "text": "Love your tokenizer blogs!!",
+    "reply": null
+  },
+  {
+    "date": "2025-09-25T22:53:43.198000+00:00",
+    "text": "Omg! The more you know. Thank you \ud83d\ude4f",
+    "reply": null
   },
   {
     "date": "2025-09-25T22:45:55.437000+00:00",
     "text": "This phenomenon needs a nice catchy name because every research paper (including my own) that refers to it uses as many words but it\u2019s an insidious problem",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-09-24T00:12:59.566000+00:00",
+    "text": "3rd party inference providers will probably pop up soon \ud83d\udc40",
+    "reply": null
   },
   {
     "date": "2025-09-23T21:07:13.324000+00:00",
     "text": "I\u2019m back at my alma mater today to talk about personal anecdotes of how I have experienced AI, how those experiences fueled my research, and the kind of questions that still remain. Looking forward to it! \ud83e\udd17\n\nwww.eventbrite.com/e/personal-a...",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-09-23T11:54:19.555000+00:00",
+    "text": "Yes OSS >> Open weights but Anthropic is neither and also their research is not reproducible since they\u2019re usually just whitepapers unaccompanied by any data whatsoever (see: Clio and the economic index work with a hand wavy taxonomy)",
+    "reply": null
+  },
+  {
+    "date": "2025-09-23T11:54:19.554000+00:00",
+    "text": "I would argue fine tuning, LORA, distillation, and a host of other downstream research is helped with open weight models. Deepseek was co-released in many different smaller flavors, and they\u2019re all uniquely useful even for GPU-poor researchers",
+    "reply": null
   },
   {
     "date": "2025-09-19T01:45:15.468000+00:00",
     "text": "I\u2019m just going to play that South Park episode on a loop at people now. It was so spot on",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-09-17T09:26:41.876000+00:00",
+    "text": "How many of us chose to interact with assertive and sycophantic chatbots as the only mechanism of interacting with AI, when a thousand possible alternatives exist? (See: embodied AI) It\u2019s what we were given by marketers. System designs matter",
+    "reply": null
   },
   {
     "date": "2025-09-17T09:26:41.875000+00:00",
     "text": "This continues to be a recurring theme -_- Why is consumer agency so scary to the market? Noticed the same trend when I worked at Twitter: the personalization team cared for engagement metrics way more than actually showing users what they wanted to follow: \u201cpeople don\u2019t know what they like\u201d",
-    "has_embed": true
+    "reply": null
   },
   {
     "date": "2025-09-16T16:29:37.612000+00:00",
     "text": "\ud83e\udd16 As AI-generated content is shared in movies/TV/across the web, there's one simple low-hanging fruit \ud83c\udf47 to help know what's real: Visible watermarks. With others @hf.co, I've made sure it's trivially easy to add this disclosure to images, video, chatbot text. See how:\nhuggingface.co/blog/waterma...",
-    "has_embed": true
+    "reply": null
   },
   {
     "date": "2025-09-14T19:05:02.043000+00:00",
     "text": "I wish there was a way for arxiv to take me to the abstract page by default instead of the html page \ud83d\ude2c it is strictly worse",
-    "has_embed": false
+    "reply": null
+  },
+  {
+    "date": "2025-09-13T20:04:43.193000+00:00",
+    "text": "I want to read this!",
+    "reply": null
+  },
+  {
+    "date": "2025-09-11T19:26:29.131000+00:00",
+    "text": "This was a lifesaver for timed Leetcode type interviews during job hunting in my final year of undergrad haha. It\u2019s been around a while",
+    "reply": null
   },
   {
     "date": "2025-09-11T16:58:38.103000+00:00",
     "text": "I adore the public library. I just put 15 picture books on hold for my kiddo, on trains (current obsession) and beaches (first visit soon). We'll pick them up after they're all gathered at our branch. This is free!\n\nYou all know this, I just feel the need to say it out loud occasionally.",
-    "has_embed": false
+    "reply": null
   },
   {
     "date": "2025-09-08T14:25:35.446000+00:00",
     "text": "It's interesting to think that the visual depiction of the word \"AI\" is still strongly coupled to humanoid robots even as the most popular applications of what we currently think of AI are not that. Terminology overloading over time is fascinating to live through.",
-    "has_embed": false
+    "reply": null
+  },
+  {
+    "date": "2025-09-06T20:02:23.532000+00:00",
+    "text": "Influencers in AI do like to coin/reinvent extant concepts to be fair. Even \u201cfrontier models\u201d itself is a coined term that can mean anything and everything",
+    "reply": null
+  },
+  {
+    "date": "2025-09-06T16:35:54.934000+00:00",
+    "text": "Wouldn\u2019t that just be classical information retrieval or web search? (P.S. only true facts is a very very high bar)",
+    "reply": null
+  },
+  {
+    "date": "2025-09-06T16:34:26.265000+00:00",
+    "text": "What does spiky nature of intelligence mean here? Not familiar with this term, although it reminds me of Moravec\u2019s paradox:\n\nen.m.wikipedia.org/wiki/Moravec...",
+    "reply": null
+  },
+  {
+    "date": "2025-09-06T16:30:46.805000+00:00",
+    "text": "How does Claude have the same response? This is sus",
+    "reply": null
+  },
+  {
+    "date": "2025-09-06T16:28:33.769000+00:00",
+    "text": "Interesting!",
+    "reply": null
   },
   {
     "date": "2025-08-31T17:41:12.949000+00:00",
     "text": "The Kant Car",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-08-31T13:35:23.007000+00:00",
+    "text": "California\u2019s flag is so awesome it\u2019s hard to beat tbh",
+    "reply": null
+  },
+  {
+    "date": "2025-08-31T13:34:40.096000+00:00",
+    "text": "That\u2019s the only one I am sort of ok with, it\u2019s supposedly the mayflower. I wish they were a bit more complex though haha",
+    "reply": null
+  },
+  {
+    "date": "2025-08-31T04:28:17.169000+00:00",
+    "text": "These official ones are hideous oh god",
+    "reply": null
+  },
+  {
+    "date": "2025-08-29T19:41:42.015000+00:00",
+    "text": "This has been my observation as well!",
+    "reply": null
   },
   {
     "date": "2025-08-29T18:04:29.155000+00:00",
     "text": "Research posts on Bluesky are more original \u2014 and get better engagement www.nature.com/articles/d41...",
-    "has_embed": true
+    "reply": null
   },
   {
     "date": "2025-08-26T17:25:26.942000+00:00",
     "text": "It\u2019s fascinating to see the time gap between Taylor swift\u2019s engagement insta post and full length news articles pop up. Journalist folks please tell me do you have these pre-written just in case or are you just that proficient?",
-    "has_embed": false
+    "reply": null
   },
   {
     "date": "2025-08-20T16:18:29.250000+00:00",
     "text": "Thinking a lot about documentation standards today. I would be very interested in people's thoughts on what factors lead to a documentation schema to become a standard? Thinking about datasheets vs model cards for eg, and how one became a (somewhat) durable standard..",
-    "has_embed": false
+    "reply": null
   },
   {
     "date": "2025-08-17T17:08:36.171000+00:00",
     "text": "My favorite thing about the Gemini chain of thoughts is how it says \u201cI am now laser focused on\u201d <insert part of code that I asked to fix>. It\u2019s cute",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-08-17T15:21:19.742000+00:00",
+    "text": "Which is sort of my point - surely a conscious being that can communicate via messages would not be controlled by a prompt? If you try running these models without a prompt (just a dot or space) they still produce incoherent content, which to me seems several rungs below, say, ant consciousness",
+    "reply": null
+  },
+  {
+    "date": "2025-08-17T15:07:12.388000+00:00",
+    "text": "We eat animals and make them plough fields or produce milk, so sentience (in my mind) isn\u2019t a necessary barrier to exploitation. Perhaps sentience is a spectrum?",
+    "reply": null
+  },
+  {
+    "date": "2025-08-17T14:59:16.389000+00:00",
+    "text": "I appreciate it, even though I disagree :)",
+    "reply": null
+  },
+  {
+    "date": "2025-08-17T14:13:21.910000+00:00",
+    "text": "Can we take a deep breath and remember that models are software? Certainly if you believe models are sentient (they\u2019re not) then just giving them refusal isn\u2019t enough? Where\u2019s the line in the sand exactly?\n\nWhat makes Claude unsure about itself being sentient while GPT is very clear that it isn\u2019t? \ud83d\ude43",
+    "reply": null
   },
   {
     "date": "2025-08-17T14:13:21.909000+00:00",
     "text": "I genuinely want to know the thought process here. Is each model iteration a new being? Is Claude 4.1 its own legal entity deserving of model welfare different from 4.0? Or is it like one human updating their world knowledge and becoming smarter? Was the very first trained Claude the robot embryo?",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-08-11T19:47:02.824000+00:00",
+    "text": "We talk about what incentive structures make organizations do this, what some common chart issues are, and what we as a coalition are doing to help!\n\nevalevalai.com/documentatio...",
+    "reply": null
   },
   {
     "date": "2025-08-11T19:47:02.823000+00:00",
     "text": "Remember the discussions around AI Eval plots last week? We at @eval-eval.bsky.social have a quick blog post on the AI Eval Charts Crisis!",
-    "has_embed": false
+    "reply": null
+  },
+  {
+    "date": "2025-08-08T17:24:43.916000+00:00",
+    "text": "We should strive to build systems that prioritize reduced codependency and reliable availability, giving back agency to the user. One solution to this is on device, open models, but also generally speaking we need stronger studies here.",
+    "reply": null
   },
   {
     "date": "2025-08-08T17:24:43.915000+00:00",
     "text": "The product decision to discontinue older versions of ChatGPT and the comments on Reddit around that decision reminded me once again of discussions around \u201crobot death\u201d, which is real insofar as people\u2019s feelings and emotions are real.",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-08-08T02:42:32.499000+00:00",
+    "text": "\ud83d\udc80\ud83d\udc80\ud83d\udc80",
+    "reply": null
+  },
+  {
+    "date": "2025-08-08T00:55:17.962000+00:00",
+    "text": "Please make a bookmark function for this site for posts like these <3",
+    "reply": null
   },
   {
     "date": "2025-08-08T00:54:24.466000+00:00",
     "text": "New paper idea: Graph Crimes in Evaluations as a form of Epistemic Injustice",
-    "has_embed": false
+    "reply": null
   },
   {
     "date": "2025-08-07T14:51:48.842000+00:00",
     "text": "I\u2019ve made my husband laugh with the same joke 3 times I feel so powerful",
-    "has_embed": false
+    "reply": null
   },
   {
     "date": "2025-07-21T17:11:35.629000+00:00",
     "text": "This! Also begets the question, why are people starting to get averse to social forms of knowledge production, involving multi-level stakeholders? Why is this mad rush to clip out the humans from the process, instead of working in tandem?",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-07-16T18:45:51.459000+00:00",
+    "text": "Yes! This one omg",
+    "reply": null
   },
   {
     "date": "2025-07-16T17:17:29.891000+00:00",
     "text": "\ud83d\udea8 AI Evals Crisis: Officially kicking off the Eval Science Workstream \ud83d\udea8\n\nWe\u2019re building a shared scientific foundation for evaluating AI systems, one that\u2019s rigorous, open, and grounded in real-world & cross-disciplinary best practices\ud83d\udc47 (1/2)\n\nRead our new blog post: tinyurl.com/evalevalai",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-07-16T12:20:43.729000+00:00",
+    "text": "We may have seen the same episode lol the guest chef for that episode was also named Abhijeet or something I remember",
+    "reply": null
+  },
+  {
+    "date": "2025-07-15T19:33:44.751000+00:00",
+    "text": "Next year! Working on it :P International couples always seem to end up having multiple weddings lol (families in different countries)",
+    "reply": null
   },
   {
     "date": "2025-07-15T19:20:26.931000+00:00",
     "text": "[New] Husbandposting! And yes we had a croquembouche for dessert because I saw it on masterchef once and I\u2019ve always wanted that \u2764\ufe0f",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-07-15T14:31:00.575000+00:00",
+    "text": "The data shows AI development is far more distributed, diverse, and collaborative than popular narratives suggest. Real innovation happens through community collaboration across specialized domains.\n\nWhat will you discover? \ud83d\ude80\n\nhuggingface.co/blog/evijit/...",
+    "reply": null
+  },
+  {
+    "date": "2025-07-15T14:31:00.574000+00:00",
+    "text": "But not to worry, you can do your own analysis too! We include links to hub datasets, weekly snapshots over time, and a wealth of other data for you to explore yourself! huggingface.co/datasets/hfm...",
+    "reply": null
+  },
+  {
+    "date": "2025-07-15T14:31:00.573000+00:00",
+    "text": "Academic research is already producing research on Hugging Face data, including this recent \n@facct.bsky.social \n paper: \"The Brief and Wondrous Life of Open Models\"\n\ndl.acm.org/doi/10.1145/...",
+    "reply": null
+  },
+  {
+    "date": "2025-07-15T14:31:00.572000+00:00",
+    "text": "\ud83d\udd25 Interactive tools (linked in the blog) to explore yourself:\n\nModelVerse Explorer - organizational contributions\nDataVerse Explorer - dataset patterns\nOrganization HeatMap - activity over time\nBase Model Explorer - model family trees\nSemantic Search - find models by capability",
+    "reply": null
+  },
+  {
+    "date": "2025-07-15T14:31:00.571000+00:00",
+    "text": "Who are the most prolific contributors? Research institutions lead: AI2 (Allen Institute) emerges as one of the most active contributors, alongside significant activity from IBM, NVIDIA, and international organizations. The open source ecosystem spans far beyond Big Tech!",
+    "reply": null
+  },
+  {
+    "date": "2025-07-15T14:31:00.570000+00:00",
+    "text": "Let's also talk about datasets: \n\n- Most downloaded datasets are evaluation benchmarks (MMLU, Squad, GLUE)\n- Universities and research institutions dominate foundational data\n- Domain-specific datasets thrive in finance, healthcare, robotics, and science\n- Open datasets power most AI development!",
+    "reply": null
+  },
+  {
+    "date": "2025-07-15T14:31:00.569000+00:00",
+    "text": "Looking at a single model's stats often does not tell the full story of its usefulness. The Qwen, Llama, and Gemma models have led to a universe of derivative models on the hub, all made by the community. This is the beauty of open source!",
+    "reply": null
+  },
+  {
+    "date": "2025-07-15T14:31:00.568000+00:00",
+    "text": "Legacy models like Clip, GPT-2, BERT, etc. remain among the most downloaded models despite being years old, showing that modern chat interfaces represent just one slice of AI applications! The ecosystem is much more diverse than frontier model discussions suggest.",
+    "reply": null
+  },
+  {
+    "date": "2025-07-15T14:31:00.567000+00:00",
+    "text": "Small models consistently outperform large variants in downloads, even within the same model family.\nThis suggests practical deployment considerations often matter more than maximum capability. The community is building for real-world use, not just benchmarks.",
+    "reply": null
+  },
+  {
+    "date": "2025-07-15T14:31:00.566000+00:00",
+    "text": "huggingface.co/blog/evijit/...\n\nShort thread below!",
+    "reply": null
   },
   {
     "date": "2025-07-15T14:31:00.565000+00:00",
     "text": "New blog post alert! \ud83d\udea8\"What is the Hugging Face Community Building?\", with @yjernite.bsky.social and Irene Soliaman\n \nThe AI narrative focuses on big players, but the real story is happening in the open source AI ecosystem across 1.8M models, 450K datasets, and 560K apps, on  \n@hf.co.",
-    "has_embed": false
+    "reply": null
   },
   {
     "date": "2025-07-03T19:04:10.992000+00:00",
     "text": "Gotta plug @timnitgebru.bsky.social @alexhanna.bsky.social and Asmelash Teka Hadgu's piece:\n\nwww.dair-institute.org/blog/elders/\n\nAnd @anikacolliernavaroli.com's excellent interview with Timnit on the subject: www.techpolicy.press/through-to-t...",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-07-03T17:49:02.669000+00:00",
+    "text": "God bless! Maybe I\u2019ll cook something up for my Bengali speaking mom during my time off - this is so cool!",
+    "reply": null
   },
   {
     "date": "2025-07-03T14:20:35.574000+00:00",
     "text": "Random hot take: Too many people are building AI for genz and not enough are building for their grandparents. Where are the apps/bots that say a retired, perhaps non English speaking grandma can use to improve their lives?",
-    "has_embed": false
+    "reply": null
   },
   {
     "date": "2025-07-03T13:56:51.062000+00:00",
     "text": "Not enough people know about nairrpilot.org and it shows. NAIRR needs better marketing and more resources to become a strong public computing infrastructure for American researchers and builders! \ud83c\uddfa\ud83c\uddf8\n\n@hf.co is one of many resources you can access through NAIRR ;)",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-07-01T16:13:09.737000+00:00",
+    "text": "Generally a big fan of LED frame stages, I absolutely loved the Eurovision main stage this year",
+    "reply": null
   },
   {
     "date": "2025-07-01T16:06:56.508000+00:00",
     "text": "I still think the set design of the Evita revival at the American Rep theater at Harvard was the most stunning interpretation of all time - I hope this concept makes it to Broadway at some point \ud83e\udd29",
-    "has_embed": true
+    "reply": null
   },
   {
     "date": "2025-07-01T15:40:21.195000+00:00",
     "text": "Help this project out by participating if it\u2019s up your alley! Moral KG is an ambitious attempt to map AI reasoning traces onto a developing massive philosophical ontology, and very much being built as a bootstrap effort with a rag tag team \ud83e\udd17",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-06-28T22:18:08.283000+00:00",
+    "text": "Extremely common unfortunately - it has taken up the spot that background radio used to occupy",
+    "reply": null
   },
   {
     "date": "2025-06-23T14:47:00.169000+00:00",
     "text": "Go say hi to @jennmickel.bsky.social and others and get to know what we are doing!",
-    "has_embed": true
+    "reply": null
   },
   {
     "date": "2025-06-22T22:36:23.528000+00:00",
     "text": "We're doing better AI Evals together! A herculean effort, but evals are in crisis and together we can go back to  research roots and good science \ud83e\udd17",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-06-19T12:43:29.406000+00:00",
+    "text": "HIV (prevention and treatment) drugs are fully covered by insurance and vouchers for people without insurance in my experience, but I\u2019m not sure if the money for this comes from the federal govt or from state. Massachusetts does a really good job of testing and prevention",
+    "reply": null
   },
   {
     "date": "2025-06-17T13:52:43.966000+00:00",
     "text": "Generative AI often renders the user invisible in their limited worldview. Please sign up for a short interactive workshop on AI, Misrepresentation and Mental Health, at both @facct.bsky.social in Athens, and Alt-FAccT in NYC! Limited space, so hurry! \n\nSign up here! tinyurl.com/ai-mirrors",
-    "has_embed": true
+    "reply": null
   },
   {
     "date": "2025-06-15T00:20:38.526000+00:00",
     "text": "Alright, people, let's be honest: GenAI systems are everywhere, and figuring out whether they're any good is a total mess. Should we use them? Where? How? Do they need a total overhaul?\n\n(1/6)",
-    "has_embed": false
+    "reply": null
+  },
+  {
+    "date": "2025-06-13T20:51:24.028000+00:00",
+    "text": "I like it \ud83e\udee2 (I don\u2019t like the open exposing of people\u2019s names and account details but I like looking into the reactor core of humanity)",
+    "reply": null
   },
   {
     "date": "2025-06-13T17:13:40.871000+00:00",
     "text": "I'm very pleased that both FAccT and AIES have way more qualitative evals of systems than I have seen in previous years. More of these please!",
-    "has_embed": false
+    "reply": null
+  },
+  {
+    "date": "2025-06-09T13:13:34.378000+00:00",
+    "text": "Even if licenses evolve with technology as you suggest, it is still important to consider how previous licenses apply to current technology since we can't expect every rights holder to update their license, so it is not a complete solution imo..",
+    "reply": null
   },
   {
     "date": "2025-06-09T12:11:53.065000+00:00",
     "text": "Living downtown and literally 2 blocks from the Opera House is certainly a clutch because I\u2019m always late to things. Catch Rom\u00e9o et Juliette playing in Boston it was great \ud83d\ude0d",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-06-09T02:27:28.399000+00:00",
+    "text": "Oh 100%, I think it is possible to agree that a) These models are great statistical pattern matchers \ud83e\udd9c and b) With clever system design these can be very useful tools to solve important tasks",
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T14:23:29.553000+00:00",
+    "text": "Shameless plug: I wrote this guide couple of months ago that continues to be very relevant. There\u2019s so much good and free data out there that just needs a little push to be maximally usable for society: huggingface.co/blog/evijit/...",
+    "reply": null
   },
   {
     "date": "2025-06-08T14:15:11.650000+00:00",
     "text": "Competitive language models trained on fully openly licensed data is possible! Don\u2019t let for profit orgs tell you otherwise.\ud83d\ude09 Incredible work by some of my favorite folks across organizations.",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T14:09:09.147000+00:00",
+    "text": "Fair!",
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T13:09:24.853000+00:00",
+    "text": "Coming back to this thread to say thank you, I added a couple of feeds: HAI and Philosophy of Tech, and I found some more people to add to my private list and I think it\u2019s noticeably closer to the old academic twitter I was missing \ud83d\ude00",
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T13:07:20.360000+00:00",
+    "text": "Wouldn\u2019t it be easier to just route these orders to a warehouse that is designed for quick sorting and order fulfillment instead of going through a store? I think Amazon fresh deliveries already work like that. I can see the unmanned aspect of it happening in such a facility though!",
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T12:59:00.147000+00:00",
+    "text": "\u201cDistrusts hiring tools\u201d = deemed ineligible to be hired at Zapier is just absolute comedy especially with the hundreds of research papers showing we are right to treat these tools with skepticism..",
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T12:56:31.505000+00:00",
+    "text": "Right, but which in itself might be illegal (hiring tools are mentioned in the policy for example), such a mess \ud83e\udee5",
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T12:54:13.576000+00:00",
+    "text": "Yeah. I do wonder how much of that governance is because of bad actors but actors that have no choice but to scrape because of the lack of apis. It does look like everyone\u2019s building MCP servers into their sites though, I\u2019m curious to see what happens in a couple years",
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T12:46:24.103000+00:00",
+    "text": "Alternatively, this could be a call for better metadata practices to visual elements (alt text, UX descriptions, apis) that might unironically improve accessibility, so I don\u2019t think it\u2019s all bad.",
+    "reply": null
   },
   {
     "date": "2025-06-08T12:42:47.225000+00:00",
     "text": "I\u2019ll be at alt-FAccT in New York on June 20! Skipping Athens this year for personal reasons (but a really good one \ud83d\udc8d) so I\u2019d love to see you if you\u2019re going! \ud83e\udd17",
-    "has_embed": false
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T12:40:50.498000+00:00",
+    "text": "How do you feel about compulsory vibe workplaces:",
+    "reply": null
   },
   {
     "date": "2025-06-08T12:36:03.083000+00:00",
     "text": "And now add AI Agents to the conversation, and we\u2019re looking at a dire need for infrastructure overhaul",
-    "has_embed": true
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T12:34:41.650000+00:00",
+    "text": "I have a list called \u201cAI research\u201d that I started populating with my favorite people and have it pinned, and you\u2019re right that it does provide a better experience, thank you",
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T12:32:01.003000+00:00",
+    "text": "I did know of this! Thanks for reminding. I should curate it better :)",
+    "reply": null
+  },
+  {
+    "date": "2025-06-08T10:20:20.636000+00:00",
+    "text": "After those brief spikes, it did come back to academia though (for me). I guess X has a tendency of forcefully pushing viral content and the payout incentives don\u2019t help either..",
+    "reply": null
   },
   {
     "date": "2025-06-07T21:52:41.474000+00:00",
     "text": "I miss the research hangout atmosphere of the old Twitter, it\u2019s just all politics on X and on Bsky now - just on opposite sides of the spectrum. Sorry to say but it seems like special interest subreddits are the last bastion standing \ud83d\ude05",
-    "has_embed": false
+    "reply": null
   },
   {
     "date": "2025-06-06T19:18:56.466000+00:00",
     "text": "Can you train a performant language model using only openly licensed text?\n\nWe are thrilled to announce the Common Pile v0.1, an 8TB dataset of openly licensed and public domain text. We train 7B models for 1T and 2T tokens and match the performance similar models like LLaMA 1 & 2",
-    "has_embed": true
+    "reply": null
   }
 ]
