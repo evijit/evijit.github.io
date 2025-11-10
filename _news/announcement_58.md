@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I had the distinct honor of speaking at a panel entitled 'AI's Effect on the Creative Industries', organized by [All Tech Is Human](https://alltechishuman.org/) and hosted by the Consulate General of Canada in New York. Moderated by Madhavi Singh and with co-panelists Rebecca Ross (Creative Commons), Prithy Ahmed (Standards Canada), and Sarah Robertson (Dorsey Whitney), we looked at the intersection of Generative AI and its impact on the creative industries.
+I had the distinct honor of speaking at a panel entitled 'AI's Effect on the Creative Industries', organized by [All Tech Is Human](https://alltechishuman.org/) and hosted by the Consulate General of Canada in New York. We looked at the intersection of Generative AI and its impact on the creative industries, and I stressed on the importance of holistic labor protections for creatives and going beyond copyright as a single tool.

@@ -9,15 +9,19 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
-- Apr 2025, Panel: "Is U.S. Policy Ready for Agentic AI?" at the [Center for Data Innovation](https://datainnovation.org/2025/04/is-u-s-policy-ready-for-agentic-ai/)
+- Nov 2025, Panel: "AI and the Creative Industry" at the Canadian Consulate and All Tech is Human
 
-- Mar 2025, Panel on Open Source AI Regulation at the [Summit on State AI Legislation (SSAIL)](https://dec.yale.edu/programs/summit-on-state-ai-legislation-ssail) at the Digital Ethics Center, Yale University
+- Oct 2025, Panel: "Rights (to Life, Liberty, and the Pursuit of Happiness)" at the UConn Humanities Institute AI Symposium
+
+- Apr 2025, Panel: "Is U.S. Policy Ready for Agentic AI?" at the [Center for Data Innovation](https://datainnovation.org/2025/04/is-u-s-policy-ready-for-agentic-ai/)
 
 - Mar 2025, NLP & Generative AI Panel at the [HBS Tech Conference](https://www.techclubhbs.com/2025-conference)
 
-- Feb 2025, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at [The MIT Sloan AI Conference](https://www.mitaimlconference.com/)
+- Feb 2025, Panel on Open Source AI Regulation at the [Summit on State AI Legislation (SSAIL)](https://dec.yale.edu/programs/summit-on-state-ai-legislation-ssail) at the Digital Ethics Center, Yale University
 
-- Oct 2024, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at [The Future of Third-Party AI Evaluation Workshop](https://sites.google.com/view/thirdparty-ai-evalulation/workshop?authuser=0)
+- Jan 2025, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at [The MIT Sloan AI Conference](https://www.mitaimlconference.com/)
+
+- Oct 2024, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at [Strengthening AI Accountability Through Better Third-Party Evaluations](https://hai.stanford.edu/news/strengthening-ai-accountability-through-better-third-party-evaluations) hosted by Stanford HAI
 
 - Oct 2024, Bridging the Gap: Real-World AI Biases and Responsible Governance Frameworks at [Indian Institute of Technology (IIT), Kharagpur](https://cse.iitkgp.ac.in/)
 
@@ -47,7 +51,15 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Coverage and Op-Eds
 
+- Apr 2025, [California finally beats Big Tech in court](https://www.politico.com/newsletters/politico-technology-california-decoded-preview/2025/04/18/california-finally-beats-big-tech-in-court-00298056) - Politico
+
+- Mar 2025, [Hugging-face experts warn: We shouldn't give AI agents full control](https://t3n.de/news/hugging-face-experten-warnen-ki-agenten-kontrolle-1679713/?utm_source=rss&utm_medium=feed&utm_campaign=news) - T3N (German)
+
 - Mar 2025, [Why handing over total control to AI agents would be a huge mistake](https://www.technologyreview.com/2025/03/24/1113647/why-handing-over-total-control-to-ai-agents-would-be-a-huge-mistake/) - MIT Tech Review Op-Ed
+
+- Mar 2025, [The hidden cost of brainstorming with ChatGPT](https://www.businessinsider.com/openai-chatgpt-brainstorming-addiction-dependence-negative-consequences-mit-research-2025-3) - Business Insider
+
+- Mar 2025, [DeepSeek pioneers a new way for AI to 'reason'](https://www.snexplores.org/article/deepseek-ai-reasoning-agents) - Science News Explores
 
 - Mar 2025, [Hugging Face submits open-source blueprint, challenging Big Tech in White House AI policy fight](https://venturebeat.com/ai/hugging-face-submits-open-source-blueprint-challenging-big-tech-in-white-house-ai-policy-fight/) - VentureBeat
 
