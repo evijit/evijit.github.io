@@ -9,17 +9,17 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
-- Nov 2025, Panel: "AI and the Creative Industry" at the Canadian Consulate and All Tech is Human
+- Oct 2025, Panel: "AI and the Creative Industry" at the Canadian Consulate and All Tech is Human
 
 - Oct 2025, Panel: "Rights (to Life, Liberty, and the Pursuit of Happiness)" at the UConn Humanities Institute AI Symposium
 
 - Apr 2025, Panel: "Is U.S. Policy Ready for Agentic AI?" at the [Center for Data Innovation](https://datainnovation.org/2025/04/is-u-s-policy-ready-for-agentic-ai/)
 
+- Mar 2025, Panel on Open Source AI Regulation at the [Summit on State AI Legislation (SSAIL)](https://dec.yale.edu/programs/summit-on-state-ai-legislation-ssail) at the Digital Ethics Center, Yale University
+
 - Mar 2025, NLP & Generative AI Panel at the [HBS Tech Conference](https://www.techclubhbs.com/2025-conference)
 
-- Feb 2025, Panel on Open Source AI Regulation at the [Summit on State AI Legislation (SSAIL)](https://dec.yale.edu/programs/summit-on-state-ai-legislation-ssail) at the Digital Ethics Center, Yale University
-
-- Jan 2025, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at [The MIT Sloan AI Conference](https://www.mitaimlconference.com/)
+- Feb 2025, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at [The MIT Sloan AI Conference](https://www.mitaimlconference.com/)
 
 - Oct 2024, Coordinated Disclosure for AI: Beyond Security Vulnerabilities at [Strengthening AI Accountability Through Better Third-Party Evaluations](https://hai.stanford.edu/news/strengthening-ai-accountability-through-better-third-party-evaluations) hosted by Stanford HAI
 
@@ -50,6 +50,12 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 - Nov 2022, "Subverting Fair Image Search with Generative Adversarial Perturbations" as a part of the 'Celebrating Young Researchers' event, [Trustworthy ML Initiative](https://www.trustworthyml.org/)
 
 ### Media Coverage and Op-Eds
+
+- Nov 2025, [Responsible AI podcast with Alex Alben](https://podcasts.apple.com/us/podcast/responsible-ai-from-the-ai-forum/id1733357591) - The AI Forum
+
+- May 2025, [Ethical Machines podcast with Reid Blackman - "We're Not Ready for Agentic AI"](https://podcasts.apple.com/us/podcast/were-not-ready-for-agentic-ai/id1751550186?i=1000709391707) - Ethical Machines
+
+- May 2025, [Can AI take your coding job?](https://www.marketplace.org/story/2025/05/19/can-ai-take-your-coding-job) - NPR Marketplace
 
 - Apr 2025, [California finally beats Big Tech in court](https://www.politico.com/newsletters/politico-technology-california-decoded-preview/2025/04/18/california-finally-beats-big-tech-in-court-00298056) - Politico
 
