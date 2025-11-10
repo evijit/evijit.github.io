@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Going to San Diego for NeurIPS? We at Eval-Eval, along with the UK AISI, are hosting a closed door state of evals workshop at UC San Diego on Dec 8th. [Request to join](https://evaleval.github.io/events/workshop/)!
+We at Eval-Eval, along with the UK AISI, are hosting a closed-door workshop on the state of evaluations at UC San Diego on December 8th for those attending NeurIPS. [Request to join](https://evaleval.github.io/events/workshop/).
