@@ -51,7 +51,7 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Coverage and Op-Eds
 
-- Nov 2025, [Responsible AI podcast with Alex Alben](https://podcasts.apple.com/us/podcast/responsible-ai-from-the-ai-forum/id1733357591) - The AI Forum
+- Nov 2025, [Responsible AI podcast with Alex Alben](https://www.theaiforum.org/podcast/avijit-ghosh-human-agency) - The AI Forum
 
 - May 2025, [Ethical Machines podcast with Reid Blackman - "We're Not Ready for Agentic AI"](https://podcasts.apple.com/us/podcast/were-not-ready-for-agentic-ai/id1751550186?i=1000709391707) - Ethical Machines
 

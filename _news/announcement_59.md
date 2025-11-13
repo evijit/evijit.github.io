@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I was on the [Responsible AI podcast with Alex Alben](https://podcasts.apple.com/us/podcast/responsible-ai-from-the-ai-forum/id1733357591), discussing how AI could address human drudgery and why we need to focus on solving immediate, practical problems rather than pursuing speculative frontier challenges.
+I was on the [Responsible AI podcast with Alex Alben](https://www.theaiforum.org/podcast/avijit-ghosh-human-agency), discussing how AI could address human drudgery and why we need to focus on solving immediate, practical problems rather than pursuing speculative frontier challenges.
