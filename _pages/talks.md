@@ -9,7 +9,7 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
-- Oct 2025, Panel: "AI and the Creative Industry" at the Canadian Consulate and All Tech is Human
+- Oct 2025, Panel: ["AI and the Creative Industry"](https://luma.com/08vjt3v0) at the Canadian Consulate and All Tech is Human
 
 - Oct 2025, Panel: "Rights (to Life, Liberty, and the Pursuit of Happiness)" at the UConn Humanities Institute AI Symposium
 
