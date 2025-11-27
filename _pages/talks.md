@@ -51,6 +51,8 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 
 ### Media Coverage and Op-Eds
 
+- Nov 2025, [China leapfrogs US in global market for 'open' AI models](https://www.ft.com/content/931c8218-a9d7-4cbd-8b08-27516637ff41) - Financial Times
+
 - Nov 2025, [Responsible AI podcast with Alex Alben](https://www.theaiforum.org/podcast/avijit-ghosh-human-agency) - The AI Forum
 
 - May 2025, [Ethical Machines podcast with Reid Blackman - "We're Not Ready for Agentic AI"](https://podcasts.apple.com/us/podcast/were-not-ready-for-agentic-ai/id1751550186?i=1000709391707) - Ethical Machines

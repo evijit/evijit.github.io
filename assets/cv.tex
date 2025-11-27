@@ -1,0 +1,1330 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+
+% \RequirePackage[sfdefault]{quattrocento}
+\usepackage[default,scale=0.95]{librefranklin}
+
+% \newenvironment{quattro}{\fontfamily{QuattrocentoSans-TLF}\selectfont}{\par}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{tfrupee}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\RequirePackage{tikz}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\usepackage{scalerel}
+% \usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{tfrupee}  
+
+
+\usepackage{longtable}
+\usepackage{array}
+
+
+\definecolor{lightgray}{HTML}{999999}
+\definecolor{graytext}{HTML}{999999}
+
+
+
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=gg!70,rounded corners=0.5ex,inner xsep=1ex,inner ysep =0.55ex,text height=1.3ex,text depth=.25ex]{#1};
+}
+
+\definecolor{awesome}{HTML}{000066}
+\definecolor{gg}{HTML}{525D67}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\geometry{left=1.75cm, top=1.5cm, right=1.75cm, bottom=1.5cm, footskip=.2cm}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.5in}
+% \addtolength{\textheight}{1.0in}
+
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2.75pt}}
+  }
+}
+
+\newcommand{\pubtype}[1]{
+\vspace{0.25em}
+  \paragraph{\color{gg}\textit{#1}\vspace{-0.25em}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{5pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10}{}\selectfont#1} & {\color{awesome}\fontsize{9}{}\selectfont#2} \\
+      \textit{\color{awesome}\fontsize{8}{}\selectfont#3} & \textit{\color{gg}\fontsize{8}{}\selectfont#4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\paper}[4]{
+  \vspace{-3pt}\item
+    \begin{tabularx}{0.97\textwidth}[t]{X@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & {\color{awesome}\small #2} \\
+      \textit{\color{awesome}\footnotesize#3} & \textit{\color{gg}\footnotesize #4} \\
+    \end{tabularx}\vspace{-4pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-8pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+
+\newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\scshape\color{lightgray} #1}}
+
+\newcommand*{\makecvfooter}[3]{%
+  \fancyfoot{}
+  \fancyfoot[L]{\footerstyle{#1}}
+  \fancyfoot[C]{\footerstyle{#2}}
+  \fancyfoot[R]{\footerstyle{#3}}
+}
+
+% For elements of honor
+\newcommand*{\honortitlestyle}[1]{{\small\bodyfont #1}}
+\newcommand*{\honorpositionstyle}[1]{{\small\bodyfont\bfseries\color{awesome} #1}}
+\newcommand*{\honordatestyle}[1]{{\small\bodyfont\color{gg} #1}}
+\newcommand*{\honorlocationstyle}[1]{{\footnotesize\bodyfontlight\slshape\color{awesome} #1}}
+% Define an environment for cvhonor
+\newenvironment{cvhonors}{%
+  \vspace{\acvSectionContentTopSkip}
+%   \vspace{-3.5mm}
+  \begin{center}
+    % \setlength\tabcolsep{-4pt}
+    % \setlength{\extrarowheight}{-7pt}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.4cm} L{\textwidth - 7cm} R{5.5cm}}
+}{%
+    \end{tabular*}
+  \end{center}
+}
+
+\newenvironment{cvhonorsb}{%
+  \vspace{\acvSectionContentTopSkip}
+%   \vspace{-3.5mm}
+  \begin{center}
+    % \setlength\tabcolsep{-4pt}
+    % \setlength{\extrarowheight}{-7pt}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.4cm} L{\textwidth - 5cm} R{3.5cm}}
+}{%
+    \end{tabular*}
+  \end{center}
+}
+
+\newcommand*{\cvhonor}[4]{%
+  \honordatestyle{#4} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+}
+
+\newcommand*{\cvhonorb}[4]{%
+  \honordatestyle{#4} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Huge Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{
+    % \begin{quattro}
+    \color{awesome} \fontsize {27pt}{1em} \textsc{Avijit Ghosh}
+    % \end{quattro}
+    } \\ \vspace{0.5em}
+    {\small \color{awesome} Technical AI Policy Researcher, Hugging Face} \\ \vspace{0.2em}
+   {\footnotesize {\color{awesome} 
+   \faPhone \hspace{0.25em}(+1) 857-337-0180 $|$ \href{mailto:avijit@huggingface.co}{\faEnvelope \hspace{0.25em} avijit@huggingface.co (Work)}  $|$ \href{mailto:avijitg22@gmail.com}{avijitg22@gmail.com (Personal)} $|$
+   \href{https://evijit.io}{\faGlobe \hspace{0.25em} evijit.io} $|$
+    \href{https://linkedin.com/in/evijit}{\faLinkedin \hspace{0.25em} evijit} $|$
+    \href{https://github.com/evijit}{\faGithub \hspace{0.25em} evijit}
+    }}
+    \vspace{-0.8em}
+\end{center}
+
+\begin{center}
+% \begin{quattro}
+{\bfseries\color{gg}\fontsize{7.5pt}{1em}{\foreach \n in {Responsible AI, Machine Learning, AI Policy, AI for Science, AI Governance}{\cvtag{\n}}}}
+% \end{quattro}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Ph.D. in Computer Science (Advised by \href{https://cbw.sh/}{Dr. Christo Wilson)}}{2019 - 2023}
+      \vspace{-4pt}
+    \resumeSubheading
+      {Indian Institute of Technology (IIT) Kharagpur}{Kharagpur, India}
+      {B.Tech. in Chemical Engineering, M.Tech in Financial Engineering, Minor in Computer Science}{2014 - 2019}
+  \resumeSubHeadingListEnd
+
+\section{Doctoral Thesis}
+\resumeSubHeadingListStart
+  
+  \resumeSubheading
+      {\small Algorithmic Fairness in the Real World: Challenges and Considerations}{\small Defended June 2023}
+      {}{}
+      \vspace{-12pt}
+      \resumeItemListStart
+        \resumeItem{Social bias in machine learning algorithms is a widespread problem that has been addressed through various measures, but implementing fair machine learning systems in the real world is challenging due to issues like noisy demographic information, adversarial vulnerabilities, policy restrictions and complex interactions between humans and algorithms.}
+        \resumeItem{In my thesis, I outline these problems in fair ML systems, with the aim to gain a more complete understanding of the issues involved and to be able to provide technical and policy recommendations to overcome their real world implementation challenges.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Publications}
+  \pubtype{Peer-Reviewed Conference}
+  \resumeSubHeadingListStart
+
+        \paper
+        {\href{https://arxiv.org/abs/2508.02937}{Documenting Patterns of Exoticism of Marginalized Populations within Text-to-Image Generators}
+        } 
+        {AIES '25} 
+        {Sourojit Ghosh, Sanjana Gautam, Pranav Venkit, {\bf Avijit Ghosh}} 
+        {Madrid, Spain}
+
+        \paper
+        {\href{https://arxiv.org/abs/2502.03689}{Stop treating ‘AGI’ as the north-star goal of AI research}
+        } 
+        {ICML '25}
+        {B. Blili-Hamelin, C. Graziul, L. Hancox-Li, H. Hazan, E. El-Mhamdi, {\bf Avijit Ghosh}, K. Heller, J. Metcalf, \newline F. Murai, E. Salvaggio, A. Smart, T. Snider, M. Tighanimine, T. Ringer, M. Mitchell, S. Dori-Hacohen}
+        {Vancouver, Canada}
+
+        \paper
+        {\href{https://arxiv.org/abs/2503.16861}{In-House Evaluation Is Not Enough: Towards Robust Third-Party Flaw Disclosure for General-Purpose AI}
+        } 
+        {ICML '25}
+        {S. Longpre, K. Klyman, R. Appel, S. Kapoor, R. Bommasani, M. Sahar, S. McGregor,  {\bf Avijit Ghosh}, B. Blili-Hamelin, \newline  N. Butters, A. Nelson, A. Elazari, A. Sellars, C. Ellis, D. Sherrets, D. Song, H. Geiger, I. Cohen, L. McIlvenny,\newline  M. Srikumar, M. Jaycox, M. Anderljung, N. Johnson, N. Carlini, N. Miailhe, N. Marda, P. Henderson,\newline  R. Portnoff, R. Weiss, V. Westerhoff, Y. Jernite, R. Chowdhury, P. Liang, A. Narayanan.}
+        {Vancouver, Canada}
+
+        \paper
+        {\href{https://dl.acm.org/doi/10.1145/3715275.3732018}{``It's not a representation of me": Examining Accent Bias and Digital Exclusion in Synthetic AI Voice Services}
+        } 
+        {FAccT '25} 
+        {Shira Michel, Sufi Kaur, Sarah Elizabeth Gillespie, Jeffrey Gleason, Christo Wilson, {\bf Avijit Ghosh}} 
+        {Athens, Greece}
+
+        \paper
+        {\href{https://arxiv.org/abs/2406.04231}{Quantifying Misalignment Between Agents: Towards a Sociotechnical Understanding of Alignment}
+        } 
+        {AAAI '25} 
+        {Aidan Kierans, {\bf Avijit Ghosh}, Hananel Hazan, Shiri Dori-Hacohen} 
+        {Philadelphia, USA}
+
+        \paper
+        {\href{https://arxiv.org/pdf/2402.07039}{Coordinated Disclosure for AI: Beyond Security Vulnerabilities}
+        } 
+        {AIES '24}
+        {Sven Cattell, {\bf Avijit Ghosh}, Lucie-Aimée Kaffee} 
+        {San Jose, USA}
+
+        \paper
+        {\href{https://dl.acm.org/doi/10.1145/3589334.3645666}{Perceptions in pixels: analyzing perceived gender and skin tone in real-world image search results }
+        } 
+        {WWW '24}
+        {Jeffrey Gleason, {\bf Avijit Ghosh},  Christo Wilson} 
+        {Singapore}
+
+        \paper
+        {\href{https://arxiv.org/pdf/2307.10223.pdf}{Bound by the Bounty: Collaboratively Shaping Evaluation Processes for Queer AI Harms}
+        } 
+        {AIES '23}
+        {N. Dennler, A. Ovalle, A. Singh, L. Soldaini, A. Subramonian, H. Tu, W. Agnew, {\bf Avijit Ghosh}, K. Yee, \newline I.F. Peradejordi, Z. Talat, M. Russo, J. Pinhal} 
+        {Montreal, Canada}
+
+        \paper
+        {\href{https://arxiv.org/pdf/2307.03306.pdf}{When Fair Classification Meets Noisy Protected Attributes}
+        } 
+        {AIES '23}
+        {{\bf Avijit Ghosh}, Pablo Kvitca, Christo Wilson} 
+        {Montreal, Canada}
+
+        \paper
+        {\href{https://arxiv.org/pdf/2303.16972.pdf}{Queer In AI: A Case Study in Community-Led Participatory AI}
+        } 
+        {FAccT '23}
+        {Organizers of Queer In AI, A. Ovalle, A. Subramonian, A. Singh, C. Voelcker, D. Sutherland, D. Locatelli, E. Breznik, \newline F. Klubička, H. Yuan, H. J, H. Zhang, J. Shriram, K. Lehman, L. Soldaini, M. Sap, M. Deisenroth, M. Pacheco, M. Ryskina, \newline  M. Mundt, M. Agarwal, N. McLean, P. Xu, A. Pranav, R. Korpan, R. Ray, S. Mathew, S. Arora, S. John, T. Anand, V. Agrawal,\newline  W. Agnew, Y. Long, Z. Wang, Z. Talat, {\bf Avijit Ghosh}, N. Dennler, M. Noseworthy, S. Jha, E. Baylor, A. Joshi, N. Bilenko,\newline A. McNamara, R. Gontijo-Lopes, A. Markham, E. Dòng, J. Kay, M. Saraswat, N. Vytla, L. Stark.} 
+        {Chicago, Illinois}
+  
+        \paper
+        {\href{https://arxiv.org/abs/2205.02414}{Subverting Fair Image Search with Generative Adversarial Perturbations}
+        } 
+        {FAccT '22}
+        {{\bf Avijit Ghosh}, Matthew Jagielski, Christo Wilson} 
+        {Seoul, South Korea}
+        
+        \paper
+        {\href{https://arxiv.org/abs/2106.07057}{FairCanary: Rapid Continuous Explainable Fairness}
+        } 
+        {AIES '22} 
+        {{\bf Avijit Ghosh*}, Aalok Shanbhag*, Christo Wilson} 
+        {Oxford, United Kingdom}
+  
+      \paper
+        {\href{https://arxiv.org/pdf/1912.07579.pdf}{Algorithms that ``Don't See Color": Comparing Biases in Lookalike and Special Ad Audiences}
+        } 
+        {AIES '22} 
+        {Piotr Sapiezynski, {\bf Avijit Ghosh}, Levi Kaplan, Alan Mislove, Aaron Rieke} 
+        {Oxford, United Kingdom} 
+  
+     \paper
+       {\href{https://dl.acm.org/doi/10.1145/3404835.3462850}{When Fair Ranking Meets Uncertain Inference}} 
+       {SIGIR '21}
+       {{\bf Avijit Ghosh}, Ritam Dutt, Christo Wilson}
+        {Montreal, Canada / Virtual}
+    
+    \paper
+      {\href{https://dl.acm.org/doi/abs/10.1145/3442188.3445928}{Building and Auditing Fair Algorithms: A Case Study in Candidate Screening}}{FAccT '21}
+      {Christo Wilson, {\bf Avijit Ghosh}, Shan Jiang, Alan Mislove, Lewis Baker, Janelle Szary, Kelly Trindel, Frida Polli}{Toronto, Canada / Virtual}
+      
+      
+    \paper
+      {\href{https://link.springer.com/chapter/10.1007/978-3-030-15719-7_23}{Public Sphere 2.0: Targeted Commenting in Online News Media}}{ECIR '19}
+      {Ankan Mullick, Sayan Ghosh*, Ritam Dutt*, {\bf Avijit Ghosh*},   Abhijnan Chakrabarty}{Cologne, Germany} 
+    
+    
+    \resumeSubHeadingListEnd
+    
+    \vspace{-1.4em}
+
+    \pubtype{Peer-Reviewed Workshop}
+    \resumeSubHeadingListStart
+
+    \paper
+        {\href{https://arxiv.org/pdf/2502.12447}{Protecting Human Cognition in the Age of AI}
+        } 
+         {\textcolor{darkgray}{Tools4Thoughts@}CHI '25} 
+        {Anjali Singh, Karan Taneja, Zhitong Guan, {\bf Avijit Ghosh}} 
+        {Yokohama, Japan}
+
+    \paper
+        {\href{https://arxiv.org/pdf/2410.12104}{To Err is AI: A Case Study Informing LLM Flaw Reporting Practices}
+        } 
+         {\textcolor{darkgray}{IAAI@}AAAI '25}
+        {Sean McGregor, Allyson Ettinger, Nick Judd, Paul Albee, Liwei Jiang, Kavel Rao, Will Smith, Shayne Longpre, \newline {\bf Avijit Ghosh}, Christopher Fiorelli, Michelle Hoang, Sven Cattell, Nouha Dziri} 
+        {Philadelphia, USA}
+
+     \paper
+        {\href{https://arxiv.org/abs/2209.07667}{Can There be Art Without an Artist?}
+        } 
+        {\textcolor{darkgray}{HEGM@}NeurIPS '22}
+        {{\bf Avijit Ghosh}, Genoveva Fossas} 
+        {New Orleans, USA}
+
+    \paper
+      {\href{https://arxiv.org/abs/2101.01673}{Characterizing Intersectional Group Fairness with Worst-Case Comparisons}}{\textcolor{darkgray}{AIDBEI@}AAAI '21}
+      {{\bf Avijit Ghosh}, Lea Genuit, Mary Reagan}{Vancouver, Canada / Virtual}  
+      
+    \paper
+      {\href{https://www.ieee-security.org/TC/SPW2019/ConPro/papers/ghosh-conpro19.pdf}{Analyzing Political Advertisers’ Use of Facebook’s Targeting Features}}{\textcolor{darkgray}{Conpro@}S\&P '19}
+      {{\bf Avijit Ghosh}, Giridhari Venkatadri, Alan Mislove}{San Francisco, USA} 
+
+    \paper
+    {\href{https://dl.acm.org/doi/10.1145/3184558.3191623}{SAVITR: A System for Real-time Location Extraction from Microblogs during Emergencies}} 
+    {\textcolor{darkgray}{SMERP@}WWW '18} 
+    {Ritam Dutt, Kaustubh Hiware, {\bf Avijit Ghosh}, Rameshwar Bhaskaran} 
+    {Lyon, France}
+
+    \paper
+    {\href{https://arxiv.org/abs/1701.06711}{WebSelect: A Research Prototype for Optimizing Ad Exposures based on Network Structure}
+    } 
+    {WITS'19} 
+    {{\bf Avijit Ghosh}, Agam Gupta, Divya Sharma, Uttam Sarkar}
+    {Dublin, Ireland}
+
+    
+    \resumeSubHeadingListEnd
+
+    \vspace{-1.4em}
+
+
+    \pubtype{Peer-Reviewed Journal}
+    \resumeSubHeadingListStart
+    \paper
+    {\href{https://link.springer.com/chapter/10.1007/978-981-33-6656-5_18}{Connectedness of Markets with Heterogeneous Agents and the Information Cascades}
+    } 
+    {\href{https://link.springer.com/book/10.1007/978-981-33-6656-5}{AAA'21}} 
+    {{\bf Avijit Ghosh}, Aditya Chourasiya, Lakshay Bansal, Abhijeet Chandra} 
+    {Journal}
+    \resumeSubHeadingListEnd
+
+    \vspace{-1.4em}
+
+
+    \pubtype{Book Chapter}
+    \resumeSubHeadingListStart
+    
+    \paper
+    {\href{https://arxiv.org/pdf/2306.05949v2}{Evaluating the social impact of generative AI systems in systems and society}
+    } 
+    {Chapter}
+    {I. Solaiman, Z. Talat, W. Agnew, L. Ahmad, D. Baker, S. Blodgett, C. Chen, H. Daumé, \newline J. Dodge, I. Duan, E. Evans, F. Friedrich, {\bf Avijit Ghosh}, U. Gohar, S. Hooker, Y. Jernite, R. Kalluri, A. Lusoli, A. Leidinger, M. Lin, X. Lin, S. Luccioni, J. Mickel, M. Mitchell, J. Newman, A. Ovalle, M. Png, S. Singh, A. Strait, L. Struppek, A. Subramonian.} 
+    {Oxford Handbook on Generative AI (forthcoming)}
+    \resumeSubHeadingListEnd
+
+    \vspace{-1.4em}
+
+    \pubtype{Preprints and Working Manuscripts}
+    \resumeSubHeadingListStart
+
+    % \paper
+    % {Dangers of using improper datasets for fair ranking} 
+    % {Working Manuscript} 
+    % {{\bf Avijit Ghosh}, Amifa Raj, Christo Wilson, Kristian Lum, Michael Ekstrand} 
+    % {}
+
+    \paper
+    {\href{https://www.dataprovenance.org/economies-of-open-intelligence.pdf}{Economies of Open Intelligence}
+    } 
+    {Preprint} 
+    {S. Longpre, C. Akiki, C. Lund, A. Kulkarni, E. Chen, I. Solaiman, {\bf Avijit Ghosh}, Y. Jernite, L. Kaffee} 
+    {}
+
+    \paper
+    {\href{https://arxiv.org/abs/2511.05613}{Who Measures What Matters? An Analysis of Social Impact Evaluations in Foundation Model Reporting}
+    } 
+    {Preprint} 
+    {A. Reuel*, {\bf Avijit Ghosh*}, J. Chim*, A. Tran, Y. Long, J. Mickel, U. Gohar, S. Yadav, P. S. Ammanamanchi, M. Allaham, H. A. Rahmani, M. Akhtar, F. Friedrich, R. Scholz, M. A. Riegler, J. Batzner, E. Habba, A. Saxena, A. Kornilova, K. Wei, P. Soni, Y. Mathew, K. Klyman, J. Sania, S. Sahoo,\newline O. B. Bruvik, A. Wang, S. Goswami, P. Sadeghi, Y. Jernite, Z. Talat, S. Biderman, M. Kochenderfer, S. Koyejo, I. Solaiman} 
+    {}
+
+    \paper
+    {\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5705186}{Open Technical Problems in Open-Weight AI Model Risk Management}
+    } 
+    {Preprint} 
+    {S. Casper, K. O'Brien, S. Longpre, E. Seger, K. Klyman, R. Bommasani, A. Nrusimha, I. Shumailov, S. Mindermann, S. Basart, F. Rudzicz,\newline K. Pelrine, {\bf Avijit Ghosh}, A. Strait, R. Kirk, D. Hendrycks, P. Henderson, Z. Kolter, G. Irving, Y. Gal, Y. Bengio, D. Hadfield-Menell} 
+    {}
+
+    
+    \paper
+    {\href{https://arxiv.org/abs/2509.06580}{AI For Scientific Discovery is a Social Problem}
+    } 
+    {Preprint} 
+    {Georgia Channing*, {\bf Avijit Ghosh*}} 
+    {}
+    
+    \paper
+    {\href{https://arxiv.org/abs/2502.02649}{Fully Autonomous AI Agents Should Not be Developed}
+    } 
+    {Preprint} 
+    {Margaret Mitchell, {\bf Avijit Ghosh}, Alexandra Sasha Luccioni, Giada Pistilli, } 
+    {}
+
+    \paper
+    {\href{https://arxiv.org/pdf/2308.04448.pdf}{Dual Governance: The intersection of centralized regulation and crowdsourced safety mechanisms\newline for Generative AI}
+    } 
+    {Preprint} 
+    {{\bf Avijit Ghosh}, Dhanya Lakshmi} 
+    {}
+
+    \paper
+    {\href{https://arxiv.org/pdf/1912.07579.pdf}{Unified Shapley Framework to Explain Prediction Drift}
+    } 
+    {Preprint} 
+    {Aalok Shanbhag*, {\bf Avijit Ghosh*}, Josh Rubin*} 
+    {}
+    
+    \paper
+    {\href{https://evijit.github.io/docs/Supervised_extraction_of_catchphrases_from_legal_documents.pdf}{Supervised extraction of catchphrases from legal documents}
+    } 
+    {Preprint} 
+    {{\bf Avijit Ghosh*}, Prerit Gupta*, Ritam Dutt, Kaustubh Hiware, Arpan Mandal, Kripabandhu Ghosh, Saptarshi Ghosh} 
+    {}
+    
+    
+    
+    \resumeSubHeadingListEnd
+
+    \vspace{2pt}
+
+
+    \textit{\color{awesome}\tiny * Equal contribution}
+
+
+\vspace{-5pt}
+
+
+\section{Grants}
+
+
+\vspace{-5pt}
+
+{\small
+\begin{longtable}{@{\hspace{0pt}}p{0.06\textwidth}@{}p{0.78\textwidth}@{\hspace{4pt}}r@{}}
+
+\textcolor{gg}{2025} & \textcolor{awesome}{\textbf{Beyond Polarization: Fostering Plurality in Large Language Model Design and Development. (\$6K)}} & \textcolor{awesome}{\footnotesize \it UCHI AI Seed Fund} \\[0.5ex]
+
+\textcolor{gg}{2018} & \textcolor{awesome}{\textbf{SGSIS Institute Challenge Grant. (\rupee 1M)}} & \textcolor{awesome}{\footnotesize \it IIT Kharagpur} \\[0.5ex]
+
+
+\end{longtable}
+}
+
+    
+\section{Awards}
+    
+\begin{cvhonors}
+
+  \cvhonor
+    {Winner} % Award
+    {Spotlight Poster} % Event
+    {ICML '25} % Location
+    {2025} % Date(s)
+
+  \cvhonor
+    {Winner} % Award
+    {Best AI Art} % Event
+    {CVPR '24} % Location
+    {2024} % Date(s)
+
+
+%---------------------------------------------------------
+  \cvhonor
+    {Winner} % Award
+    {Best Paper} % Event
+    {FAccT '23} % Location
+    {2023} % Date(s)
+
+%---------------------------------------------------------
+  \cvhonor
+    {Winner} % Award
+    {Best Paper - Runner Up} % Event
+    {Conpro '22} % Location
+    {2022} % Date(s)
+    
+%---------------------------------------------------------
+  \cvhonor
+    {Winner} % Award
+    {Best Poster} % Event
+    {ECIR '19} % Location
+    {2019} % Date(s)
+
+%---------------------------------------------------------
+  \cvhonor
+    {Dean's Fellowship} % Award
+    {for first Year PhD students (\$ 72K)} % Event
+    {Northeastern University} % Location
+    {2019} % Date(s)
+
+%---------------------------------------------------------
+  \cvhonor
+    {Winner} % Award
+    {Institute Order of Merit - Technology} % Event
+    {IIT Kharagpur} % Location
+    {2019} % Date(s)
+    
+% %---------------------------------------------------------
+%   \cvhonor
+%     {Winner} % Award
+%     {SGSIS Institute Challenge Grant (INR 1M)} % Event
+%     {IIT Kharagpur} % Location
+%     {2018} % Date(s)
+% %---------------------------------------------------------
+
+\cvhonor{Silver Medal}
+     {Stock Market Analysis}
+     {Inter IIT Tech Meet, Kanpur}
+     {2017}
+     
+%---------------------------------------------------------
+
+\cvhonor{Gold Medal}
+     {Software Development}
+     {Inter IIT Tech Meet, Mandi}
+     {2016}
+     
+%---------------------------------------------------------
+
+\cvhonor{Governor's Medal}
+     {National Rank 5, ICSE Board}
+     {Government of West Bengal}
+     {2012}
+     
+%---------------------------------------------------------
+
+\cvhonor{NTSE Scholar}
+     {National Talent Search Examination}
+     {NCERT}
+     {2010}
+     
+% \item{2016}
+%      {Inter IIT Tech Meet - Mandi}
+%      {Gold Medal in the Software Development Event.}
+
+\end{cvhonors}
+
+
+\section{Teaching}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Responsible Machine Learning}{Northeastern University}
+      {Lecturer}{Fall 2023}
+      \resumeItemListStart
+        \resumeItem{Explores the ethical challenges and responsibilities of creating and deploying machine learning (ML) models.}
+        \resumeItem{Biases in ML models, methods for uncovering them, and algorithmic fairness techniques to mitigate them}
+        \resumeItem{Term project to apply algorithmic fairness to a real world scenario}
+      \resumeItemListEnd
+      
+  \resumeSubheading
+      {Algorithmic Auditing}{Northeastern University}
+      {Teaching Assistant for Dr. Piotr Sapiezynski}{Spring 2022}
+      \resumeItemListStart
+        \resumeItem{Designing audits that measure the effects of interests and control noise sources}
+        \resumeItem{Minimize potential harms of audits to all stakeholders}
+        \resumeItem{Legal bounds of algorithm audits}
+        \resumeItem{Beyond audits: potential harms that cannot be measured through audits}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  
+
+
+
+%-----------EXPERIENCE-----------
+\section{Academic Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {University of Connecticut}{Storrs, CT}
+      {Research Affiliate}{Mar 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Collaborating with various faculty in the School of Computing and the Humanities Institute on research and mentoring PhD students and Undergraduate Researchers on AI Alignment related projects as a visiting/associate expert.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Lecturer at Khoury College of Computer Sciences}{Sep 2023 -- Dec 2023}
+      \resumeItemListStart
+        \resumeItem{Teaching \href{https://evijit.io/teaching/}{CS 4973-05 Responsible Machine Learning} to senior undergrads. With the help of readings, guest lectures and original course material, the focus of the course is to empower students to responsibly deploy ethical and fair machine learning models for societal benefit.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Research Assistant at Khoury College of Computer Sciences}{Sep 2019 -- Jun 2023}
+      \resumeItemListStart
+        \resumeItem{Analyzing Fair ranking systems and showing how they fail in the presence of noisy protected attribute data. Also investigated adversarial attacks on the guaranteed fairness of retrieval systems.}
+        \resumeItem{ A cooperative fairness audit of the recommendation algorithm of {\color{awesome}PyMetrics}, a talent matching software. \href{https://www.pymetrics.ai/pygest/third-party-auditing-why-we-invited-external-experts-into-our-codebase}{\color{awesome}{Press Release.}}}
+        \resumeItem{Investigated Facebook's Special Audiences system for opportunity advertisements and showed that the audience creation algorithm was still biased against women, seniors and minorities.}
+        \resumeItem{Analyzed the ad reach and spend information obtained from Facebook's ad transparency feature and the personal targeting dataset from Propublica's Facebook ad dataset and showed that advertisers with higher budgets use more privacy sensitive targeting techniques like PII or Lookalike audiences. Findings published and presented at {\color{awesome}IEEE ConPro 2019.}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {LIG, University of Grenoble Alps}{Grenoble, France}
+      {Visiting Researcher}{May 2019 -- July 2019}
+      \resumeItemListStart
+        \resumeItem{Study of how news companies promote different items on social media, investigating possible patterns of differential information spreading using both posts and ads.}
+        \resumeItem{We also discovered and reported an exposed access token bug to \color{awesome}Facebook Bug Bounty.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {IIT Kharagpur}{Kharagpur, India}
+      {Undergraduate Researcher - Complex Networks Research Group}{2014 -- 2019}
+      \resumeItemListStart
+        \resumeItem {Automated Extraction of Catchwords from Legal Documents using a novel NER tagger to help categorize lengthy legal texts.}
+        \resumeItem {Automatically position user comments against relevant news article paragraphs. Presented at \textcolor{awesome}{ECIR 2019.}}
+        \resumeItem {Savitr - A real-time location extraction system for disaster management using twitter. Presented at \textcolor{awesome}{WWW-SMERP 2018.}}
+        \resumeItem {Classification and Summarization of tweets during a disaster event, presented at \textcolor{awesome}{IBM Day 2016.}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% \vspace{2pt}
+
+%-----------EXPERIENCE-----------
+\section{Industry Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Hugging Face}{New York, NY}
+      {Technical AI Policy Researcher}{Mar 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{I am responsible for policy responses from Hugging Face to ongoing legislative and regulatory movements in AI, while my technical research examines critical challenges in AI safety: from algorithmic bias to agent autonomy to standardization efforts in AI Evaluation and Vulnerability Disclosure. I translate this expertise to varied stakeholders through publications at academic machine learning conferences and op-eds in media publications. My work has influenced AI regulation, established best practices for AI Documentation, and advanced the democratization of machine learning technology while ensuring it serves human wellbeing.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AdeptID}{Boston, MA}
+      {Research Data Scientist}{Jul 2023 -- Feb 2024}
+      \resumeItemListStart
+        \resumeItem{Work with the Data Science and Engineering teams and external policy experts to audit internal systems and ensure that AdeptID's ML models are fair and unbiased and adhere to regulations.}
+        \resumeItem{Conduct original research on ML Fairness and investigate solutions to unanswered questions about potential sources of bias in an industrially deployed ML pipeline.}
+      \resumeItemListEnd
+  
+  \resumeSubheading
+      {Twitter}{San Francisco, CA}
+      {Research Intern}{Sep -- Dec 2021 and Jun -- Aug 2022}
+      \resumeItemListStart
+        \resumeItem{Worked with the META (Machine Ethics, Transparency and Accountability) team at Twitter, to investigate the relationship between demography agnostic and demography dependent author impression fairness metrics at scale.}
+        \resumeItem{Developed home timeline diversity metrics based on user feedback, to find balance between recommendation efficiency and fairness.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fiddler Labs}{Palo Alto, CA}
+      {Research Intern}{Oct 2020 -- Apr 2021}
+      \resumeItemListStart
+        \resumeItem{Explain distributional shifts in Machine Learning model outputs by unifying Shapley based methods.}
+        \resumeItem{Using optimal transport theory, proposed a threshold independent fairness metric that allows for real time explanations.}
+        \resumeItem{Worked with the product team and civil rights lawyers in the deployment of Fiddler's Machine Learning model fairness dashboard. Introduced and incorporated intersectional fairness metrics in the product.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Xerox Research Centre}{Bangalore, India}
+      {Research Intern}{May 2017 -- July 2017}
+      \resumeItemListStart
+        \resumeItem {Implemented XTrack, a Smart Vehicle Tracking and Battery usage minimizing Algorithm, using BLE to relay GPS information.}
+        \resumeItem {Proposed a method for Uber-like Surge Price Prediction using Spatio-Temporal techniques like the Neural Hawkes and Recurrent Marked Temporal Point Process. Awarded the title of \color{awesome}{Best Internship Project}.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Google Summer of Code}{Remote}
+      {GSoC Student at OpenMRS}{Apr 2016 - Aug 2016}
+      \resumeItemListStart
+        \resumeItem {Replaced the HTML XForms system used with native generated forms using the Forms REST Api in the android client of the Opensource Medical Record System. Added offline form saving. Configured Travis CI to automatically build and push the apk\newline to the play store.} 
+        \resumeItem {Overall, contributed {\color{awesome}{100K lines of code}} and became the top code contributor in the project repository.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\vspace{-2pt}
+
+\section{Outreach and Leadership}
+
+\begin{cvhonorsb}
+
+
+\cvhonorb
+    {ACM Conference on Fairness, Accountability, and Transparency} % Award
+    {} % Event
+    {Registration Chair} % Location
+    {2025} % Date(s)
+    
+\cvhonorb
+    {EvalEval: Evaluating Evaluations: Examining Best Practices for Measuring Broader Impacts of Generative AI} % Award
+    {} % Event
+    {General Chair} % Location
+    {2024} % Date(s)
+
+\cvhonorb
+    {SIGIR DEI lunch with speaker panel on disability in computing} % Award
+    {} % Event
+    {Chair} % Location
+    {2023} % Date(s)
+
+
+\cvhonorb
+    {FAccT CRAFT Workshop on an \href{https://sites.google.com/view/raiindiacraftfacct2023/home}{India-first Responsible AI research agenda}} % Award
+    {} % Event
+    {Organizer} % Location
+    {2023} % Date(s)
+
+\cvhonorb{FAccT CRAFT Workshop on 
+    \href{https://www.aqai.xyz/acm-facct-craft-workshop-2023/}{Humanitarian AI for the Global South}} % Award
+    {} % Event
+    {Organizer} % Location
+    {2022} % Date(s)
+
+\cvhonorb
+    {FAccT CRAFT Workshop on Identifying Queer Harms as a bias bounty with \href{https://www.queerinai.com/}{Queer in AI}} % Award
+    {} % Event
+    {Organizer} % Location
+    {2022} % Date(s)
+
+\cvhonorb
+    {SIGIR \href{https://www.queerinai.com/}{Queer in AI} social with speaker panel on queer stereotypes in web search} % Award
+    {} % Event
+    {Organizer} % Location
+    {2021} % Date(s)
+
+\cvhonorb
+    {\href{https://kwoc.kossiitkgp.org/}{Kharagpur Winter Of Code}} % Award
+    {} % Event
+    {Founder} % Location
+    {2017} % Date(s)
+    
+\cvhonorb
+    {\href{https://kossiitkgp.org/}{Kharagpur Open Source Society}} % Award
+    {} % Event
+    {Founder} % Location
+    {2016} % Date(s)
+    
+\end{cvhonorsb}
+
+
+\section{Academic Service}
+    
+\begin{cvhonorsb}
+
+%---------------------------------------------------------
+
+% \cvhonorb
+%     {Invited Speaker} % Award
+%     {} % Event
+%     {UKCDEI'22, Trustworthy ML Initiative'22, SXSW'23} % Location
+%     {Multiple} % Date(s)
+
+\cvhonorb
+    {AAAI Conference on Artificial Intelligence} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2026} % Date(s)
+
+\cvhonorb
+    {AAAI/ACM Conference on AI, Ethics, and Society} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2025} % Date(s)
+
+\cvhonorb
+    {ACM Conference on Fairness, Accountability, and Transparency} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2025} % Date(s)
+
+\cvhonorb
+    {Conference on Language Modeling} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2025} % Date(s)
+
+\cvhonorb
+    {AAAI/ACM Conference on AI, Ethics, and Society} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2024} % Date(s)
+
+\cvhonorb
+    {Conference on Neural Information Processing Systems} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2024} % Date(s)
+
+\cvhonorb
+    {ICWSM: The International AAAI Conference on Web and Social Media} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2024} % Date(s)
+
+\cvhonorb
+    {The Web Conference} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2024} % Date(s)
+
+
+\cvhonorb
+    {ACM Conference on Fairness, Accountability, and Transparency} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2024} % Date(s)
+
+\cvhonorb
+    {FAccTRec: Workshop on Responsible Recommendation} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2023} % Date(s)
+
+\cvhonorb
+    {Conference on Neural Information Processing Systems} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2023} % Date(s)
+
+
+\cvhonorb
+    {AAAI/ACM Conference on AI, Ethics, and Society} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2023} % Date(s)
+    
+\cvhonorb
+    {ACM Conference on Fairness, Accountability, and Transparency} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2023} % Date(s)
+
+\cvhonorb
+    {The Web Conference} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2023} % Date(s)
+
+\cvhonorb
+    {ACM Conference on Fairness, Accountability, and Transparency} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2022} % Date(s)
+
+\cvhonorb
+    {AAAI/ACM Conference on AI, Ethics, and Society} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2022} % Date(s)
+
+\cvhonorb
+    {Conference on Neural Information Processing Systems} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2022} % Date(s)
+
+\cvhonorb
+    {Conference on Empirical Methods in Natural Language Processing} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2022} % Date(s)
+
+\cvhonorb
+    {Conference on Neural Information Processing Systems} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2021} % Date(s)
+
+\end{cvhonorsb}
+
+
+\section{Speaking Engagements}
+
+\begin{cvhonors}
+
+\cvhonor
+    {Panel: ``AI and the Creative Industry"} % Award
+    {} % Event
+    {Canadian Consulate and All Tech is Human} % Location
+    {2025} % Date(s)
+
+\cvhonor
+    {Panel: ``Rights (to Life, Liberty, and the Pursuit of Happiness)"} % Award
+    {} % Event
+    {Uconn Humanities Institute AI Symposium} % Location
+    {2025} % Date(s)
+
+\cvhonor
+    {Panel: ``Is U.S. Policy Ready for Agentic AI?"} % Award
+    {} % Event
+    {Center for Data Innovation} % Location
+    {2025} % Date(s)
+
+\cvhonor
+    {Panel on Open Source AI Regulation at the Summit on State AI Legislation} % Award
+    {} % Event
+    {Digital Ethics Center, Yale University} % Location
+    {2025} % Date(s)
+
+\cvhonor
+    {NLP and Generative AI Panel} % Award
+    {} % Event
+    {Harvard Business School Tech Conference} % Location
+    {2025} % Date(s)
+
+\cvhonor
+    {Coordinated Disclosure for AI: Beyond Security Vulnerabilities} % Award
+    {} % Event
+    {The MIT Sloan AI Conference} % Location
+    {2025} % Date(s)
+
+\cvhonor
+    {Coordinated Disclosure for AI: Beyond Security Vulnerabilities} % Award
+    {} % Event
+    {Future of Third-Party AI Evaluations} % Location
+    {2024} % Date(s)
+
+\cvhonor
+    {Bridging the Gap: Real-World AI Biases and Responsible Governance Frameworks} % Award
+    {} % Event
+    {IIT Kharagpur} % Location
+    {2024} % Date(s)
+
+\cvhonor
+    {ERASED BY AI: Personal Experiences of the Psychological Impact of AI Bias} % Award
+    {} % Event
+    {Arthur AI Fest} % Location
+    {2024} % Date(s)
+
+\cvhonor
+    {Teaching Responsible AI: Building with open source and Hugging Face} % Award
+    {} % Event
+    {Northeastern University} % Location
+    {2024} % Date(s)
+
+\cvhonor
+    {Coordinated Disclosure for AI: Beyond Security Vulnerabilities} % Award
+    {} % Event
+    {EQUAL lab at MILA} % Location
+    {2024} % Date(s)
+
+\cvhonor
+    {Technology Impact on Cybersecurity} % Award
+    {} % Event
+    {Boston University} % Location
+    {2024} % Date(s)
+
+
+
+\cvhonor
+    {AI Vulnerability Reporting Event in the US Congress} % Award
+    {} % Event
+    {Hackers on the Hill} % Location
+    {2024} % Date(s)
+
+\cvhonor
+    {Queer Bias Bounty: Considerations for community audits and lessons learnt} % Award
+    {} % Event
+    {Centre for Data Ethics and Innovation, UK} % Location
+    {2023} % Date(s)
+
+\cvhonor
+    {Can There be AI Art Without an Artist?} % Award
+    {} % Event
+    {South By Southwest (SXSW)} % Location
+    {2023} % Date(s)
+
+    \cvhonor
+    {On the evolving tension between centralized regulation and decentralized development of Text-to-Image Models} % Award
+    {} % Event
+    {AIDBEI at AAAI} % Location
+    {2023} % Date(s)
+
+\cvhonor
+    {Proxies for bias monitoring: Ethics workshop} % Award
+    {} % Event
+    {Centre for Data Ethics and Innovation, UK} % Location
+    {2022} % Date(s)
+
+\cvhonor
+    {Subverting Fair Image Search with Generative Adversarial Perturbations} % Award
+    {as part of the 'Celebrating Young Researchers' event} % Event
+    {Trustworthy ML Initiative} % Location
+    {2022} % Date(s)
+
+\end{cvhonors}
+
+
+\section{Media Mentions}
+
+\vspace{-3mm}
+
+{\small
+\begin{longtable}{@{\hspace{8pt}}p{0.06\textwidth}@{}p{0.72\textwidth}@{\hspace{4pt}}r@{}}
+
+\textcolor{gg}{2025} & \href{https://www.ft.com/content/931c8218-a9d7-4cbd-8b08-27516637ff41}{\textcolor{awesome}{\textbf{China leapfrogs US in global market for 'open' AI models}}} & \textcolor{awesome}{\footnotesize \it Financial Times} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://www.theaiforum.org/podcast/avijit-ghosh-human-agency}{\textcolor{awesome}{\textbf{Responsible AI podcast with Alex Alben}}} & \textcolor{awesome}{\footnotesize \it The AI Forum} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://podcasts.apple.com/us/podcast/were-not-ready-for-agentic-ai/id1751550186?i=1000709391707}{\textcolor{awesome}{\textbf{Ethical Machines podcast - "We're Not Ready for Agentic AI"}}} & \textcolor{awesome}{\footnotesize \it Ethical Machines} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://www.marketplace.org/story/2025/05/19/can-ai-take-your-coding-job}{\textcolor{awesome}{\textbf{Can AI take your coding job?}}} & \textcolor{awesome}{\footnotesize \it NPR Marketplace} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://www.politico.com/newsletters/politico-technology-california-decoded-preview/2025/04/18/california-finally-beats-big-tech-in-court-00298056}{\textcolor{awesome}{\textbf{California finally beats Big Tech in court
+}}} & \textcolor{awesome}{\footnotesize \it Politico} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://t3n.de/news/hugging-face-experten-warnen-ki-agenten-kontrolle-1679713/?utm_source=rss&utm_medium=feed&utm_campaign=news}{\textcolor{awesome}{\textbf{Hugging-face experts warn: We shouldn't give AI agents full control
+}}} & \textcolor{awesome}{\footnotesize \it T3N (German)} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://www.technologyreview.com/2025/03/24/1113647/why-handing-over-total-control-to-ai-agents-would-be-a-huge-mistake/}{\textcolor{awesome}{\textbf{Why handing over total control to AI agents would be a huge mistake
+}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review Op-Ed} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://www.businessinsider.com/openai-chatgpt-brainstorming-addiction-dependence-negative-consequences-mit-research-2025-3}{\textcolor{awesome}{\textbf{The hidden cost of brainstorming with ChatGPT
+}}} & \textcolor{awesome}{\footnotesize \it Business Insider} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://www.snexplores.org/article/deepseek-ai-reasoning-agents}{\textcolor{awesome}{\textbf{DeepSeek pioneers a new way for AI to ‘reason’
+}}} & \textcolor{awesome}{\footnotesize \it Science News Explores} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://www.businessinsider.com/ai-agents-jobs-board-ad-replacing-human-skills-2025-2}{\textcolor{awesome}{\textbf{Two founders built a jobs board for Al agents. Humans need not apply — but their skills are still required.
+}}} & \textcolor{awesome}{\footnotesize \it Business Insider} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://www.techcircle.in/2025/02/19/why-truly-open-source-ai-remains-out-of-reach}{\textcolor{awesome}{\textbf{Why truly open-source AI remains out of reach
+}}} & \textcolor{awesome}{\footnotesize \it HT TechCircle} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://www.businessinsider.com/openai-stargate-project-moat-deepseek-2025-1}{\textcolor{awesome}{\textbf{What does OpenAI get from Stargate? A \$500 billion chance to build a whole new moat.
+}}} & \textcolor{awesome}{\footnotesize \it Business Insider} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://fortune.com/2025/01/22/openai-stargate-ai-sam-altman-donald-trump/}{\textcolor{awesome}{\textbf{OpenAI’s Stargate may be tech’s biggest gamble ever, but here’s what’s really at stake}}} & \textcolor{awesome}{\footnotesize \it Fortune} \\[0.5ex]
+
+\textcolor{gg}{2025} & \href{https://evijit.io/assets/img/Epaper_194_2025-01-03_9.jpeg}{\textcolor{awesome}{\textbf{AI will transform everything from daily life to businesses}}} & \textcolor{awesome}{\footnotesize \it Dainik Bhaskar Op-ed (Hindi)} \\[0.5ex]
+
+\textcolor{gg}{2024} & \href{https://www.wired.com/story/plaud-note-pin-ai-wearable/}{\textcolor{awesome}{\textbf{This Wearable AI Notetaker Will Transcribe Your Meetings — and Someday, Your Entire Life}}} & \textcolor{awesome}{\footnotesize \it Wired} \\[0.5ex]
+
+\textcolor{gg}{2024} & \href{https://www.lesechos.fr/tech-medias/intelligence-artificielle/en-californie-la-loi-de-protection-contre-lia-amendee-pour-apaiser-la-silicon-valley-2114566}{\textcolor{awesome}{\textbf{In California, the controversial AI protection law is about to be passed}}} & \textcolor{awesome}{\footnotesize \it Les Echos (French)} \\[0.5ex]
+
+\textcolor{gg}{2024} & \href{https://www.technologyreview.com/2024/08/22/1097224/we-finally-have-a-definition-for-open-source-ai/}{\textcolor{awesome}{\textbf{We finally have a definition for open-source AI}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review} \\[0.5ex]
+
+\textcolor{gg}{2024} & \href{https://fortune.com/2024/08/12/defcon-gen-ai-bug-bounty-cybersecurity-vulnerabilities/?987123}{\textcolor{awesome}{\textbf{World's biggest hacker fest spotlights AI's soaring importance in the high-stakes cybersecurity war—and its vulnerability}}} & \textcolor{awesome}{\footnotesize \it Fortune} \\[0.5ex]
+
+\textcolor{gg}{2024} & \href{https://www.bhaskar.com/opinion/news/avijit-ghoshs-column-ai-full-of-bias-is-both-a-challenge-and-an-opportunity-for-india-133333195.html}{\textcolor{awesome}{\textbf{AI full of prejudices both a challenge and an opportunity for India}}} & \textcolor{awesome}{\footnotesize \it Dainik Bhaskar Op-ed (Hindi)} \\[0.5ex]
+
+\textcolor{gg}{2024} & \href{https://www.fastcompany.com/91131154/image-search-results-bias-research}{\textcolor{awesome}{\textbf{Common image search results are overwhelmingly white, a new study finds}}} & \textcolor{awesome}{\footnotesize \it Fast Company} \\[0.5ex]
+
+\textcolor{gg}{2024} & \href{https://www.theguardian.com/technology/2024/mar/16/ai-racism-chatgpt-gemini-bias}{\textcolor{awesome}{\textbf{As AI tools get smarter, they're growing more covertly racist, experts find}}} & \textcolor{awesome}{\footnotesize \it The Guardian} \\[0.5ex]
+
+\textcolor{gg}{2024} & \href{https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/}{\textcolor{awesome}{\textbf{LLMs become more covertly racist with human intervention}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review} \\[0.5ex]
+
+\textcolor{gg}{2023} & \href{https://www.indiatimes.com/trending/spectrum/how-can-ai-affect-queer-people-in-india-617408.html}{\textcolor{awesome}{\textbf{How Can AI Affect LGBTQIA+ People In India? Three Indian-Origin Queer Researchers Explain}}} & \textcolor{awesome}{\footnotesize \it IndiaTimes} \\[0.5ex]
+
+\textcolor{gg}{2023} & \href{https://news.northeastern.edu/2023/09/06/ethical-ai-development/}{\textcolor{awesome}{\textbf{He hacked AI chatbots to find flaws and vulnerabilities. Now Northeastern's Avijit Ghosh is writing a report on combating these problems}}} & \textcolor{awesome}{\footnotesize \it Northeastern Global News} \\[0.5ex]
+
+\textcolor{gg}{2023} & \href{https://www.kpcc.org/podcast/airtalk/hurricane-hilary-is-barreling-towards-socal-what-can-we-expect}{\textcolor{awesome}{\textbf{Radio Interview - AirTalk}}} & \textcolor{awesome}{\footnotesize \it LAIST/NPR} \\[0.5ex]
+
+\textcolor{gg}{2023} & \href{https://www.cbc.ca/radio/asithappens/the-aih-transcript-for-august-16-2023-1.6939160}{\textcolor{awesome}{\textbf{Radio Interview - As It Happens}}} & \textcolor{awesome}{\footnotesize \it CBC Canada} \\[0.5ex]
+
+\textcolor{gg}{2023} & \href{https://www.nytimes.com/2023/08/16/technology/ai-defcon-hackers.html}{\textcolor{awesome}{\textbf{When Hackers Descended to Test A.I., They Found Flaws Aplenty}}} & \textcolor{awesome}{\footnotesize \it The New York Times} \\[0.5ex]
+
+\textcolor{gg}{2023} & \href{https://passionfru.it/ai-sxsw-2023-3434/}{\textcolor{awesome}{\textbf{From accessibility efforts to ethical concerns, here are our AI takeaways from SXSW content creators should consider}}} & \textcolor{awesome}{\footnotesize \it Passionfruit} \\[0.5ex]
+
+\textcolor{gg}{2021} & \href{https://apnews.com/article/technology-business-race-and-ethnicity-racial-injustice-artificial-intelligence-2fe8d3ef7008d299d9d810f0c0f7905d}{\textcolor{awesome}{\textbf{NYC aims to be first to rein in AI hiring tools}}} & \textcolor{awesome}{\footnotesize \it Associated Press} \\[0.5ex]
+
+\textcolor{gg}{2021} & \href{https://www.technologyreview.com/2021/02/11/1017955/auditors-testing-ai-hiring-algorithms-bias-big-questions-remain/}{\textcolor{awesome}{\textbf{Auditors are testing hiring algorithms for bias, but there's no easy fix}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review} \\[0.5ex]
+
+\textcolor{gg}{2021} & \href{https://www.wired.com/story/new-york-city-proposes-regulating-algorithms-hiring/}{\textcolor{awesome}{\textbf{New York City Proposes Regulating Algorithms Used in Hiring}}} & \textcolor{awesome}{\footnotesize \it Wired} \\[0.5ex]
+
+\textcolor{gg}{2021} & \href{https://www.federalreserve.gov/newsevents/speech/brainard20210112a.htm}{\textcolor{awesome}{\textbf{Supporting Responsible Use of AI and Equitable Outcomes in Financial Services}}} & \textcolor{awesome}{\footnotesize \it The Federal Reserve} \\[0.5ex]
+
+\textcolor{gg}{2019} & \href{https://www.propublica.org/article/facebook-ads-can-still-discriminate-against-women-and-older-workers-despite-a-civil-rights-settlement}{\textcolor{awesome}{\textbf{Facebook Ads Can Still Discriminate Against Women and Older Workers, Despite a Civil Rights Settlement}}} & \textcolor{awesome}{\footnotesize \it Propublica} \\[0.5ex]
+
+\textcolor{gg}{2019} & \href{https://www.motherjones.com/politics/2019/12/facebook-agreed-not-to-let-its-ads-discriminate-but-they-still-can/}{\textcolor{awesome}{\textbf{Facebook Agreed Not to Let Its Ads Discriminate. But They Still Can.}}} & \textcolor{awesome}{\footnotesize \it Mother Jones} \\[0.5ex]
+
+\end{longtable}
+}
+
+% \section{Media Mentions}
+
+% \begin{cvhonorsb}
+
+% \cvhonor
+%     {\href{https://www.wired.com/story/plaud-note-pin-ai-wearable/}{This Wearable AI Notetaker Will Transcribe Your Meetings — and Someday, Your Entire Life}} % Award
+%     {} % Event
+%     {Wired} % Location
+%     {2024} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.lesechos.fr/tech-medias/intelligence-artificielle/en-californie-la-loi-de-protection-contre-lia-amendee-pour-apaiser-la-silicon-valley-2114566}{En Californie, la loi de protection contre l'IA amendée pour apaiser la Silicon Valley}} % Award
+%     {} % Event
+%     {Les Echos} % Location
+%     {2024} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.technologyreview.com/2024/08/22/1097224/we-finally-have-a-definition-for-open-source-ai/}{We finally have a definition for open-source AI}} % Award
+%     {} % Event
+%     {MIT Technology Review} % Location
+%     {2024} % Date(s)
+
+% \cvhonor
+%     {\href{https://fortune.com/2024/08/12/defcon-gen-ai-bug-bounty-cybersecurity-vulnerabilities/?987123}{World's biggest hacker fest spotlights AI's soaring importance in the high-stakes cybersecurity war—and its vulnerability}} % Award
+%     {} % Event
+%     {Fortune Magazine} % Location
+%     {2024} % Date(s)
+
+
+% \cvhonor
+%     {\href{https://www.bhaskar.com/opinion/news/avijit-ghoshs-column-ai-full-of-bias-is-both-a-challenge-and-an-opportunity-for-india-133333195.html}{पूर्वाग्रहों से भरी एआई भारत के लिए चुनौती-अवसर दोनों}} % Award
+%     {} % Event
+%     {Dainik Bhaskar Op-ed} % Location
+%     {2024} % Date(s)
+
+
+% \cvhonor
+%     {\href{https://www.fastcompany.com/91131154/image-search-results-bias-research}{Common image search results are overwhelmingly white, a new study finds}} % Award
+%     {} % Event
+%     {Fast Company} % Location
+%     {2024} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.theguardian.com/technology/2024/mar/16/ai-racism-chatgpt-gemini-bias}{As AI tools get smarter, they’re growing more covertly racist, experts find}} % Award
+%     {} % Event
+%     {The Guardian} % Location
+%     {2024} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/}{LLMs become more covertly racist with human intervention}} % Award
+%     {} % Event
+%     {MIT Technology Review} % Location
+%     {2024} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.indiatimes.com/trending/spectrum/how-can-ai-affect-queer-people-in-india-617408.html}{How Can AI Affect LGBTQIA+ People In India? Three Indian-Origin Queer Researchers Explain}} % Award
+%     {} % Event
+%     {IndiaTimes} % Location
+%     {2023} % Date(s)
+
+% \cvhonor
+%     {\href{https://news.northeastern.edu/2023/09/06/ethical-ai-development/}{He hacked AI chatbots to find flaws and vulnerabilities. Now Northeastern’s Avijit Ghosh is writing a report on combating these problems}} % Award
+%     {} % Event
+%     {Northeastern Global News} % Location
+%     {2023} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.kpcc.org/podcast/airtalk/hurricane-hilary-is-barreling-towards-socal-what-can-we-expect}{Radio Interview - AirTalk}} % Award
+%     {} % Event
+%     {LAIST/NPR} % Location
+%     {2023} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.cbc.ca/radio/asithappens/the-aih-transcript-for-august-16-2023-1.6939160}{Radio Interview - As It Happens}} % Award
+%     {} % Event
+%     {CBC Canada} % Location
+%     {2023} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.nytimes.com/2023/08/16/technology/ai-defcon-hackers.html?unlocked_article_code=QqiwO9KZ2dVgz77qvZdn_d0wtUydJlP-OxRmVpvYSxD6eVdiBnfwRKqn1kO498M75VY8xZfH-ryaJPdxX_fK70oQSiJN8_scGieCDMEqiEbg8IC2MFaCMFR8FOY3m1D2X8mRWLKhsEOOgzEoV7trJnskK6IXwrE1ijhwGrzhGlOaMrRT4VP2SXcKMY0WthVTKhXLuYkuTOom8KYrWJgxS8ORjfNqxcnBsA8Br7mCacRlGSG2ryt1rnpiQl_i9fnN5Pso-i1XUnmAHSlWhiGW_QxSMr0cTx0UOn1jiYN4sXJRzbHK86kgKN5CGfdScuOPVh1vD5hUwSeuCBvhlPaxfJLhx1E1V6FG3q4Jp3e_mqkHisCW8wfKqWWN0co-Gy0Q4dKsZHsZeg}{When Hackers Descended to Test A.I., They Found Flaws Aplenty}} % Award
+%     {} % Event
+%     {The New York Times} % Location
+%     {2023} % Date(s)
+
+% \cvhonor
+%     {\href{https://passionfru.it/ai-sxsw-2023-3434/}{From accessibility efforts to ethical concerns, here are our AI takeaways from SXSW content creators should consider}} % Award
+%     {} % Event
+%     {Passionfruit} % Location
+%     {2023} % Date(s)
+
+% \cvhonor
+%     {\href{https://apnews.com/article/technology-business-race-and-ethnicity-racial-injustice-artificial-intelligence-2fe8d3ef7008d299d9d810f0c0f7905d}{NYC aims to be first to rein in AI hiring tools}} % Award
+%     {} % Event
+%     {Associated Press} % Location
+%     {2021} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.technologyreview.com/2021/02/11/1017955/auditors-testing-ai-hiring-algorithms-bias-big-questions-remain/}{Auditors are testing hiring algorithms for bias, but there’s no easy fix}} % Award
+%     {} % Event
+%     {MIT Technology Review} % Location
+%     {2021} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.wired.com/story/new-york-city-proposes-regulating-algorithms-hiring/}{New York City Proposes Regulating Algorithms Used in Hiring}} % Award
+%     {} % Event
+%     {Wired} % Location
+%     {2021} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.federalreserve.gov/newsevents/speech/brainard20210112a.htm}{Supporting Responsible Use of AI and Equitable Outcomes in Financial Services}} % Award
+%     {} % Event
+%     {The Federal Reserve} % Location
+%     {2021} % Date(s)
+
+% \cvhonor
+%     {\href{https://www.propublica.org/article/facebook-ads-can-still-discriminate-against-women-and-older-workers-despite-a-civil-rights-settlement}{Facebook Ads Can Still Discriminate Against Women and Older Workers, Despite a Civil Rights Settlement}} % Award
+%     {} % Event
+%     {Propublica} % Location
+%     {2019} % Date(s)
+
+
+% \cvhonor
+%     {\href{https://www.motherjones.com/politics/2019/12/facebook-agreed-not-to-let-its-ads-discriminate-but-they-still-can/}{Facebook Agreed Not to Let Its Ads Discriminate. But They Still Can.}} % Award
+%     {} % Event
+%     {Mother Jones} % Location
+%     {2019} % Date(s)
+
+% \end{cvhonorsb}
+
+
+
+
+
+% %
+% %-----------PROGRAMMING SKILLS-----------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \itemsep0em 
+%     \small{
+%     \item{
+%      \textbf{\color{awesome}Languages}{: Python, Java, C, R, Bash, SQL, HTML/CSS, JavaScript, Matlab}
+%      } 
+%      \item{
+%      \textbf{\color{awesome}Tools \& Frameworks}{: Git, TravisCI, Pytorch, Keras, TensorFlow, Docker, AWS, Sagemaker, Google Cloud ML, Android}
+%      }
+%      \item{
+%      \textbf{\color{awesome}Machine Learning}{: Transformers/BERT, ResNets, Adversarial examples, Fairness, Explainability}
+%      }
+%     }
+%  \end{itemize}
+
+%-------------------------------------------
+\makecvfooter[\today]
+
+\end{document}

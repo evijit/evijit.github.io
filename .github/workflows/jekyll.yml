@@ -38,6 +38,18 @@ jobs:
         run: |
           npm install -g @mermaid-js/mermaid-cli
 
+      - name: Compile LaTeX CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+          working_directory: assets
+          args: -pdf -interaction=nonstopmode -halt-on-error
+
+      - name: Move compiled PDF
+        run: |
+          mkdir -p assets/pdf
+          mv assets/cv.pdf assets/pdf/Avijit_CV.pdf
+
       - name: Setup GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
