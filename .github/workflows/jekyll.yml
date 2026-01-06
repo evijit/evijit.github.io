@@ -39,7 +39,7 @@ jobs:
           npm install -g @mermaid-js/mermaid-cli
 
       - name: Compile LaTeX CV
-        uses: xu-cheng/latex-action@v3
+        uses: xu-cheng/latex-action@v4
         with:
           root_file: cv.tex
           working_directory: assets
