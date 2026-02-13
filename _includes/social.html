@@ -119,6 +119,9 @@
             {%- if site.github_username -%}
             <a href="https://github.com/{{ site.github_username }}" title="GitHub"><i class="fa-brands fa-github"></i></a>
             {% endif %}
+            {%- if site.huggingface_username -%}
+            <a href="https://huggingface.co/{{ site.huggingface_username }}" title="Hugging Face"><i class="fa-brands fa-hugging-face"></i></a>
+            {% endif %}
             {%- if site.scholar_userid -%}
             <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
             {% endif %}  
