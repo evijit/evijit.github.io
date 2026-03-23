@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pdflatex -interaction=nonstopmode cv.tex)",
+      "Read(//Library/TeX/**)",
+      "Read(//usr/local/**)",
+      "Read(//usr/**)"
+    ]
+  }
+}
