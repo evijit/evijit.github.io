@@ -3,6 +3,7 @@ layout: page
 permalink: /blogs/
 title: Blogs
 description: Blog posts and essays.
+page_class: page-blogs
 nav: true
 nav_order: 2
 ---
