@@ -9,6 +9,12 @@ nav_order: 6
 
 ### Invited Speaking Engagements
 
+- Mar 2026, ["Evaluation Reporting in the Age of Agentic AI"](https://www.youtube.com/live/UxMZfbWI3LY) at the Agentic Evaluations Workshop on the Hugging Face YouTube channel
+
+- Mar 2026, "What if AI Systems Weren't Chatbots?" at the PLAMADISO talk series, Weizenbaum Institute, Berlin
+
+- Feb 2026, Opening panelist at IASEAI 2026 in Paris; fireside chat at the IASEAI Open-Weight AI Risk Management workshop
+
 - Oct 2025, Panel: ["AI and the Creative Industry"](https://luma.com/08vjt3v0) at the Canadian Consulate and All Tech is Human
 
 - Oct 2025, Panel: "Rights (to Life, Liberty, and the Pursuit of Happiness)" at the UConn Humanities Institute AI Symposium
@@ -50,6 +56,10 @@ lessons learnt"](https://docs.google.com/presentation/d/1NzmBZMqnJ42iRMUehJWNxhO
 - Nov 2022, "Subverting Fair Image Search with Generative Adversarial Perturbations" as a part of the 'Celebrating Young Researchers' event, [Trustworthy ML Initiative](https://www.trustworthyml.org/)
 
 ### Media Coverage and Op-Eds
+
+- Mar 2026, [Sarvam AI models excel in Indic, lag frontier systems](https://www.linkedin.com/feed/update/urn:li:activity:7440356914250747904/) - Financial Express India
+
+- Mar 2026, [Deutsche Telekom Wants AI Agents to Talk on Your Phone for You](https://www.wired.com/story/deutsche-telekom-elevenlabs-ai-phone-calls-mwc-2026/) - Wired
 
 - Nov 2025, [China leapfrogs US in global market for 'open' AI models](https://www.ft.com/content/931c8218-a9d7-4cbd-8b08-27516637ff41) - Financial Times
 
