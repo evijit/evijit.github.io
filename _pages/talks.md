@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /outreach/
+permalink: /engagements/
 title: Engagements
 description: Invited speaking, media coverage, and community leadership
 page_class: page-engagements
