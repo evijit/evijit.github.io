@@ -23,9 +23,7 @@
   display: none;
 }
 :root .fa-moon {
-  padding-left: 10px;
-  padding-top: 12px;
-  display: block;
+  display: inline;
 }
 :root .repo-img-light {
   display: block;
@@ -49,9 +47,7 @@ html[data-theme=dark] {
   --global-card-bg-color: #212529;
 }
 html[data-theme=dark] .fa-sun {
-  padding-left: 10px;
-  padding-top: 12px;
-  display: block;
+  display: inline;
 }
 html[data-theme=dark] .fa-moon {
   display: none;
@@ -782,11 +778,17 @@ blockquote {
   transform: rotate(0);
 }
 
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
 #light-toggle {
-  padding: 0;
+  padding: 0.5rem 0 0.5rem 10px;
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
+  line-height: 1;
 }
 #light-toggle:hover {
   color: var(--global-hover-color);

@@ -294,11 +294,17 @@ blockquote {
   }
 }
 
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
 #light-toggle {
-  padding: 0;
+  padding: 0.5rem 0 0.5rem 10px;
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
+  line-height: 1;
 
   &:hover {
     color: var(--global-hover-color);
