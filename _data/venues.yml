@@ -4,3 +4,14 @@
 
 "PhysRev":
   url: https://journals.aps.org/
+
+"TMLR":
+  url: https://jmlr.org/tmlr/
+
+"HF Blog":
+  url: https://huggingface.co/blog
+  color: "#d97706"
+
+"EvalEval Blog":
+  url: https://evalevalai.com/
+  color: "#2563eb"

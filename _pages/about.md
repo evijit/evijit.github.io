@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Techinal AI Policy Researcher, ML & Society, <a href='https://huggingface.co/">Hugging Face</a>
+subtitle: Technical AI Policy Researcher, ML & Society, <a href="https://huggingface.co/">Hugging Face</a>
 
 profile:
   align: right

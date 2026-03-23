@@ -2,13 +2,32 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description:
+description: Course materials and guest lectures
+page_class: page-teaching
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
-## Fall 2023
-### CS 4973-05 Responsible Machine Learning
+<div class="teaching-note-card">
+	I taught this full semester course in Fall 2023, and it was one of the most fun teaching experiences I have had! While I am not actively teaching full semester courses right now, I still love to guest lecture from time to time for other faculty and programs.
+</div>
+
+<div class="teaching-meta-grid">
+	<div class="teaching-meta-card">
+		<p class="meta-label">Term</p>
+		<p class="meta-value">Fall 2023</p>
+	</div>
+	<div class="teaching-meta-card">
+		<p class="meta-label">Course</p>
+		<p class="meta-value">CS 4973-05</p>
+	</div>
+	<div class="teaching-meta-card">
+		<p class="meta-label">Topic</p>
+		<p class="meta-value">Responsible Machine Learning</p>
+	</div>
+</div>
+
+## Fall 2023: CS 4973-05 Responsible Machine Learning
 
 #### Course description: 
 In today's world, machine learning (ML) models have proliferated different real-world applications, and responsibly deploying them is crucial to ensure their positive impact on society. This course is designed for senior computer science undergraduate students interested in exploring the ethical challenges and responsibilities of creating and deploying ML models. Throughout the course, students will learn about the various types of biases that can exist in ML models, methods for uncovering these biases via auditing, and algorithmic fairness techniques to mitigate them. The course will also delve into emerging ethical issues related to generative text and image models and discuss good governance of the AI landscape, covering both centralized regulatory efforts and decentralized defense mechanisms against problematic AI. Through a project component, students will have the opportunity to apply what they learn in class to a real-world scenario and gain hands-on experience in developing responsible ML models. By completing this course, students will become responsible AI practitioners who can create ethical and fair AI systems that benefit society.

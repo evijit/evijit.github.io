@@ -3,11 +3,18 @@ layout: default
 ---
 
 <!-- page.html -->
-        <div class="post">
+        <div class="post{% if page.page_class %} {{ page.page_class }}{% endif %}">
 
-          <header class="post-header">
+          <header class="post-header pretty-hero page-hero">
             <h1 class="post-title">{{ page.title }}</h1>
+            {% if page.description %}
             <p class="post-description">{{ page.description }}</p>
+            {% endif %}
+            {% if page.hero_link_text and page.hero_link_url %}
+            <p class="page-hero-link-wrap">
+              <a class="page-hero-link" href="{{ page.hero_link_url }}">{{ page.hero_link_text }}</a>
+            </p>
+            {% endif %}
           </header>
 
           <article>

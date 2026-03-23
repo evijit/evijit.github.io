@@ -4,61 +4,58 @@ layout: default
 
 <!-- about.html -->
       <div class="post">
-        <header class="post-header">
-          <h1 class="post-title" style="margin-bottom: 20px;">
+        <article class="home-about-article">
+          <div class="home-about-card">
+          <h1 class="post-title home-name-title">
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
-        </header>
+          <div class="home-about-grid">
+            <div class="home-about-bio">
+              {{ content }}
+            </div>
 
-        <article style="font-size: 0.97em;">
-          {% if page.profile -%}
-            <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}" 
-            style=" margin-top: -20px; padding: 10px;">
-              {%- if page.profile.image %}
-                {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+            {% if page.profile -%}
+              <div class="home-about-profile">
+                {%- if page.profile.image %}
+                  {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
 
-                {% if page.profile.image_circular %}
-                  {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-                {% else %}
-                  {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-                {% endif %}
+                  {% if page.profile.image_circular %}
+                    {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+                  {% else %}
+                    {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+                  {% endif %}
 
-                {% include figure.html 
-                path=profile_image_path 
-                class=profile_image_class
-                alt=page.profile.image -%}
-              {% endif -%}
-              <!-- <h6 class="desc" style="text-align: center; margin-bottom: 20px;">{{ page.subtitle }}</h6> -->
-              {%- if page.profile.address %}
-              <div class="address" style="font-size: small; text-align: center; margin-top: -10px; margin-bottom: 10px;">
-                {{ page.profile.address }}
-              </div>
+                  {% include figure.html
+                  path=profile_image_path
+                  class=profile_image_class
+                  alt=page.profile.image -%}
+                {% endif -%}
 
-              <!-- Social -->
-              {%- if page.social %}
-              <div class="social">
-                <div class="contact-icons" style="font-size:18px; letter-spacing: 3px;">
-                  {% include social.html %}
+                {%- if page.profile.address %}
+                <div class="address home-profile-address">
+                  {{ page.profile.address }}
                 </div>
 
-                <div class="contact-note">
-                  {{ site.contact_note }}
+                {%- if page.social %}
+                <div class="social">
+                  <div class="contact-icons home-profile-icons">
+                    {% include social.html %}
+                  </div>
+
+                  <div class="contact-note">
+                    {{ site.contact_note }}
+                  </div>
                 </div>
-                
+                {%- endif %}
+                {%- endif %}
               </div>
             {%- endif %}
-
-              {%- endif %}
-            </div>
-          {%- endif %}
-
-          <div class="clearfix" style="text-align: justify">
-            {{ content }}
+          </div>
           </div>
 
           <!-- News -->
           {% if page.news -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
+            <h2 class="home-section-title"><a href="{{ '/news/' | relative_url }}">News</a></h2>
             {%- include news.html %}
           {%- endif %}
 

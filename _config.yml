@@ -276,6 +276,8 @@ scholar:
 
   replace_strings: true
   join_strings: true
+  sort_by: year
+  order: descending
 
   details_dir: bibliography
   details_layout: bibtex.html

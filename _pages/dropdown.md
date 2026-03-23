@@ -1,6 +1,7 @@
 ---
 layout: page
 title: submenus
+description: Shortcut navigation to key sections
 exclude: true
 nav: true
 nav_order: 6
