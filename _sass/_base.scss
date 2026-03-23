@@ -60,11 +60,13 @@ img {
 }
 
 blockquote {
-  background: var(--global-bg-color);
+  background: transparent;
   border-left: 2px solid var(--global-theme-color);
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  font-size: 1.2rem;
+  margin: 1.5em 0;
+  padding: 0.25em 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--global-text-color-light);
 }
 
 // Math
@@ -309,6 +311,15 @@ blockquote {
   &:hover {
     color: var(--global-hover-color);
   }
+}
+
+// Contact note (standalone)
+
+.contact-note {
+  margin-top: 1.4rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
 }
 
 // Social (bottom)
@@ -767,7 +778,7 @@ html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-  transition: all 750ms !important;
+  transition: background-color 250ms, color 250ms, border-color 250ms, box-shadow 250ms !important;
   transition-delay: 0 !important;
 }
 

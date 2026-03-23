@@ -49,8 +49,11 @@
 
 \definecolor{lightgray}{HTML}{999999}
 \definecolor{graytext}{HTML}{999999}
+\definecolor{pagebg}{HTML}{F7F6F3}
+\definecolor{maintext}{HTML}{181614}
+\definecolor{divrule}{HTML}{C0BDB9}
 
-
+\pagecolor{pagebg}
 
 \newcommand{\cvtag}[1]{%
   \tikz[baseline]\node[anchor=base,draw=gg!70,rounded corners=0.5ex,inner xsep=1ex,inner ysep =0.55ex,text height=1.3ex,text depth=.25ex]{#1};
@@ -99,8 +102,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-4pt}\scshape\raggedright\large\color{maintext}
+}{}{0em}{}[\color{divrule}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -212,6 +215,7 @@
 
 
 \begin{document}
+\color{maintext}
 
 %----------HEADING----------
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -778,6 +782,17 @@
 
 \begin{cvhonorsb}
 
+\cvhonorb
+    {\href{https://evalevalai.com/events/2026-acl-workshop/}{ACL Workshop on Evaluating AI in Practice}} % Award
+    {} % Event
+    {General Chair} % Location
+    {2026} % Date(s)
+
+\cvhonorb
+    {\href{https://evalevalai.com/events/workshop-2025/}{Workshop on Evaluating AI in Practice, UC San Diego}} % Award
+    {} % Event
+    {General Chair} % Location
+    {2025} % Date(s)
 
 \cvhonorb
     {ACM Conference on Fairness, Accountability, and Transparency} % Award
@@ -848,6 +863,18 @@
 %     {} % Event
 %     {UKCDEI'22, Trustworthy ML Initiative'22, SXSW'23} % Location
 %     {Multiple} % Date(s)
+
+\cvhonorb
+    {International Conference on Machine Learning (ICML)} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2026} % Date(s)
+
+\cvhonorb
+    {ACM Conference on Fairness, Accountability, and Transparency (FAccT)} % Award
+    {} % Event
+    {Program Committee} % Location
+    {2026} % Date(s)
 
 \cvhonorb
     {AAAI Conference on Artificial Intelligence} % Award

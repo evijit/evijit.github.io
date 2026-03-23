@@ -3,9 +3,9 @@
  ******************************************************************************/
  
 :root {
-  --global-bg-color: #{$white-color};
+  --global-bg-color: #f7f6f3;
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
+  --global-text-color: #181614;
   --global-text-color-light: #{$grey-color};
   --global-theme-color: rgba(0, 0, 102,1);
   --global-hover-color: rgba(0, 0, 102,1);
@@ -45,13 +45,13 @@
 }
 
 html[data-theme='dark'] {
-  --global-bg-color: #{$black-color};
+  --global-bg-color: #111110;
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$light-blue-color};
-  --global-hover-color: #{$light-blue-color};
-  --global-footer-bg-color: #{$black-color};
+  --global-text-color: #dedad4;
+  --global-text-color-light: #8a8680;
+  --global-theme-color: #6aacff;
+  --global-hover-color: #6aacff;
+  --global-footer-bg-color: #0c0c0b;
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color-light};

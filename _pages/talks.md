@@ -106,6 +106,10 @@ nav_order: 7
 
 <h2 id="service" class="page-section-title">Leadership and Service</h2>
 
+- 2026 - [2026 ACL Workshop on Evaluating AI in Practice](https://evalevalai.com/events/2026-acl-workshop/) - General Chair
+- 2026 - International Conference on Machine Learning (ICML) - Program Committee
+- 2026 - ACM Conference on Fairness, Accountability, and Transparency (FAccT) - Program Committee
+- 2025 - [2025 Workshop on Evaluating AI in Practice](https://evalevalai.com/events/workshop-2025/) - General Chair
 - 2025 - [ACM Conference on Fairness, Accountability, and Transparency](https://facctconference.org/2025/committees) - Registration Chair
 - 2024 - [Evaluating Evaluations: Examining Best Practices for Measuring Broader Impacts of Generative AI - NeurIPS 2024 Workshop](https://evaleval.github.io/) - Lead Organizer
 - 2023 - SIGIR DEI lunch with speaker panel on disability in computing - Organizer

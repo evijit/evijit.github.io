@@ -37,7 +37,7 @@ Knowledge of Python and ML fundamentals (DS 3000 or equivalent)
 
 #### Syllabus:
 
-{:class="table table-bordered"}
+{:class="table syllabus-table"}
 | **Date** | **Topic** | **Readings** | **Homework**
 |--|--|--|--|
 | **Thu, 9/7** | [Introduction to Course](https://evijit.io/materials/Lecture_1_Introduction.pdf) | - | - |

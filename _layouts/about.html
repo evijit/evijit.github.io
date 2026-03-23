@@ -59,15 +59,13 @@ layout: default
             {%- include news.html %}
           {%- endif %}
 
-          <br>
-
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Highlighted Publications</a></h2>
+            <h2 class="home-section-title"><a href="{{ '/publications/' | relative_url }}">Highlighted Publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
 
-          <div class="contact-note" style="text-align: center; font-size: small;">
+          <div class="contact-note">
             The best way to reach me is via email. I am also frequently active on X/Twitter.
           </div>
 
