@@ -6,7 +6,7 @@
  * Themes
  ******************************************************************************/
 :root {
-  --global-bg-color: #f7f6f3;
+  --global-bg-color: #ffffff;
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
   --global-text-color: #181614;
   --global-text-color-light: #828282;
@@ -17,7 +17,7 @@
   --global-footer-link-color: #ffffff;
   --global-distill-app-color: #828282;
   --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: #ffffff;
+  --global-card-bg-color: #f8f8f8;
 }
 :root .fa-sun {
   display: none;
