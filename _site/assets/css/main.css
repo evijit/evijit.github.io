@@ -332,6 +332,28 @@ body.sticky-bottom-footer {
     order: -1;
     margin-bottom: 0.35rem;
   }
+  .home-name-title {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .news table,
+  .news tbody {
+    display: block;
+  }
+  .news tr {
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  .news th.news-date-cell {
+    display: block;
+    width: auto;
+    padding-right: 0;
+    padding-bottom: 0.3rem;
+  }
+  .news td {
+    display: block;
+  }
 }
 .home-section-title {
   margin-top: 1.6rem;
