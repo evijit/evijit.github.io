@@ -276,7 +276,7 @@ scholar:
 
   replace_strings: true
   join_strings: true
-  sort_by: year
+  sort_by: year,month
   order: descending
 
   details_dir: bibliography
