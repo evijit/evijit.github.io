@@ -896,6 +896,7 @@ blockquote {
 .toggle-container {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 #light-toggle {
