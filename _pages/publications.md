@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /publications/
+permalink: /papers/
 title: Papers
 description: A list of my publications.
 page_class: page-papers
