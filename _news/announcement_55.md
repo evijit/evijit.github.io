@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our new position paper argues that AI for scientific discovery is fundamentally a social problem, showing that culture, incentives, and coordination are the main obstacles to progress. We are launching the [Hugging Science Initiative](https://huggingface.co/hugging-science) to address these challenges. [Read the paper](https://www.cell.com/patterns/fulltext/S2666-3899(26)00006-1).
+Our new position paper argues that AI for scientific discovery is fundamentally a social problem, showing that culture, incentives, and coordination are the main obstacles to progress. We are launching the [Hugging Science Initiative](https://huggingface.co/hugging-science) to address these challenges. [Read the paper](https://arxiv.org/abs/2509.06580).
