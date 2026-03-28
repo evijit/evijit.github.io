@@ -4,7 +4,8 @@
       "Bash(pdflatex -interaction=nonstopmode cv.tex)",
       "Read(//Library/TeX/**)",
       "Read(//usr/local/**)",
-      "Read(//usr/**)"
+      "Read(//usr/**)",
+      "Bash(xxd)"
     ]
   }
 }
