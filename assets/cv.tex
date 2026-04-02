@@ -47,6 +47,10 @@
   \tikz[baseline]\node[anchor=base,draw=awesome!30,fill=awesome!7,text=awesome,rounded corners=6pt,inner xsep=0.9ex,inner ysep=0.5ex,text height=1.3ex,text depth=.25ex,font=\bfseries\fontsize{7.5pt}{9pt}\selectfont]{#1};
 }
 
+\newcommand{\acadtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=gg!40,fill=gg!8,text=gg,rounded corners=6pt,inner xsep=0.9ex,inner ysep=0.5ex,text height=1.3ex,text depth=.25ex,font=\bfseries\fontsize{7.5pt}{9pt}\selectfont]{#1};
+}
+
 \geometry{left=1.75cm, top=1.5cm, right=1.75cm, bottom=1.5cm, footskip=.2cm}
 
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -66,8 +70,9 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-4pt}\bfseries\raggedright\normalsize\color{black}
-}{}{0em}{\MakeUppercase}[\color{divrule}\titlerule \vspace{-5pt}]
+  \bfseries\raggedright\normalsize\color{black}
+}{}{0em}{\MakeUppercase}[\color{divrule}\titlerule]
+\titlespacing*{\section}{0pt}{14pt}{4pt}
 
 \pdfgentounicode=1
 
@@ -90,10 +95,19 @@
     \end{tabular*}\vspace{-6pt}
 }
 
+\newcommand{\resumeSubheadingTagged}[5]{
+  \vspace{8pt}\item
+    \vspace{2pt}#5\par\vspace{2pt}%
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10}{12}\selectfont#1} & {\color{awesome}\fontsize{9}{11}\selectfont#2} \\
+      \textit{\color{awesome}\fontsize{8}{10}\selectfont#3} & \textit{\color{gg}\fontsize{8}{10}\selectfont#4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
 \newcommand{\paper}[4]{
   \vspace{-3pt}\item
     \begin{tabularx}{0.97\textwidth}[t]{X@{\extracolsep{\fill}}r}
-      \textbf{\small#1} & {\color{awesome}\small #2} \\
+      \textbf{\small#1} & \cvtag{#2} \\
       \textit{\color{awesome}\footnotesize#3} & \textit{\color{gg}\footnotesize #4} \\
     \end{tabularx}\vspace{-4pt}
 }
@@ -136,26 +150,29 @@
 \newcommand*{\honorlocationstyle}[1]{{\footnotesize\bodyfontlight\slshape\color{awesome} #1}}
 
 \newenvironment{cvhonors}{%
-  \vspace{\acvSectionContentTopSkip}
+  \resetyear
   \begin{longtable}{@{} C{1.4cm} L{\dimexpr\textwidth-7.5cm\relax} R{5.5cm} @{}}
 }{%
   \end{longtable}
 }
 
 \newenvironment{cvhonorsb}{%
-  \vspace{\acvSectionContentTopSkip}
+  \resetyear
   \begin{longtable}{@{} C{1.4cm} L{\dimexpr\textwidth-5.5cm\relax} R{3.5cm} @{}}
 }{%
   \end{longtable}
 }
 
 \newcommand*{\cvhonor}[4]{%
-  \honordatestyle{#4} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+  \yearpill{#4} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
 
 \newcommand*{\cvhonorb}[4]{%
-  \honordatestyle{#4} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+  \yearpill{#4} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
+
+\newcommand{\yearpill}[1]{\acadtag{#1}}
+\newcommand{\resetyear}{}
 
 
 \begin{document}
@@ -331,7 +348,7 @@
     \paper
     {\href{https://link.springer.com/chapter/10.1007/978-981-33-6656-5_18}{Connectedness of Markets with Heterogeneous Agents and the Information Cascades}
     }
-    {\href{https://link.springer.com/book/10.1007/978-981-33-6656-5}{AAA'21}}
+    {AAA'21}
     {{\bf Avijit Ghosh}, Aditya Chourasiya, Lakshay Bansal, Abhijeet Chandra}
     {Journal}
     \resumeSubHeadingListEnd
@@ -342,35 +359,35 @@
     \paper
         {\href{https://arxiv.org/pdf/2502.12447}{Protecting Human Cognition in the Age of AI}
         }
-         {\textcolor{darkgray}{Tools4Thoughts@}CHI '25}
+         {Tools4Thoughts@CHI '25}
         {Anjali Singh, Karan Taneja, Zhitong Guan, {\bf Avijit Ghosh}}
         {Yokohama, Japan}
 
     \paper
         {\href{https://arxiv.org/pdf/2410.12104}{To Err is AI: A Case Study Informing LLM Flaw Reporting Practices}
         }
-         {\textcolor{darkgray}{IAAI@}AAAI '25}
+         {IAAI@AAAI '25}
         {Sean McGregor, Allyson Ettinger, Nick Judd, Paul Albee, Liwei Jiang, Kavel Rao, Will Smith, Shayne Longpre, \newline {\bf Avijit Ghosh}, Christopher Fiorelli, Michelle Hoang, Sven Cattell, Nouha Dziri}
         {Philadelphia, USA}
 
      \paper
         {\href{https://arxiv.org/abs/2209.07667}{Can There be Art Without an Artist?}
         }
-        {\textcolor{darkgray}{HEGM@}NeurIPS '22}
+        {HEGM@NeurIPS '22}
         {{\bf Avijit Ghosh}, Genoveva Fossas}
         {New Orleans, USA}
 
     \paper
-      {\href{https://arxiv.org/abs/2101.01673}{Characterizing Intersectional Group Fairness with Worst-Case Comparisons}}{\textcolor{darkgray}{AIDBEI@}AAAI '21}
+      {\href{https://arxiv.org/abs/2101.01673}{Characterizing Intersectional Group Fairness with Worst-Case Comparisons}}{AIDBEI@AAAI '21}
       {{\bf Avijit Ghosh}, Lea Genuit, Mary Reagan}{Vancouver, Canada / Virtual}
 
     \paper
-      {\href{https://www.ieee-security.org/TC/SPW2019/ConPro/papers/ghosh-conpro19.pdf}{Analyzing Political Advertisers' Use of Facebook's Targeting Features}}{\textcolor{darkgray}{Conpro@}S\&P '19}
+      {\href{https://www.ieee-security.org/TC/SPW2019/ConPro/papers/ghosh-conpro19.pdf}{Analyzing Political Advertisers' Use of Facebook's Targeting Features}}{Conpro@S\&P '19}
       {{\bf Avijit Ghosh}, Giridhari Venkatadri, Alan Mislove}{San Francisco, USA}
 
     \paper
     {\href{https://dl.acm.org/doi/10.1145/3184558.3191623}{SAVITR: A System for Real-time Location Extraction from Microblogs during Emergencies}}
-    {\textcolor{darkgray}{SMERP@}WWW '18}
+    {SMERP@WWW '18}
     {Ritam Dutt, Kaustubh Hiware, {\bf Avijit Ghosh}, Rameshwar Bhaskaran}
     {Lyon, France}
 
@@ -465,14 +482,108 @@
     \textit{\color{awesome}\tiny * Equal contribution}
 
 
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheadingTagged{Hugging Face}{New York, NY}{Lead Technical AI Policy Researcher}{Mar 2024 -- Present}{\cvtag{Industry}}
+      \resumeItemListStart
+        \resumeItem{\textit{Promoted: Applied AI Policy Researcher (Mar 2024) $\to$ Technical AI Policy Researcher (Oct 2025) $\to$ Lead (Mar 2026).}}
+        \resumeItem{Lead Hugging Face's technical AI policy work, representing the organization to legislators and regulators across the US, UK, and EU on issues spanning open-source AI governance, evaluation standards, and vulnerability disclosure.}
+        \resumeItem{Founded and lead the \href{https://www.evalevalai.com/}{EvalEval Coalition}, a multi-stakeholder initiative to bring rigor and accountability to AI evaluations; developed the \href{https://evalcards.evalevalai.com/}{EvalCards} standard for AI documentation best practices.}
+        \resumeItem{Research spans algorithmic bias, agent autonomy, and AI vulnerability disclosure; published at ICML, FAccT, AAAI, AIES, and NeurIPS, with op-eds in MIT Technology Review.}
+        % \resumeItem{Work has achieved direct policy impact: helped shape NYC automated employment decision tool regulation and contributed to Facebook removing their biased ad targeting algorithm.}
+      \resumeItemListEnd
+
+  \resumeSubheadingTagged{University of Connecticut}{Storrs, CT}{Research Affiliate, CACC}{Mar 2024 -- Present}{\acadtag{Academic}}
+      \resumeItemListStart
+        \resumeItem{Collaborate with faculty across the School of Computing and the Humanities Institute on AI alignment research; mentor PhD students and undergraduate researchers on fairness, safety, and AI policy projects.}
+      \resumeItemListEnd
+
+  \resumeSubheadingTagged{Northeastern University}{Boston, MA}{Lecturer, Khoury College of Computer Sciences}{Sep 2023 -- Dec 2023}{\acadtag{Academic}}
+      \resumeItemListStart
+        \resumeItem{Designed and taught \href{https://evijit.io/teaching/}{CS 4973-05: Responsible Machine Learning} to senior undergraduates; curriculum covered algorithmic fairness, bias auditing, ML privacy, and AI safety, with industry guest lectures and a real-world fairness project.}
+      \resumeItemListEnd
+
+  \resumeSubheadingTagged{AdeptID}{Boston, MA}{Research Data Scientist}{Jul 2023 -- Feb 2024}{\cvtag{Industry}}
+      \resumeItemListStart
+        \resumeItem{Audited production ML models for fairness and regulatory compliance in collaboration with data science, engineering, and external policy experts.}
+        \resumeItem{Conducted original research on bias sources in industrially deployed hiring ML pipelines and developed mitigation strategies aligned with emerging employment discrimination law.}
+      \resumeItemListEnd
+
+  \resumeSubheadingTagged{Twitter}{San Francisco, CA}{Research Intern}{Sep -- Dec 2021 and Jun -- Aug 2022}{\cvtag{Industry}}
+      \resumeItemListStart
+        \resumeItem{Worked with the META (Machine Ethics, Transparency, and Accountability) team to investigate tradeoffs between demography-agnostic and demography-dependent author impression fairness metrics at platform scale.}
+        \resumeItem{Developed home timeline diversity metrics grounded in user feedback surveys to balance recommendation efficiency with algorithmic fairness.}
+      \resumeItemListEnd
+
+  \resumeSubheadingTagged{Fiddler Labs}{Palo Alto, CA}{Research Intern}{Oct 2020 -- Apr 2021}{\cvtag{Industry}}
+      \resumeItemListStart
+        \resumeItem{Proposed a unified Shapley-based framework to explain distributional shifts in ML model outputs; work published as a preprint.}
+        \resumeItem{Developed a threshold-independent fairness metric using optimal transport theory, enabling real-time explanations for model decisions.}
+        \resumeItem{Collaborated with the product team and civil rights attorneys to incorporate intersectional fairness metrics into Fiddler's commercial ML monitoring dashboard.}
+      \resumeItemListEnd
+
+  \resumeSubheadingTagged{Northeastern University}{Boston, MA}{Research Assistant, Khoury College of Computer Sciences}{Sep 2019 -- Jun 2023}{\acadtag{Academic}}
+      \resumeItemListStart
+        \resumeItem{Doctoral research on algorithmic fairness in real-world deployments: identified failure modes of fair ranking systems under noisy demographic data and adversarial attacks; published at FAccT, SIGIR, and AIES.}
+        \resumeItem{Conducted a cooperative third-party fairness audit of {\color{awesome}pymetrics}' talent-matching algorithm in collaboration with the company — one of the first industry-academic algorithmic audits of its kind. \href{https://www.pymetrics.ai/pygest/third-party-auditing-why-we-invited-external-experts-into-our-codebase}{\color{awesome}{Press Release.}}}
+        \resumeItem{Demonstrated that Facebook's Special Audiences ad targeting remained biased against women, seniors, and minorities despite civil rights settlements; findings contributed to Facebook \href{https://about.fb.com/news/2022/06/expanding-our-work-on-ads-fairness/}{\color{awesome}{removing the algorithm}}, covered by ProPublica, AP, and Wired.}
+        \resumeItem{Showed that high-budget political advertisers disproportionately use privacy-sensitive PII and Lookalike targeting; published at IEEE Security \& Privacy ConPro 2019.}
+      \resumeItemListEnd
+
+  \resumeSubheadingTagged{LIG, University of Grenoble Alps}{Grenoble, France}{Visiting Researcher}{May 2019 -- July 2019}{\acadtag{Academic}}
+      \resumeItemListStart
+        \resumeItem{Investigated differential information spreading by news organizations on social media, analyzing patterns across organic posts and paid advertising.}
+        \resumeItem{Discovered and responsibly disclosed an exposed access token vulnerability to {\color{awesome}Facebook Bug Bounty}.}
+      \resumeItemListEnd
+
+  \resumeSubheadingTagged{IIT Kharagpur}{Kharagpur, India}{Undergraduate Researcher, Complex Networks Research Group}{2014 -- 2019}{\acadtag{Academic}}
+      \resumeItemListStart
+        \resumeItem{Built Savitr, a real-time location extraction system from social media for disaster response; presented at \textcolor{awesome}{WWW-SMERP 2018}.}
+        \resumeItem{Developed a system to automatically align reader comments with relevant news article paragraphs; presented at \textcolor{awesome}{ECIR 2019}.}
+        \resumeItem{Automated extraction of legal catchphrases from court documents using a novel NER-based tagger.}
+      \resumeItemListEnd
+
+  \resumeSubheadingTagged{Xerox Research Centre}{Bangalore, India}{Research Intern}{May 2017 -- July 2017}{\cvtag{Industry}}
+      \resumeItemListStart
+        \resumeItem{Developed XTrack, a BLE-based smart vehicle tracking system with battery-efficient GPS relaying.}
+        \resumeItem{Proposed a spatio-temporal surge price prediction model using Neural Hawkes processes and Recurrent Marked Temporal Point Processes; awarded {\color{awesome}Best Internship Project}.}
+      \resumeItemListEnd
+
+  \resumeSubheadingTagged{Google Summer of Code}{Remote}{GSoC Student at OpenMRS}{Apr 2016 - Aug 2016}{\cvtag{Industry}}
+      \resumeItemListStart
+        \resumeItem{Replaced the legacy HTML XForms system with native form generation via the REST API in the OpenMRS Android client; added offline form saving and automated CI/CD deployment to the Play Store via Travis CI.}
+        \resumeItem{Contributed {\color{awesome}{100K+ lines of code}}, becoming the top contributor in the project repository.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Teaching}
+\vspace{-2mm}
+  \resumeSubHeadingListStart
+  \resumeSubheadingTagged{Northeastern University}{Boston, MA}{CS 4973-05: Responsible Machine Learning}{Fall 2023}{\cvtag{Adjunct Professor}}
+      \resumeItemListStart
+        \resumeItem{Designed and taught a course exploring the ethical challenges of creating and deploying ML models; topics included algorithmic fairness, bias auditing, ML privacy, and AI safety.}
+        \resumeItem{Assignments covered bias uncovering methods and algorithmic fairness techniques; culminated in a term project applying fairness to a real-world scenario.}
+      \resumeItemListEnd
+
+  \resumeSubheadingTagged{Northeastern University}{Boston, MA}{Algorithmic Auditing (Dr.\ Piotr Sapiezynski)}{Spring 2022}{\cvtag{Teaching Assistant}}
+      \resumeItemListStart
+        \resumeItem{Supported instruction on audit design, noise control, minimizing stakeholder harms, legal bounds of algorithm audits, and limitations of audit-based approaches.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
 \section{Grants}
 
 {\small
-\begin{longtable}{@{\hspace{0pt}}p{0.06\textwidth}@{}p{0.78\textwidth}@{\hspace{4pt}}r@{}}
+\resetyear
+\begin{longtable}{@{}p{1.1cm}@{\hspace{2pt}}p{\dimexpr\textwidth-9.0cm\relax}@{\hspace{8pt}}R{6.9cm}@{}}
 
-\textcolor{gg}{2025} & \textcolor{awesome}{\textbf{Beyond Polarization: Fostering Plurality in Large Language Model Design and Development. (\$6K)}} & \textcolor{awesome}{\footnotesize \it UCHI AI Seed Fund} \\[0.5ex]
+\yearpill{2025} & \textcolor{awesome}{\textbf{Beyond Polarization: Fostering Plurality in Large Language Model Design and Development. (\$6K)}} & \textcolor{awesome}{\footnotesize \it UCHI AI Seed Fund} \\[0.5ex]
 
-\textcolor{gg}{2018} & \textcolor{awesome}{\textbf{SGSIS Institute Challenge Grant. (\rupee 1M)}} & \textcolor{awesome}{\footnotesize \it IIT Kharagpur} \\[0.5ex]
+\yearpill{2018} & \textcolor{awesome}{\textbf{SGSIS Institute Challenge Grant. (\rupee 1M)}} & \textcolor{awesome}{\footnotesize \it IIT Kharagpur} \\[0.5ex]
 
 \end{longtable}
 }
@@ -547,182 +658,16 @@
 \end{cvhonors}
 
 
-\section{Teaching}
-  \resumeSubHeadingListStart
-  \resumeSubheading{Responsible Machine Learning}{Northeastern University}{Lecturer}{Fall 2023}
-      \resumeItemListStart
-        \resumeItem{Explores the ethical challenges and responsibilities of creating and deploying machine learning (ML) models.}
-        \resumeItem{Biases in ML models, methods for uncovering them, and algorithmic fairness techniques to mitigate them}
-        \resumeItem{Term project to apply algorithmic fairness to a real world scenario}
-      \resumeItemListEnd
-
-  \resumeSubheading{Algorithmic Auditing}{Northeastern University}{Teaching Assistant for Dr. Piotr Sapiezynski}{Spring 2022}
-      \resumeItemListStart
-        \resumeItem{Designing audits that measure the effects of interests and control noise sources}
-        \resumeItem{Minimize potential harms of audits to all stakeholders}
-        \resumeItem{Legal bounds of algorithm audits}
-        \resumeItem{Beyond audits: potential harms that cannot be measured through audits}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-
-\section{Academic Experience}
-  \resumeSubHeadingListStart
-
-  \resumeSubheading{University of Connecticut}{Storrs, CT}{Research Affiliate}{Mar 2024 -- Present}
-      \resumeItemListStart
-        \resumeItem{Collaborating with various faculty in the School of Computing and the Humanities Institute on research and mentoring PhD students and Undergraduate Researchers on AI Alignment related projects as a visiting/associate expert.}
-    \resumeItemListEnd
-
-  \resumeSubheading{Northeastern University}{Boston, MA}{Lecturer at Khoury College of Computer Sciences}{Sep 2023 -- Dec 2023}
-      \resumeItemListStart
-        \resumeItem{Teaching \href{https://evijit.io/teaching/}{CS 4973-05 Responsible Machine Learning} to senior undergrads. With the help of readings, guest lectures and original course material, the focus of the course is to empower students to responsibly deploy ethical and fair machine learning models for societal benefit.}
-    \resumeItemListEnd
-
-    \resumeSubheading{Northeastern University}{Boston, MA}{Research Assistant at Khoury College of Computer Sciences}{Sep 2019 -- Jun 2023}
-      \resumeItemListStart
-        \resumeItem{Analyzing Fair ranking systems and showing how they fail in the presence of noisy protected attribute data. Also investigated adversarial attacks on the guaranteed fairness of retrieval systems.}
-        \resumeItem{ A cooperative fairness audit of the recommendation algorithm of {\color{awesome}PyMetrics}, a talent matching software. \href{https://www.pymetrics.ai/pygest/third-party-auditing-why-we-invited-external-experts-into-our-codebase}{\color{awesome}{Press Release.}}}
-        \resumeItem{Investigated Facebook's Special Audiences system for opportunity advertisements and showed that the audience creation algorithm was still biased against women, seniors and minorities.}
-        \resumeItem{Analyzed the ad reach and spend information obtained from Facebook's ad transparency feature and the personal targeting dataset from Propublica's Facebook ad dataset and showed that advertisers with higher budgets use more privacy sensitive targeting techniques like PII or Lookalike audiences. Findings published and presented at {\color{awesome}IEEE ConPro 2019.}}
-    \resumeItemListEnd
-
-    \resumeSubheading{LIG, University of Grenoble Alps}{Grenoble, France}{Visiting Researcher}{May 2019 -- July 2019}
-      \resumeItemListStart
-        \resumeItem{Study of how news companies promote different items on social media, investigating possible patterns of differential information spreading using both posts and ads.}
-        \resumeItem{We also discovered and reported an exposed access token bug to \color{awesome}Facebook Bug Bounty.}
-      \resumeItemListEnd
-
-    \resumeSubheading{IIT Kharagpur}{Kharagpur, India}{Undergraduate Researcher - Complex Networks Research Group}{2014 -- 2019}
-      \resumeItemListStart
-        \resumeItem {Automated Extraction of Catchwords from Legal Documents using a novel NER tagger to help categorize lengthy legal texts.}
-        \resumeItem {Automatically position user comments against relevant news article paragraphs. Presented at \textcolor{awesome}{ECIR 2019.}}
-        \resumeItem {Savitr - A real-time location extraction system for disaster management using twitter. Presented at \textcolor{awesome}{WWW-SMERP 2018.}}
-        \resumeItem {Classification and Summarization of tweets during a disaster event, presented at \textcolor{awesome}{IBM Day 2016.}}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-
-\section{Industry Experience}
-  \resumeSubHeadingListStart
-
-  \resumeSubheading{Hugging Face}{New York, NY}{Lead Technical AI Policy Researcher}{Mar 2024 -- Present}
-      \resumeItemListStart
-        \resumeItem{\textit{Promoted from Applied AI Policy Researcher (Mar 2024) $\to$ Technical AI Policy Researcher (Oct 2025) $\to$ Lead (Mar 2026).}}
-        \resumeItem{I am responsible for policy responses from Hugging Face to ongoing legislative and regulatory movements in AI, while my technical research examines critical challenges in AI safety: from algorithmic bias to agent autonomy to standardization efforts in AI Evaluation and Vulnerability Disclosure. I translate this expertise to varied stakeholders through publications at academic machine learning conferences and op-eds in media publications. My work has influenced AI regulation, established best practices for AI Documentation, and advanced the democratization of machine learning technology while ensuring it serves human wellbeing.}
-      \resumeItemListEnd
-
-    \resumeSubheading{AdeptID}{Boston, MA}{Research Data Scientist}{Jul 2023 -- Feb 2024}
-      \resumeItemListStart
-        \resumeItem{Work with the Data Science and Engineering teams and external policy experts to audit internal systems and ensure that AdeptID's ML models are fair and unbiased and adhere to regulations.}
-        \resumeItem{Conduct original research on ML Fairness and investigate solutions to unanswered questions about potential sources of bias in an industrially deployed ML pipeline.}
-      \resumeItemListEnd
-
-  \resumeSubheading{Twitter}{San Francisco, CA}{Research Intern}{Sep -- Dec 2021 and Jun -- Aug 2022}
-      \resumeItemListStart
-        \resumeItem{Worked with the META (Machine Ethics, Transparency and Accountability) team at Twitter, to investigate the relationship between demography agnostic and demography dependent author impression fairness metrics at scale.}
-        \resumeItem{Developed home timeline diversity metrics based on user feedback, to find balance between recommendation efficiency and fairness.}
-      \resumeItemListEnd
-
-    \resumeSubheading{Fiddler Labs}{Palo Alto, CA}{Research Intern}{Oct 2020 -- Apr 2021}
-      \resumeItemListStart
-        \resumeItem{Explain distributional shifts in Machine Learning model outputs by unifying Shapley based methods.}
-        \resumeItem{Using optimal transport theory, proposed a threshold independent fairness metric that allows for real time explanations.}
-        \resumeItem{Worked with the product team and civil rights lawyers in the deployment of Fiddler's Machine Learning model fairness dashboard. Introduced and incorporated intersectional fairness metrics in the product.}
-      \resumeItemListEnd
-
-    \resumeSubheading{Xerox Research Centre}{Bangalore, India}{Research Intern}{May 2017 -- July 2017}
-      \resumeItemListStart
-        \resumeItem {Implemented XTrack, a Smart Vehicle Tracking and Battery usage minimizing Algorithm, using BLE to relay GPS information.}
-        \resumeItem {Proposed a method for Uber-like Surge Price Prediction using Spatio-Temporal techniques like the Neural Hawkes and Recurrent Marked Temporal Point Process. Awarded the title of \color{awesome}{Best Internship Project}.}
-      \resumeItemListEnd
-
-    \resumeSubheading{Google Summer of Code}{Remote}{GSoC Student at OpenMRS}{Apr 2016 - Aug 2016}
-      \resumeItemListStart
-        \resumeItem {Replaced the HTML XForms system used with native generated forms using the Forms REST Api in the android client of the Opensource Medical Record System. Added offline form saving. Configured Travis CI to automatically build and push the apk\newline to the play store.}
-        \resumeItem {Overall, contributed {\color{awesome}{100K lines of code}} and became the top code contributor in the project repository.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-
-\section{Outreach and Leadership}
+\section{Leadership and Service}
 
 \begin{cvhonorsb}
 
+% 2026
 \cvhonorb
     {\href{https://evalevalai.com/events/2026-acl-workshop/}{ACL Workshop on Evaluating AI in Practice}}
     {}
     {General Chair}
     {2026}
-
-\cvhonorb
-    {\href{https://evalevalai.com/events/workshop-2025/}{Workshop on Evaluating AI in Practice, UC San Diego}}
-    {}
-    {General Chair}
-    {2025}
-
-\cvhonorb
-    {ACM Conference on Fairness, Accountability, and Transparency}
-    {}
-    {Registration Chair}
-    {2025}
-
-\cvhonorb
-    {EvalEval: Evaluating Evaluations: Examining Best Practices for Measuring Broader Impacts of Generative AI}
-    {}
-    {General Chair}
-    {2024}
-
-\cvhonorb
-    {SIGIR DEI lunch with speaker panel on disability in computing}
-    {}
-    {Chair}
-    {2023}
-
-\cvhonorb
-    {FAccT CRAFT Workshop on an \href{https://sites.google.com/view/raiindiacraftfacct2023/home}{India-first Responsible AI research agenda}}
-    {}
-    {Organizer}
-    {2023}
-
-\cvhonorb{FAccT CRAFT Workshop on
-    \href{https://www.aqai.xyz/acm-facct-craft-workshop-2023/}{Humanitarian AI for the Global South}}
-    {}
-    {Organizer}
-    {2022}
-
-\cvhonorb
-    {FAccT CRAFT Workshop on Identifying Queer Harms as a bias bounty with \href{https://www.queerinai.com/}{Queer in AI}}
-    {}
-    {Organizer}
-    {2022}
-
-\cvhonorb
-    {SIGIR \href{https://www.queerinai.com/}{Queer in AI} social with speaker panel on queer stereotypes in web search}
-    {}
-    {Organizer}
-    {2021}
-
-\cvhonorb
-    {\href{https://kwoc.kossiitkgp.org/}{Kharagpur Winter Of Code}}
-    {}
-    {Founder}
-    {2017}
-
-\cvhonorb
-    {\href{https://kossiitkgp.org/}{Kharagpur Open Source Society}}
-    {}
-    {Founder}
-    {2016}
-
-\end{cvhonorsb}
-
-
-\section{Academic Service}
-
-\begin{cvhonorsb}
 
 \cvhonorb
     {International Conference on Machine Learning (ICML)}
@@ -742,6 +687,19 @@
     {Program Committee}
     {2026}
 
+% 2025
+\cvhonorb
+    {\href{https://evalevalai.com/events/workshop-2025/}{Workshop on Evaluating AI in Practice, UC San Diego}}
+    {}
+    {General Chair}
+    {2025}
+
+\cvhonorb
+    {ACM Conference on Fairness, Accountability, and Transparency}
+    {}
+    {Registration Chair}
+    {2025}
+
 \cvhonorb
     {AAAI/ACM Conference on AI, Ethics, and Society}
     {}
@@ -759,6 +717,13 @@
     {}
     {Program Committee}
     {2025}
+
+% 2024
+\cvhonorb
+    {EvalEval: Evaluating Evaluations: Examining Best Practices for Measuring Broader Impacts of Generative AI}
+    {}
+    {General Chair}
+    {2024}
 
 \cvhonorb
     {AAAI/ACM Conference on AI, Ethics, and Society}
@@ -790,6 +755,19 @@
     {Program Committee}
     {2024}
 
+% 2023
+\cvhonorb
+    {SIGIR DEI lunch with speaker panel on disability in computing}
+    {}
+    {Chair}
+    {2023}
+
+\cvhonorb
+    {FAccT CRAFT Workshop on an \href{https://sites.google.com/view/raiindiacraftfacct2023/home}{India-first Responsible AI research agenda}}
+    {}
+    {Organizer}
+    {2023}
+
 \cvhonorb
     {FAccTRec: Workshop on Responsible Recommendation}
     {}
@@ -820,6 +798,19 @@
     {Program Committee}
     {2023}
 
+% 2022
+\cvhonorb
+    {FAccT CRAFT Workshop on \href{https://www.aqai.xyz/acm-facct-craft-workshop-2023/}{Humanitarian AI for the Global South}}
+    {}
+    {Organizer}
+    {2022}
+
+\cvhonorb
+    {FAccT CRAFT Workshop on Identifying Queer Harms as a bias bounty with \href{https://www.queerinai.com/}{Queer in AI}}
+    {}
+    {Organizer}
+    {2022}
+
 \cvhonorb
     {ACM Conference on Fairness, Accountability, and Transparency}
     {}
@@ -844,11 +835,31 @@
     {Program Committee}
     {2022}
 
+% 2021
+\cvhonorb
+    {SIGIR \href{https://www.queerinai.com/}{Queer in AI} social with speaker panel on queer stereotypes in web search}
+    {}
+    {Organizer}
+    {2021}
+
 \cvhonorb
     {Conference on Neural Information Processing Systems}
     {}
     {Program Committee}
     {2021}
+
+% 2017--2016
+\cvhonorb
+    {\href{https://kwoc.kossiitkgp.org/}{Kharagpur Winter Of Code}}
+    {}
+    {Founder}
+    {2017}
+
+\cvhonorb
+    {\href{https://kossiitkgp.org/}{Kharagpur Open Source Society}}
+    {}
+    {Founder}
+    {2016}
 
 \end{cvhonorsb}
 
@@ -989,79 +1000,80 @@
 \section{Media Mentions}
 
 {\small
-\begin{longtable}{@{\hspace{8pt}}p{0.06\textwidth}@{}p{0.72\textwidth}@{\hspace{4pt}}r@{}}
+\resetyear
+\begin{longtable}{@{}p{1.3cm}@{\hspace{1pt}}p{\dimexpr\textwidth-6.9cm\relax}@{\hspace{4pt}}R{4.5cm}@{}}
 
-\textcolor{gg}{2026} & \href{https://www.linkedin.com/feed/update/urn:li:activity:7440356914250747904/}{\textcolor{awesome}{\textbf{Sarvam AI models excel in Indic, lag frontier systems}}} & \textcolor{awesome}{\footnotesize \it Financial Express India} \\[0.5ex]
+\yearpill{2026} & \href{https://www.linkedin.com/feed/update/urn:li:activity:7440356914250747904/}{\textcolor{awesome}{\textbf{Sarvam AI models excel in Indic, lag frontier systems}}} & \textcolor{awesome}{\footnotesize \it Financial Express India} \\[0.5ex]
 
-\textcolor{gg}{2026} & \href{https://www.wired.com/story/deutsche-telekom-elevenlabs-ai-phone-calls-mwc-2026/}{\textcolor{awesome}{\textbf{Deutsche Telekom Wants AI Agents to Talk on Your Phone for You}}} & \textcolor{awesome}{\footnotesize \it Wired} \\[0.5ex]
+\yearpill{2026} & \href{https://www.wired.com/story/deutsche-telekom-elevenlabs-ai-phone-calls-mwc-2026/}{\textcolor{awesome}{\textbf{Deutsche Telekom Wants AI Agents to Talk on Your Phone for You}}} & \textcolor{awesome}{\footnotesize \it Wired} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://www.ft.com/content/931c8218-a9d7-4cbd-8b08-27516637ff41}{\textcolor{awesome}{\textbf{China leapfrogs US in global market for 'open' AI models}}} & \textcolor{awesome}{\footnotesize \it Financial Times} \\[0.5ex]
+\yearpill{2025} & \href{https://www.ft.com/content/931c8218-a9d7-4cbd-8b08-27516637ff41}{\textcolor{awesome}{\textbf{China leapfrogs US in global market for 'open' AI models}}} & \textcolor{awesome}{\footnotesize \it Financial Times} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://www.theaiforum.org/podcast/avijit-ghosh-human-agency}{\textcolor{awesome}{\textbf{Responsible AI podcast with Alex Alben}}} & \textcolor{awesome}{\footnotesize \it The AI Forum} \\[0.5ex]
+\yearpill{2025} & \href{https://www.theaiforum.org/podcast/avijit-ghosh-human-agency}{\textcolor{awesome}{\textbf{Responsible AI podcast with Alex Alben}}} & \textcolor{awesome}{\footnotesize \it The AI Forum} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://podcasts.apple.com/us/podcast/were-not-ready-for-agentic-ai/id1751550186?i=1000709391707}{\textcolor{awesome}{\textbf{Ethical Machines podcast - "We're Not Ready for Agentic AI"}}} & \textcolor{awesome}{\footnotesize \it Ethical Machines} \\[0.5ex]
+\yearpill{2025} & \href{https://podcasts.apple.com/us/podcast/were-not-ready-for-agentic-ai/id1751550186?i=1000709391707}{\textcolor{awesome}{\textbf{Ethical Machines podcast - "We're Not Ready for Agentic AI"}}} & \textcolor{awesome}{\footnotesize \it Ethical Machines} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://www.marketplace.org/story/2025/05/19/can-ai-take-your-coding-job}{\textcolor{awesome}{\textbf{Can AI take your coding job?}}} & \textcolor{awesome}{\footnotesize \it NPR Marketplace} \\[0.5ex]
+\yearpill{2025} & \href{https://www.marketplace.org/story/2025/05/19/can-ai-take-your-coding-job}{\textcolor{awesome}{\textbf{Can AI take your coding job?}}} & \textcolor{awesome}{\footnotesize \it NPR Marketplace} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://www.politico.com/newsletters/politico-technology-california-decoded-preview/2025/04/18/california-finally-beats-big-tech-in-court-00298056}{\textcolor{awesome}{\textbf{California finally beats Big Tech in court}}} & \textcolor{awesome}{\footnotesize \it Politico} \\[0.5ex]
+\yearpill{2025} & \href{https://www.politico.com/newsletters/politico-technology-california-decoded-preview/2025/04/18/california-finally-beats-big-tech-in-court-00298056}{\textcolor{awesome}{\textbf{California finally beats Big Tech in court}}} & \textcolor{awesome}{\footnotesize \it Politico} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://t3n.de/news/hugging-face-experten-warnen-ki-agenten-kontrolle-1679713/?utm_source=rss&utm_medium=feed&utm_campaign=news}{\textcolor{awesome}{\textbf{Hugging-face experts warn: We shouldn't give AI agents full control}}} & \textcolor{awesome}{\footnotesize \it T3N (German)} \\[0.5ex]
+\yearpill{2025} & \href{https://t3n.de/news/hugging-face-experten-warnen-ki-agenten-kontrolle-1679713/?utm_source=rss&utm_medium=feed&utm_campaign=news}{\textcolor{awesome}{\textbf{Hugging-face experts warn: We shouldn't give AI agents full control}}} & \textcolor{awesome}{\footnotesize \it T3N (German)} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://www.technologyreview.com/2025/03/24/1113647/why-handing-over-total-control-to-ai-agents-would-be-a-huge-mistake/}{\textcolor{awesome}{\textbf{Why handing over total control to AI agents would be a huge mistake}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review Op-Ed} \\[0.5ex]
+\yearpill{2025} & \href{https://www.technologyreview.com/2025/03/24/1113647/why-handing-over-total-control-to-ai-agents-would-be-a-huge-mistake/}{\textcolor{awesome}{\textbf{Why handing over total control to AI agents would be a huge mistake}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review Op-Ed} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://www.businessinsider.com/openai-chatgpt-brainstorming-addiction-dependence-negative-consequences-mit-research-2025-3}{\textcolor{awesome}{\textbf{The hidden cost of brainstorming with ChatGPT}}} & \textcolor{awesome}{\footnotesize \it Business Insider} \\[0.5ex]
+\yearpill{2025} & \href{https://www.businessinsider.com/openai-chatgpt-brainstorming-addiction-dependence-negative-consequences-mit-research-2025-3}{\textcolor{awesome}{\textbf{The hidden cost of brainstorming with ChatGPT}}} & \textcolor{awesome}{\footnotesize \it Business Insider} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://www.snexplores.org/article/deepseek-ai-reasoning-agents}{\textcolor{awesome}{\textbf{DeepSeek pioneers a new way for AI to 'reason'}}} & \textcolor{awesome}{\footnotesize \it Science News Explores} \\[0.5ex]
+\yearpill{2025} & \href{https://www.snexplores.org/article/deepseek-ai-reasoning-agents}{\textcolor{awesome}{\textbf{DeepSeek pioneers a new way for AI to 'reason'}}} & \textcolor{awesome}{\footnotesize \it Science News Explores} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://www.businessinsider.com/ai-agents-jobs-board-ad-replacing-human-skills-2025-2}{\textcolor{awesome}{\textbf{Two founders built a jobs board for Al agents. Humans need not apply — but their skills are still required.}}} & \textcolor{awesome}{\footnotesize \it Business Insider} \\[0.5ex]
+\yearpill{2025} & \href{https://www.businessinsider.com/ai-agents-jobs-board-ad-replacing-human-skills-2025-2}{\textcolor{awesome}{\textbf{Two founders built a jobs board for Al agents. Humans need not apply — but their skills are still required.}}} & \textcolor{awesome}{\footnotesize \it Business Insider} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://www.techcircle.in/2025/02/19/why-truly-open-source-ai-remains-out-of-reach}{\textcolor{awesome}{\textbf{Why truly open-source AI remains out of reach}}} & \textcolor{awesome}{\footnotesize \it HT TechCircle} \\[0.5ex]
+\yearpill{2025} & \href{https://www.techcircle.in/2025/02/19/why-truly-open-source-ai-remains-out-of-reach}{\textcolor{awesome}{\textbf{Why truly open-source AI remains out of reach}}} & \textcolor{awesome}{\footnotesize \it HT TechCircle} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://www.businessinsider.com/openai-stargate-project-moat-deepseek-2025-1}{\textcolor{awesome}{\textbf{What does OpenAI get from Stargate? A \$500 billion chance to build a whole new moat.}}} & \textcolor{awesome}{\footnotesize \it Business Insider} \\[0.5ex]
+\yearpill{2025} & \href{https://www.businessinsider.com/openai-stargate-project-moat-deepseek-2025-1}{\textcolor{awesome}{\textbf{What does OpenAI get from Stargate? A \$500 billion chance to build a whole new moat.}}} & \textcolor{awesome}{\footnotesize \it Business Insider} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://fortune.com/2025/01/22/openai-stargate-ai-sam-altman-donald-trump/}{\textcolor{awesome}{\textbf{OpenAI's Stargate may be tech's biggest gamble ever, but here's what's really at stake}}} & \textcolor{awesome}{\footnotesize \it Fortune} \\[0.5ex]
+\yearpill{2025} & \href{https://fortune.com/2025/01/22/openai-stargate-ai-sam-altman-donald-trump/}{\textcolor{awesome}{\textbf{OpenAI's Stargate may be tech's biggest gamble ever, but here's what's really at stake}}} & \textcolor{awesome}{\footnotesize \it Fortune} \\[0.5ex]
 
-\textcolor{gg}{2025} & \href{https://evijit.io/assets/img/Epaper_194_2025-01-03_9.jpeg}{\textcolor{awesome}{\textbf{AI will transform everything from daily life to businesses}}} & \textcolor{awesome}{\footnotesize \it Dainik Bhaskar Op-ed (Hindi)} \\[0.5ex]
+\yearpill{2025} & \href{https://evijit.io/assets/img/Epaper_194_2025-01-03_9.jpeg}{\textcolor{awesome}{\textbf{AI will transform everything from daily life to businesses}}} & \textcolor{awesome}{\footnotesize \it Dainik Bhaskar Op-ed (Hindi)} \\[0.5ex]
 
-\textcolor{gg}{2024} & \href{https://www.wired.com/story/plaud-note-pin-ai-wearable/}{\textcolor{awesome}{\textbf{This Wearable AI Notetaker Will Transcribe Your Meetings — and Someday, Your Entire Life}}} & \textcolor{awesome}{\footnotesize \it Wired} \\[0.5ex]
+\yearpill{2024} & \href{https://www.wired.com/story/plaud-note-pin-ai-wearable/}{\textcolor{awesome}{\textbf{This Wearable AI Notetaker Will Transcribe Your Meetings — and Someday, Your Entire Life}}} & \textcolor{awesome}{\footnotesize \it Wired} \\[0.5ex]
 
-\textcolor{gg}{2024} & \href{https://www.lesechos.fr/tech-medias/intelligence-artificielle/en-californie-la-loi-de-protection-contre-lia-amendee-pour-apaiser-la-silicon-valley-2114566}{\textcolor{awesome}{\textbf{In California, the controversial AI protection law is about to be passed}}} & \textcolor{awesome}{\footnotesize \it Les Echos (French)} \\[0.5ex]
+\yearpill{2024} & \href{https://www.lesechos.fr/tech-medias/intelligence-artificielle/en-californie-la-loi-de-protection-contre-lia-amendee-pour-apaiser-la-silicon-valley-2114566}{\textcolor{awesome}{\textbf{In California, the controversial AI protection law is about to be passed}}} & \textcolor{awesome}{\footnotesize \it Les Echos (French)} \\[0.5ex]
 
-\textcolor{gg}{2024} & \href{https://www.technologyreview.com/2024/08/22/1097224/we-finally-have-a-definition-for-open-source-ai/}{\textcolor{awesome}{\textbf{We finally have a definition for open-source AI}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review} \\[0.5ex]
+\yearpill{2024} & \href{https://www.technologyreview.com/2024/08/22/1097224/we-finally-have-a-definition-for-open-source-ai/}{\textcolor{awesome}{\textbf{We finally have a definition for open-source AI}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review} \\[0.5ex]
 
-\textcolor{gg}{2024} & \href{https://fortune.com/2024/08/12/defcon-gen-ai-bug-bounty-cybersecurity-vulnerabilities/?987123}{\textcolor{awesome}{\textbf{World's biggest hacker fest spotlights AI's soaring importance in the high-stakes cybersecurity war—and its vulnerability}}} & \textcolor{awesome}{\footnotesize \it Fortune} \\[0.5ex]
+\yearpill{2024} & \href{https://fortune.com/2024/08/12/defcon-gen-ai-bug-bounty-cybersecurity-vulnerabilities/?987123}{\textcolor{awesome}{\textbf{World's biggest hacker fest spotlights AI's soaring importance in the high-stakes cybersecurity war—and its vulnerability}}} & \textcolor{awesome}{\footnotesize \it Fortune} \\[0.5ex]
 
-\textcolor{gg}{2024} & \href{https://www.bhaskar.com/opinion/news/avijit-ghoshs-column-ai-full-of-bias-is-both-a-challenge-and-an-opportunity-for-india-133333195.html}{\textcolor{awesome}{\textbf{AI full of prejudices both a challenge and an opportunity for India}}} & \textcolor{awesome}{\footnotesize \it Dainik Bhaskar Op-ed (Hindi)} \\[0.5ex]
+\yearpill{2024} & \href{https://www.bhaskar.com/opinion/news/avijit-ghoshs-column-ai-full-of-bias-is-both-a-challenge-and-an-opportunity-for-india-133333195.html}{\textcolor{awesome}{\textbf{AI full of prejudices both a challenge and an opportunity for India}}} & \textcolor{awesome}{\footnotesize \it Dainik Bhaskar Op-ed (Hindi)} \\[0.5ex]
 
-\textcolor{gg}{2024} & \href{https://www.fastcompany.com/91131154/image-search-results-bias-research}{\textcolor{awesome}{\textbf{Common image search results are overwhelmingly white, a new study finds}}} & \textcolor{awesome}{\footnotesize \it Fast Company} \\[0.5ex]
+\yearpill{2024} & \href{https://www.fastcompany.com/91131154/image-search-results-bias-research}{\textcolor{awesome}{\textbf{Common image search results are overwhelmingly white, a new study finds}}} & \textcolor{awesome}{\footnotesize \it Fast Company} \\[0.5ex]
 
-\textcolor{gg}{2024} & \href{https://www.theguardian.com/technology/2024/mar/16/ai-racism-chatgpt-gemini-bias}{\textcolor{awesome}{\textbf{As AI tools get smarter, they're growing more covertly racist, experts find}}} & \textcolor{awesome}{\footnotesize \it The Guardian} \\[0.5ex]
+\yearpill{2024} & \href{https://www.theguardian.com/technology/2024/mar/16/ai-racism-chatgpt-gemini-bias}{\textcolor{awesome}{\textbf{As AI tools get smarter, they're growing more covertly racist, experts find}}} & \textcolor{awesome}{\footnotesize \it The Guardian} \\[0.5ex]
 
-\textcolor{gg}{2024} & \href{https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/}{\textcolor{awesome}{\textbf{LLMs become more covertly racist with human intervention}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review} \\[0.5ex]
+\yearpill{2024} & \href{https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/}{\textcolor{awesome}{\textbf{LLMs become more covertly racist with human intervention}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review} \\[0.5ex]
 
-\textcolor{gg}{2023} & \href{https://www.indiatimes.com/trending/spectrum/how-can-ai-affect-queer-people-in-india-617408.html}{\textcolor{awesome}{\textbf{How Can AI Affect LGBTQIA+ People In India? Three Indian-Origin Queer Researchers Explain}}} & \textcolor{awesome}{\footnotesize \it IndiaTimes} \\[0.5ex]
+\yearpill{2023} & \href{https://www.indiatimes.com/trending/spectrum/how-can-ai-affect-queer-people-in-india-617408.html}{\textcolor{awesome}{\textbf{How Can AI Affect LGBTQIA+ People In India? Three Indian-Origin Queer Researchers Explain}}} & \textcolor{awesome}{\footnotesize \it IndiaTimes} \\[0.5ex]
 
-\textcolor{gg}{2023} & \href{https://news.northeastern.edu/2023/09/06/ethical-ai-development/}{\textcolor{awesome}{\textbf{He hacked AI chatbots to find flaws and vulnerabilities. Now Northeastern's Avijit Ghosh is writing a report on combating these problems}}} & \textcolor{awesome}{\footnotesize \it Northeastern Global News} \\[0.5ex]
+\yearpill{2023} & \href{https://news.northeastern.edu/2023/09/06/ethical-ai-development/}{\textcolor{awesome}{\textbf{He hacked AI chatbots to find flaws and vulnerabilities. Now Northeastern's Avijit Ghosh is writing a report on combating these problems}}} & \textcolor{awesome}{\footnotesize \it Northeastern Global News} \\[0.5ex]
 
-\textcolor{gg}{2023} & \href{https://www.kpcc.org/podcast/airtalk/hurricane-hilary-is-barreling-towards-socal-what-can-we-expect}{\textcolor{awesome}{\textbf{Radio Interview - AirTalk}}} & \textcolor{awesome}{\footnotesize \it LAIST/NPR} \\[0.5ex]
+\yearpill{2023} & \href{https://www.kpcc.org/podcast/airtalk/hurricane-hilary-is-barreling-towards-socal-what-can-we-expect}{\textcolor{awesome}{\textbf{Radio Interview - AirTalk}}} & \textcolor{awesome}{\footnotesize \it LAIST/NPR} \\[0.5ex]
 
-\textcolor{gg}{2023} & \href{https://www.cbc.ca/radio/asithappens/the-aih-transcript-for-august-16-2023-1.6939160}{\textcolor{awesome}{\textbf{Radio Interview - As It Happens}}} & \textcolor{awesome}{\footnotesize \it CBC Canada} \\[0.5ex]
+\yearpill{2023} & \href{https://www.cbc.ca/radio/asithappens/the-aih-transcript-for-august-16-2023-1.6939160}{\textcolor{awesome}{\textbf{Radio Interview - As It Happens}}} & \textcolor{awesome}{\footnotesize \it CBC Canada} \\[0.5ex]
 
-\textcolor{gg}{2023} & \href{https://www.nytimes.com/2023/08/16/technology/ai-defcon-hackers.html}{\textcolor{awesome}{\textbf{When Hackers Descended to Test A.I., They Found Flaws Aplenty}}} & \textcolor{awesome}{\footnotesize \it The New York Times} \\[0.5ex]
+\yearpill{2023} & \href{https://www.nytimes.com/2023/08/16/technology/ai-defcon-hackers.html}{\textcolor{awesome}{\textbf{When Hackers Descended to Test A.I., They Found Flaws Aplenty}}} & \textcolor{awesome}{\footnotesize \it The New York Times} \\[0.5ex]
 
-\textcolor{gg}{2023} & \href{https://passionfru.it/ai-sxsw-2023-3434/}{\textcolor{awesome}{\textbf{From accessibility efforts to ethical concerns, here are our AI takeaways from SXSW content creators should consider}}} & \textcolor{awesome}{\footnotesize \it Passionfruit} \\[0.5ex]
+\yearpill{2023} & \href{https://passionfru.it/ai-sxsw-2023-3434/}{\textcolor{awesome}{\textbf{From accessibility efforts to ethical concerns, here are our AI takeaways from SXSW content creators should consider}}} & \textcolor{awesome}{\footnotesize \it Passionfruit} \\[0.5ex]
 
-\textcolor{gg}{2021} & \href{https://apnews.com/article/technology-business-race-and-ethnicity-racial-injustice-artificial-intelligence-2fe8d3ef7008d299d9d810f0c0f7905d}{\textcolor{awesome}{\textbf{NYC aims to be first to rein in AI hiring tools}}} & \textcolor{awesome}{\footnotesize \it Associated Press} \\[0.5ex]
+\yearpill{2021} & \href{https://apnews.com/article/technology-business-race-and-ethnicity-racial-injustice-artificial-intelligence-2fe8d3ef7008d299d9d810f0c0f7905d}{\textcolor{awesome}{\textbf{NYC aims to be first to rein in AI hiring tools}}} & \textcolor{awesome}{\footnotesize \it Associated Press} \\[0.5ex]
 
-\textcolor{gg}{2021} & \href{https://www.technologyreview.com/2021/02/11/1017955/auditors-testing-ai-hiring-algorithms-bias-big-questions-remain/}{\textcolor{awesome}{\textbf{Auditors are testing hiring algorithms for bias, but there's no easy fix}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review} \\[0.5ex]
+\yearpill{2021} & \href{https://www.technologyreview.com/2021/02/11/1017955/auditors-testing-ai-hiring-algorithms-bias-big-questions-remain/}{\textcolor{awesome}{\textbf{Auditors are testing hiring algorithms for bias, but there's no easy fix}}} & \textcolor{awesome}{\footnotesize \it MIT Technology Review} \\[0.5ex]
 
-\textcolor{gg}{2021} & \href{https://www.wired.com/story/new-york-city-proposes-regulating-algorithms-hiring/}{\textcolor{awesome}{\textbf{New York City Proposes Regulating Algorithms Used in Hiring}}} & \textcolor{awesome}{\footnotesize \it Wired} \\[0.5ex]
+\yearpill{2021} & \href{https://www.wired.com/story/new-york-city-proposes-regulating-algorithms-hiring/}{\textcolor{awesome}{\textbf{New York City Proposes Regulating Algorithms Used in Hiring}}} & \textcolor{awesome}{\footnotesize \it Wired} \\[0.5ex]
 
-\textcolor{gg}{2021} & \href{https://www.federalreserve.gov/newsevents/speech/brainard20210112a.htm}{\textcolor{awesome}{\textbf{Supporting Responsible Use of AI and Equitable Outcomes in Financial Services}}} & \textcolor{awesome}{\footnotesize \it The Federal Reserve} \\[0.5ex]
+\yearpill{2021} & \href{https://www.federalreserve.gov/newsevents/speech/brainard20210112a.htm}{\textcolor{awesome}{\textbf{Supporting Responsible Use of AI and Equitable Outcomes in Financial Services}}} & \textcolor{awesome}{\footnotesize \it The Federal Reserve} \\[0.5ex]
 
-\textcolor{gg}{2019} & \href{https://www.propublica.org/article/facebook-ads-can-still-discriminate-against-women-and-older-workers-despite-a-civil-rights-settlement}{\textcolor{awesome}{\textbf{Facebook Ads Can Still Discriminate Against Women and Older Workers, Despite a Civil Rights Settlement}}} & \textcolor{awesome}{\footnotesize \it Propublica} \\[0.5ex]
+\yearpill{2019} & \href{https://www.propublica.org/article/facebook-ads-can-still-discriminate-against-women-and-older-workers-despite-a-civil-rights-settlement}{\textcolor{awesome}{\textbf{Facebook Ads Can Still Discriminate Against Women and Older Workers, Despite a Civil Rights Settlement}}} & \textcolor{awesome}{\footnotesize \it Propublica} \\[0.5ex]
 
-\textcolor{gg}{2019} & \href{https://www.motherjones.com/politics/2019/12/facebook-agreed-not-to-let-its-ads-discriminate-but-they-still-can/}{\textcolor{awesome}{\textbf{Facebook Agreed Not to Let Its Ads Discriminate. But They Still Can.}}} & \textcolor{awesome}{\footnotesize \it Mother Jones} \\[0.5ex]
+\yearpill{2019} & \href{https://www.motherjones.com/politics/2019/12/facebook-agreed-not-to-let-its-ads-discriminate-but-they-still-can/}{\textcolor{awesome}{\textbf{Facebook Agreed Not to Let Its Ads Discriminate. But They Still Can.}}} & \textcolor{awesome}{\footnotesize \it Mother Jones} \\[0.5ex]
 
 \end{longtable}
 }

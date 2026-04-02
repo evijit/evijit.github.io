@@ -5,7 +5,8 @@
       "Read(//Library/TeX/**)",
       "Read(//usr/local/**)",
       "Read(//usr/**)",
-      "Bash(xxd)"
+      "Bash(xxd)",
+      "WebFetch(domain:evijit.io)"
     ]
   }
 }
