@@ -130,6 +130,13 @@ body.sticky-bottom-footer {
   width: 100%;
 }
 
+.news {
+  font-size: 0.9rem;
+}
+.news td,
+.news th {
+  font-size: inherit;
+}
 .news .news-date-cell {
   width: 1%;
   white-space: nowrap;
