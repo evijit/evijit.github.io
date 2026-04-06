@@ -15,3 +15,11 @@
 "EvalEval Blog":
   url: https://evalevalai.com/
   color: "#2563eb"
+
+"Substack":
+  url: https://substack.com
+  color: "#2A2C7A"
+
+"Medium":
+  url: https://medium.com
+  color: "#1A8917"
