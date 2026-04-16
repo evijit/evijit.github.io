@@ -106,6 +106,9 @@ nav_order: 7
 
 <h2 id="service" class="page-section-title">Leadership and Service</h2>
 
+	- 2026 - [AI for Public Goods (AI4PG) Fast Grants](https://gainforest.notion.site/ai4pg?p=28a94a2f76b380e29b71d1d408ba21e0&pm=c) - Reviewer
+	- 2026 - [2026 ACL Workshop on Evaluating AI in Practice](https://evalevalai.com/events/2026-acl-workshop/) - General Chair
+	- 2026 - International Conference on Machine Learning (ICML) - Program Committee
 - 2026 - [2026 ACL Workshop on Evaluating AI in Practice](https://evalevalai.com/events/2026-acl-workshop/) - General Chair
 - 2026 - International Conference on Machine Learning (ICML) - Program Committee
 - 2026 - ACM Conference on Fairness, Accountability, and Transparency (FAccT) - Program Committee
