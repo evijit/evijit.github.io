@@ -344,6 +344,18 @@ body.sticky-bottom-footer {
 }
 
 .page-engagements {
+  // The chip row IS the subtitle — hide the redundant prose description
+  .post-header.page-hero .post-description {
+    display: none;
+  }
+
+  // Let the chip row finish the title band — drop the hero's divider
+  .post-header.page-hero {
+    border-bottom: none;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0;
+  }
+
   .page-section-title {
     margin-top: 1.55rem;
     margin-bottom: 0.65rem;
@@ -356,8 +368,16 @@ body.sticky-bottom-footer {
   }
 
   .pretty-jump {
-    margin-top: 0.35rem;
-    margin-bottom: 1rem;
+    align-items: center;
+    gap: 0.45rem 0.55rem;
+    margin: 0 0 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  // First section title after the jump nav — let the nav do the heavy lifting
+  .pretty-jump + .page-section-title {
+    margin-top: 0;
   }
 
   h3 {

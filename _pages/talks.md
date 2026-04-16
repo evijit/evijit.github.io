@@ -8,11 +8,12 @@ nav: true
 nav_order: 7
 ---
 
-<div class="pretty-jump">
+<nav class="pretty-jump" aria-label="Section navigation">
 	<a href="#speaking" class="pretty-chip">Invited Speaking</a>
-	<a href="#media" class="pretty-chip">Media and Op-Eds</a>
-	<a href="#service" class="pretty-chip">Leadership and Service</a>
-</div>
+	<a href="#media" class="pretty-chip">Media &amp; Op-Eds</a>
+	<a href="#grants" class="pretty-chip">Grants</a>
+	<a href="#service" class="pretty-chip">Leadership &amp; Service</a>
+</nav>
 
 <h2 id="speaking" class="page-section-title">Invited Speaking Engagements</h2>
 
@@ -104,11 +105,23 @@ nav_order: 7
 - Dec 2019, [Facebook Ads Can Still Discriminate Against Women and Older Workers, Despite a Civil Rights Settlement](https://www.propublica.org/article/facebook-ads-can-still-discriminate-against-women-and-older-workers-despite-a-civil-rights-settlement) - Propublica
 - Dec 2019, [Facebook Agreed Not to Let Its Ads Discriminate. But They Still Can.](https://www.motherjones.com/politics/2019/12/facebook-agreed-not-to-let-its-ads-discriminate-but-they-still-can/) - Mother Jones
 
+
+<h2 id="grants" class="page-section-title">Grants</h2>
+
+### Received Grants
+
+- 2026 – SFA Research Grant. ($9K) — Co·Agents: The Filipino Diaspora Pilot -- A Multi-Agent System for Cross-Cultural Democratic Deliberation. — UConn School of Fine Arts
+- 2025 – Beyond Polarization: Fostering Plurality in Large Language Model Design and Development. ($6K) — UCHI AI Seed Fund
+- 2018 – SGSIS Institute Challenge Grant. (₹1M) — IIT Kharagpur
+
+### Grantmaking & Stewardship
+
+- 2026 – [Reviewer for AI for Public Goods (AI4PG) Fast Grants](https://www.recerts.org/ai4pg2025) — GainForest
+
 <h2 id="service" class="page-section-title">Leadership and Service</h2>
 
-	- 2026 - [AI for Public Goods (AI4PG) Fast Grants](https://gainforest.notion.site/ai4pg?p=28a94a2f76b380e29b71d1d408ba21e0&pm=c) - Reviewer
-	- 2026 - [2026 ACL Workshop on Evaluating AI in Practice](https://evalevalai.com/events/2026-acl-workshop/) - General Chair
-	- 2026 - International Conference on Machine Learning (ICML) - Program Committee
+- 2026 - [2026 ACL Workshop on Evaluating AI in Practice](https://evalevalai.com/events/2026-acl-workshop/) - General Chair
+- 2026 - International Conference on Machine Learning (ICML) - Program Committee
 - 2026 - [2026 ACL Workshop on Evaluating AI in Practice](https://evalevalai.com/events/2026-acl-workshop/) - General Chair
 - 2026 - International Conference on Machine Learning (ICML) - Program Committee
 - 2026 - ACM Conference on Fairness, Accountability, and Transparency (FAccT) - Program Committee

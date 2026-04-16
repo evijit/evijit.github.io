@@ -381,6 +381,14 @@ body.sticky-bottom-footer {
   text-decoration: none;
 }
 
+.page-engagements .post-header.page-hero .post-description {
+  display: none;
+}
+.page-engagements .post-header.page-hero {
+  border-bottom: none;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0;
+}
 .page-engagements .page-section-title {
   margin-top: 1.55rem;
   margin-bottom: 0.65rem;
@@ -392,8 +400,14 @@ body.sticky-bottom-footer {
   border-bottom: 1px solid var(--global-divider-color);
 }
 .page-engagements .pretty-jump {
-  margin-top: 0.35rem;
-  margin-bottom: 1rem;
+  align-items: center;
+  gap: 0.45rem 0.55rem;
+  margin: 0 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+.page-engagements .pretty-jump + .page-section-title {
+  margin-top: 0;
 }
 .page-engagements h3 {
   margin: 1rem 0 0.45rem;
