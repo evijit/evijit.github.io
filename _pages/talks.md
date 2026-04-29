@@ -116,6 +116,7 @@ nav_order: 7
 
 ### Grantmaking & Stewardship
 
+- 2026 – Reviewer for the [Sloan Foundation Technology program](https://sloan.org/programs/digital-technology) — Alfred P. Sloan Foundation
 - 2026 – [Reviewer for AI for Public Goods (AI4PG) Fast Grants](https://www.recerts.org/ai4pg2025) — GainForest
 
 <h2 id="service" class="page-section-title">Leadership and Service</h2>
