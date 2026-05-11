@@ -1,0 +1,38 @@
+# .github/workflows/ci.yml
+# Runs on pull requests to catch LaTeX and Jekyll build errors before merge.
+
+name: CI
+
+on:
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          cache-version: 0
+
+      - name: Install Mermaid CLI
+        run: |
+          npm install -g @mermaid-js/mermaid-cli
+
+      - name: Compile LaTeX CV
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: cv.tex
+          working_directory: assets
+          args: -pdf -interaction=nonstopmode -halt-on-error
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --baseurl ""
+        env:
+          JEKYLL_ENV: production
