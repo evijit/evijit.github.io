@@ -1,2 +1,27 @@
 psds/
 *.DS_Store
+
+# Jekyll build output (rebuilt by CI in .github/workflows/jekyll.yml)
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / Bundler
+.bundle/
+vendor/
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.toc
+
+# CV build artifacts (rebuilt by CI from assets/cv.tex)
+assets/cv.pdf
+assets/pdf/Avijit_CV.pdf
