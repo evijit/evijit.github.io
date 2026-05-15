@@ -422,7 +422,8 @@ body.sticky-bottom-footer {
   background-color: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
   border: 1px solid color-mix(in srgb, var(--global-theme-color) 30%, transparent);
 }
-.page-engagements h3 + ul {
+.page-engagements h3 + ul,
+.page-engagements .page-section-title + ul {
   margin: 0 0 0.9rem;
   padding: 1.1rem 1.3rem 0.7rem 1.65rem;
   border: 1px solid var(--global-divider-color);
@@ -430,20 +431,8 @@ body.sticky-bottom-footer {
   background-color: var(--global-card-bg-color);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
 }
-.page-engagements h2#service + ul {
-  margin: 0 0 0.9rem;
-  padding: 1.1rem 1.3rem 0.7rem 1.65rem;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 0.75rem;
-  background-color: var(--global-card-bg-color);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
-}
-.page-engagements h3 + ul li {
-  margin-bottom: 0.5rem;
-  line-height: 1.45;
-  font-size: 0.94rem;
-}
-.page-engagements h2#service + ul li {
+.page-engagements h3 + ul li,
+.page-engagements .page-section-title + ul li {
   margin-bottom: 0.5rem;
   line-height: 1.45;
   font-size: 0.94rem;

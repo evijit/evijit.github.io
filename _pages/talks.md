@@ -2,17 +2,15 @@
 layout: page
 permalink: /engagements/
 title: Engagements
-description: Invited speaking, media coverage, and community leadership
+description: Invited speaking and media coverage
 page_class: page-engagements
 nav: true
-nav_order: 7
+nav_order: 9
 ---
 
 <nav class="pretty-jump" aria-label="Section navigation">
 	<a href="#speaking" class="pretty-chip">Invited Speaking</a>
 	<a href="#media" class="pretty-chip">Media &amp; Op-Eds</a>
-	<a href="#grants" class="pretty-chip">Grants</a>
-	<a href="#service" class="pretty-chip">Leadership &amp; Service</a>
 </nav>
 
 <h2 id="speaking" class="page-section-title">Invited Speaking Engagements</h2>
@@ -104,35 +102,3 @@ nav_order: 7
 - Jan 2021, [Supporting Responsible Use of AI and Equitable Outcomes in Financial Services](https://www.federalreserve.gov/newsevents/speech/brainard20210112a.htm) - The Federal Reserve
 - Dec 2019, [Facebook Ads Can Still Discriminate Against Women and Older Workers, Despite a Civil Rights Settlement](https://www.propublica.org/article/facebook-ads-can-still-discriminate-against-women-and-older-workers-despite-a-civil-rights-settlement) - Propublica
 - Dec 2019, [Facebook Agreed Not to Let Its Ads Discriminate. But They Still Can.](https://www.motherjones.com/politics/2019/12/facebook-agreed-not-to-let-its-ads-discriminate-but-they-still-can/) - Mother Jones
-
-
-<h2 id="grants" class="page-section-title">Grants</h2>
-
-### Received Grants
-
-- 2026 – SFA Research Grant. ($9K) — Co·Agents: The Filipino Diaspora Pilot -- A Multi-Agent System for Cross-Cultural Democratic Deliberation. — UConn School of Fine Arts
-- 2025 – Beyond Polarization: Fostering Plurality in Large Language Model Design and Development. ($6K) — UCHI AI Seed Fund
-- 2018 – SGSIS Institute Challenge Grant. (₹1M) — IIT Kharagpur
-
-### Grantmaking & Stewardship
-
-- 2026 – Reviewer for the [Sloan Foundation Technology program](https://sloan.org/programs/digital-technology) — Alfred P. Sloan Foundation
-- 2026 – [Reviewer for AI for Public Goods (AI4PG) Fast Grants](https://www.recerts.org/ai4pg2025) — GainForest
-
-<h2 id="service" class="page-section-title">Leadership and Service</h2>
-
-- 2026 - [2026 ACL Workshop on Evaluating AI in Practice](https://evalevalai.com/events/2026-acl-workshop/) - General Chair
-- 2026 - International Conference on Machine Learning (ICML) - Program Committee
-- 2026 - [2026 ACL Workshop on Evaluating AI in Practice](https://evalevalai.com/events/2026-acl-workshop/) - General Chair
-- 2026 - International Conference on Machine Learning (ICML) - Program Committee
-- 2026 - ACM Conference on Fairness, Accountability, and Transparency (FAccT) - Program Committee
-- 2025 - [2025 Workshop on Evaluating AI in Practice](https://evalevalai.com/events/workshop-2025/) - General Chair
-- 2025 - [ACM Conference on Fairness, Accountability, and Transparency](https://facctconference.org/2025/committees) - Registration Chair
-- 2024 - [Evaluating Evaluations: Examining Best Practices for Measuring Broader Impacts of Generative AI - NeurIPS 2024 Workshop](https://evaleval.github.io/) - Lead Organizer
-- 2023 - SIGIR DEI lunch with speaker panel on disability in computing - Organizer
-- 2023 - [FAccT CRAFT Workshop on an India-first Responsible AI research agenda](https://sites.google.com/view/raiindiacraftfacct2023/home) - Organizer
-- 2022 - [FAccT CRAFT Workshop on Humanitarian AI for the Global South](https://www.aqai.xyz/acm-facct-craft-workshop-2023/) - Organizer
-- 2022 - [FAccT CRAFT Workshop on Identifying Queer Harms as a bias bounty with Queer in AI](https://www.queerinai.com/) - Organizer
-- 2021 - [SIGIR Queer in AI social with speaker panel on queer stereotypes in web search](https://www.queerinai.com/) - Organizer
-- 2017 - [Kharagpur Winter Of Code](https://kwoc.kossiitkgp.org/) - Founder
-- 2016 - [Kharagpur Open Source Society](https://kossiitkgp.org/) - Founder
