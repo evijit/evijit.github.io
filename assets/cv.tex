@@ -45,23 +45,23 @@
 \pagecolor{pagebg}
 
 \newcommand{\cvtag}[1]{%
-  {\normalsize\tikz[baseline]\node[anchor=base,draw=awesome!30,fill=awesome!7,text=awesome,rounded corners=6pt,inner xsep=0.9ex,inner ysep=0.5ex,text height=1.3ex,text depth=.25ex,font=\bfseries\fontsize{7.5pt}{9pt}\selectfont]{#1};}%
+  {\normalsize\tikz[baseline]\node[anchor=base,draw=awesome!30,fill=awesome!7,text=awesome,rounded corners=6pt,inner xsep=0.9ex,inner ysep=0.5ex,text height=1.3ex,text depth=.25ex,font=\bfseries\fontsize{8pt}{9.5pt}\selectfont]{#1};}%
 }
 
 \newcommand{\acadtag}[1]{%
-  {\normalsize\tikz[baseline]\node[anchor=base,draw=gg!40,fill=gg!8,text=gg,rounded corners=6pt,inner xsep=0.9ex,inner ysep=0.5ex,text height=1.3ex,text depth=.25ex,font=\bfseries\fontsize{7.5pt}{9pt}\selectfont]{#1};}%
+  {\normalsize\tikz[baseline]\node[anchor=base,draw=gg!40,fill=gg!8,text=gg,rounded corners=6pt,inner xsep=0.9ex,inner ysep=0.5ex,text height=1.3ex,text depth=.25ex,font=\bfseries\fontsize{8pt}{9.5pt}\selectfont]{#1};}%
 }
 
 \newcommand{\pubtagpill}[1]{%
-  {\normalsize\tikz[baseline]\node[anchor=base,draw=awesome!30,fill=awesome!7,text=awesome,rounded corners=6pt,inner xsep=0.6ex,inner ysep=0.45ex,text height=1.25ex,text depth=.25ex,align=center,font=\bfseries\fontsize{6.8pt}{8.2pt}\selectfont]{#1};}%
+  {\normalsize\tikz[baseline]\node[anchor=base,draw=awesome!30,fill=awesome!7,text=awesome,rounded corners=6pt,inner xsep=0.6ex,inner ysep=0.45ex,text height=1.25ex,text depth=.25ex,align=center,font=\bfseries\fontsize{7.3pt}{8.8pt}\selectfont]{#1};}%
 }
 
 \newcommand{\datepill}[1]{%
-  {\normalsize\tikz[baseline]\node[anchor=base,draw=gg!40,fill=gg!8,text=gg,rounded corners=6pt,inner xsep=0.6ex,inner ysep=0.45ex,text height=1.25ex,text depth=.25ex,align=center,font=\bfseries\fontsize{6.8pt}{8.2pt}\selectfont]{#1};}%
+  {\normalsize\tikz[baseline]\node[anchor=base,draw=gg!40,fill=gg!8,text=gg,rounded corners=6pt,inner xsep=0.6ex,inner ysep=0.45ex,text height=1.25ex,text depth=.25ex,align=center,font=\bfseries\fontsize{7.3pt}{8.8pt}\selectfont]{#1};}%
 }
 
 \newcommand{\rolepill}[1]{%
-  {\normalsize\tikz[baseline]\node[anchor=base,draw=awesome!30,fill=awesome!7,text=awesome,rounded corners=5pt,inner xsep=0.55ex,inner ysep=0.4ex,text height=1.15ex,text depth=.2ex,font=\bfseries\fontsize{6.2pt}{7.5pt}\selectfont]{#1};}%
+  {\normalsize\tikz[baseline]\node[anchor=base,draw=awesome!30,fill=awesome!7,text=awesome,rounded corners=5pt,inner xsep=0.55ex,inner ysep=0.4ex,text height=1.15ex,text depth=.2ex,font=\bfseries\fontsize{6.7pt}{8pt}\selectfont]{#1};}%
 }
 
 \geometry{left=1.75cm, top=1.5cm, right=1.75cm, bottom=1.2cm, footskip=.45cm}
@@ -82,6 +82,11 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+
+% Suppress mid-word hyphenations across the document — prefer wrapping whole words.
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\sloppy
 
 \titleformat{\section}{
   \bfseries\raggedright\normalsize\color{black}
@@ -171,11 +176,11 @@
   \item\vspace{0pt}
     \begin{tabularx}{\linewidth}[t]{@{}>{\RaggedRight\arraybackslash}p{\expdatewidth}@{\hspace{\expgap}}Y@{}}
       \makebox[\expdatewidth][l]{\raisebox{0.2ex}{\datepill{#5}}} &
-      {\bfseries\footnotesize\color{maintext}#1}\if\relax\detokenize{#3}\relax\else\hspace{0.35em}#3\fi\if\relax\detokenize{#4}\relax\else\hfill{\color{gg}\scriptsize\itshape #4}\fi \\
+      {\bfseries\small\color{maintext}#1}\if\relax\detokenize{#3}\relax\else\hspace{0.35em}#3\fi\if\relax\detokenize{#4}\relax\else\hfill{\color{gg}\fontsize{7.5pt}{9pt}\selectfont\itshape #4}\fi \\
       &
-      {\scriptsize\bfseries\itshape\color{awesome}#2.} \\
+      {\footnotesize\bfseries\itshape\color{awesome}#2.} \\
       \if\relax\detokenize{#6}\relax\else &
-      {\scriptsize\color{maintext}#6}\fi
+      {\footnotesize\color{maintext}#6}\fi
     \end{tabularx}%
     \vspace{0pt}%
 }
@@ -184,11 +189,11 @@
   \item\vspace{0pt}
     \begin{tabularx}{\linewidth}[t]{@{}>{\RaggedRight\arraybackslash}p{\expdatewidth}@{\hspace{\expgap}}Y@{}}
       \makebox[\expdatewidth][l]{\raisebox{0.2ex}{\datepill{#5}}} &
-      {\bfseries\footnotesize\color{maintext}#1}\if\relax\detokenize{#3}\relax\else\hspace{0.35em}#3\fi\if\relax\detokenize{#4}\relax\else\hfill{\color{gg}\scriptsize\itshape #4}\fi \\
+      {\bfseries\small\color{maintext}#1}\if\relax\detokenize{#3}\relax\else\hspace{0.35em}#3\fi\if\relax\detokenize{#4}\relax\else\hfill{\color{gg}\fontsize{7.5pt}{9pt}\selectfont\itshape #4}\fi \\
       &
-      {\scriptsize\bfseries\itshape\color{awesome}#2.} \\
+      {\footnotesize\bfseries\itshape\color{awesome}#2.} \\
       \if\relax\detokenize{#6}\relax\else &
-      {\scriptsize\color{maintext}#6}\fi
+      {\footnotesize\color{maintext}#6}\fi
     \end{tabularx}%
     \vspace{0pt}%
 }
@@ -197,12 +202,12 @@
   \item\vspace{0pt}
     \begin{tabularx}{\linewidth}[t]{@{}p{0.42cm}@{\hspace{0.14cm}}Y@{}}
       \raisebox{0.75ex}{\color{divrule}\rule{0.34cm}{0.6pt}} &
-      {\bfseries\footnotesize\color{maintext}#1}%
+      {\bfseries\small\color{maintext}#1}%
       \if\relax\detokenize{#3}\relax\else\hspace{0.3em}#3\fi
-      \hspace{0.45em}{\fontsize{6.8pt}{8pt}\selectfont\color{gg}#5} \\
+      \hspace{0.45em}{\fontsize{7.3pt}{8.6pt}\selectfont\color{gg}#5} \\
       &
-      {\scriptsize\bfseries\itshape\color{awesome}#2\if\relax\detokenize{#4}\relax\else{\color{gg}, #4}\fi. }
-      {\scriptsize\color{maintext}#6}
+      {\footnotesize\bfseries\itshape\color{awesome}#2\if\relax\detokenize{#4}\relax\else{\mdseries\color{gg}, #4}\fi. }
+      {\footnotesize\mdseries\color{maintext}#6}
     \end{tabularx}%
     \vspace{0pt}%
 }
@@ -221,8 +226,8 @@
 
 \newcommand{\paper}[4]{
   \vspace{-3pt}\item
-    \begin{tabularx}{\linewidth}[t]{@{}>{\RaggedRight\arraybackslash}p{\pubtagwidth}@{\hspace{\railgap}}Y@{\hspace{0.3em}}>{\raggedleft\arraybackslash}p{1.8cm}@{}}
-      \makebox[\pubtagwidth][l]{\pubtagpill{#2}} & {\textbf{\footnotesize#1}\par\vspace{-1pt}\textit{\color{awesome}\scriptsize#3}} & {\vphantom{\textbf{\footnotesize Xy}}\color{gg}\scriptsize\itshape #4} \\
+    \begin{tabularx}{\linewidth}[t]{@{}>{\RaggedRight\arraybackslash}p{\pubtagwidth}@{\hspace{\railgap}}Y@{\hspace{0.3em}}>{\raggedleft\arraybackslash}p{2.1cm}@{}}
+      \makebox[\pubtagwidth][l]{\pubtagpill{#2}} & {\textbf{\small#1}\par\vspace{-1pt}\textit{\color{awesome}\footnotesize#3}} & {\vphantom{\textbf{\small Xy}}\color{gg}\fontsize{7.5pt}{9pt}\selectfont\itshape #4} \\
     \end{tabularx}\vspace{-5pt}
 }
 
@@ -258,10 +263,10 @@
   \fancyfoot[R]{\footerstyle{#3}}
 }
 
-\newcommand*{\honortitlestyle}[1]{{\footnotesize\bodyfont #1}}
-\newcommand*{\honorpositionstyle}[1]{{\footnotesize\bodyfont\bfseries\color{awesome} #1}}
-\newcommand*{\honordatestyle}[1]{{\footnotesize\bodyfont\color{gg} #1}}
-\newcommand*{\honorlocationstyle}[1]{{\scriptsize\bodyfontlight\slshape\color{gg} #1}}
+\newcommand*{\honortitlestyle}[1]{{\small\bodyfont #1}}
+\newcommand*{\honorpositionstyle}[1]{{\small\bodyfont\bfseries\color{awesome} #1}}
+\newcommand*{\honordatestyle}[1]{{\small\bodyfont\color{gg} #1}}
+\newcommand*{\honorlocationstyle}[1]{{\fontsize{7.5pt}{9pt}\selectfont\bodyfontlight\slshape\color{gg} #1}}
 
 \newenvironment{cvhonors}{%
   \resetyear
@@ -278,11 +283,11 @@
 }
 
 \newcommand*{\cvhonor}[4]{%
-  \makebox[\pubtagwidth][l]{\yearpill{#4}} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+  \makebox[\pubtagwidth][l]{\yearpill{#4}} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\[0.6ex]
 }
 
 \newcommand*{\cvhonorb}[4]{%
-  \makebox[\pubtagwidth][l]{\yearpill{#4}} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+  \makebox[\pubtagwidth][l]{\yearpill{#4}} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\[0.6ex]
 }
 
 \newcommand{\yearpill}[1]{\datepill{#1}}
@@ -296,10 +301,9 @@
     \textbf{
     \color{black} \fontsize{27pt}{1em} \textsc{Avijit Ghosh}
     } \\ \vspace{0.25em}
-    {\small \color{awesome} \textbf{Lead Technical AI Policy Researcher at Hugging Face}} \\ \vspace{0.1em}
-    {\footnotesize \color{gg} Research Affiliate at the University of Connecticut} \\ \vspace{0.2em}
+    {\small \color{awesome} \textbf{Hugging Face \enskip$\cdot$\enskip University of Connecticut}} \\ \vspace{0.2em}
    {\footnotesize {\color{awesome}
-   \faPhone \hspace{0.25em}(+1) 857-337-0180 $|$ \href{mailto:avijit@huggingface.co}{\faEnvelope \hspace{0.25em} avijit@huggingface.co (Work)}  $|$ \href{mailto:avijitg22@gmail.com}{avijitg22@gmail.com (Personal)} $|$
+   \faPhone \hspace{0.25em}(+1) 857-337-0180 $|$ \href{mailto:avijitg22@gmail.com}{\faEnvelope \hspace{0.25em} avijitg22@gmail.com} $|$
    \href{https://evijit.io}{\faGlobe \hspace{0.25em} evijit.io} $|$
     \href{https://linkedin.com/in/evijit}{\faLinkedin \hspace{0.25em} evijit} $|$
     \href{https://github.com/evijit}{\faGithub \hspace{0.25em} evijit} $|$
@@ -309,7 +313,7 @@
 \end{center}
 
 \begin{center}
-\vspace{0.3em}{\bfseries\color{gg}\fontsize{7.5pt}{1em}{\foreach \n in {Responsible AI, Machine Learning, AI Policy, AI for Science, AI Governance}{\cvtag{\n}}}}
+\vspace{0.3em}{\bfseries\color{gg}\fontsize{7.5pt}{1em}{\foreach \n [count=\i] in {Responsible AI, Machine Learning, AI Policy, AI for Science, AI Governance}{\ifnum\i>1\hspace{0.5em}\fi\cvtag{\n}}}}
 \end{center}
 
 
@@ -493,11 +497,11 @@
        {\href{https://dl.acm.org/doi/10.1145/3404835.3462850}{When Fair Ranking Meets Uncertain Inference}}
        {SIGIR '21}
        {{\bf Avijit Ghosh}, Ritam Dutt, Christo Wilson}
-        {Montréal, CA}
+        {Montréal, CA (Virtual)}
 
     \paper
       {\href{https://dl.acm.org/doi/abs/10.1145/3442188.3445928}{Building and Auditing Fair Algorithms: A Case Study in Candidate Screening}}{FAccT '21}
-      {Christo Wilson, {\bf Avijit Ghosh}, Shan Jiang, Alan Mislove, Lewis Baker, Janelle Szary, Kelly Trindel, Frida Polli}{Toronto, CA}
+      {Christo Wilson, {\bf Avijit Ghosh}, Shan Jiang, Alan Mislove, Lewis Baker, Janelle Szary, Kelly Trindel, Frida Polli}{Toronto, CA (Virtual)}
 
     \paper
       {\href{https://link.springer.com/chapter/10.1007/978-3-030-15719-7_23}{Public Sphere 2.0: Targeted Commenting in Online News Media}}{ECIR '19}
@@ -531,6 +535,13 @@
     \vspace{0.4em}
     \pubtype{Peer-Reviewed Workshop}
     \resumeSubHeadingListStart
+
+    \paper
+        {\href{https://openreview.net/forum?id=SqxApLlGP9}{Position: Evaluations of AI Moral Reasoning Still Miss Half of the Picture}
+        }
+        {EvalEval '26}
+        {Aidan Kierans, Ritam Dutt, Kaley Rittichier, Shiri Dori-Hacohen, {\bf Avijit Ghosh}}
+        {San Diego, US}
 
     \paper
         {\href{https://arxiv.org/pdf/2502.12447}{Protecting Human Cognition in the Age of AI}
@@ -775,81 +786,81 @@
 
 \section{Media Mentions}
 
-{\footnotesize
+{\small
 \resetyear
 \begin{longtable}{@{\hspace{\listrailinset}} p{\pubtagwidth}@{\hspace{\railgap}}p{\dimexpr\textwidth-\listrailinset-\pubtagwidth-\railgap-4.5cm-4pt\relax}@{\hspace{4pt}}R{4.5cm}@{}}
 
-\makebox[\pubtagwidth][l]{\yearpill{2026}} & \href{https://www.linkedin.com/feed/update/urn:li:activity:7440356914250747904/}{\textcolor{awesome}{\textbf{Sarvam AI models excel in Indic, lag frontier systems}}} & \textcolor{gg}{\scriptsize \it Financial Express India} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2026}} & \href{https://www.linkedin.com/feed/update/urn:li:activity:7440356914250747904/}{\textcolor{awesome}{\textbf{Sarvam AI models excel in Indic, lag frontier systems}}} & \textcolor{gg}{\footnotesize \it Financial Express India} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2026}} & \href{https://www.wired.com/story/deutsche-telekom-elevenlabs-ai-phone-calls-mwc-2026/}{\textcolor{awesome}{\textbf{Deutsche Telekom Wants AI Agents to Talk on Your Phone for You}}} & \textcolor{gg}{\scriptsize \it Wired} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2026}} & \href{https://www.wired.com/story/deutsche-telekom-elevenlabs-ai-phone-calls-mwc-2026/}{\textcolor{awesome}{\textbf{Deutsche Telekom Wants AI Agents to Talk on Your Phone for You}}} & \textcolor{gg}{\footnotesize \it Wired} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.ft.com/content/931c8218-a9d7-4cbd-8b08-27516637ff41}{\textcolor{awesome}{\textbf{China leapfrogs US in global market for 'open' AI models}}} & \textcolor{gg}{\scriptsize \it Financial Times} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.ft.com/content/931c8218-a9d7-4cbd-8b08-27516637ff41}{\textcolor{awesome}{\textbf{China leapfrogs US in global market for 'open' AI models}}} & \textcolor{gg}{\footnotesize \it Financial Times} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.theaiforum.org/podcast/avijit-ghosh-human-agency}{\textcolor{awesome}{\textbf{Responsible AI podcast with Alex Alben}}} & \textcolor{gg}{\scriptsize \it The AI Forum} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.theaiforum.org/podcast/avijit-ghosh-human-agency}{\textcolor{awesome}{\textbf{Responsible AI podcast with Alex Alben}}} & \textcolor{gg}{\footnotesize \it The AI Forum} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://podcasts.apple.com/us/podcast/were-not-ready-for-agentic-ai/id1751550186?i=1000709391707}{\textcolor{awesome}{\textbf{Ethical Machines podcast - "We're Not Ready for Agentic AI"}}} & \textcolor{gg}{\scriptsize \it Ethical Machines} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://podcasts.apple.com/us/podcast/were-not-ready-for-agentic-ai/id1751550186?i=1000709391707}{\textcolor{awesome}{\textbf{Ethical Machines podcast - "We're Not Ready for Agentic AI"}}} & \textcolor{gg}{\footnotesize \it Ethical Machines} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.marketplace.org/story/2025/05/19/can-ai-take-your-coding-job}{\textcolor{awesome}{\textbf{Can AI take your coding job?}}} & \textcolor{gg}{\scriptsize \it NPR Marketplace} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.marketplace.org/story/2025/05/19/can-ai-take-your-coding-job}{\textcolor{awesome}{\textbf{Can AI take your coding job?}}} & \textcolor{gg}{\footnotesize \it NPR Marketplace} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.politico.com/newsletters/politico-technology-california-decoded-preview/2025/04/18/california-finally-beats-big-tech-in-court-00298056}{\textcolor{awesome}{\textbf{California finally beats Big Tech in court}}} & \textcolor{gg}{\scriptsize \it Politico} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.politico.com/newsletters/politico-technology-california-decoded-preview/2025/04/18/california-finally-beats-big-tech-in-court-00298056}{\textcolor{awesome}{\textbf{California finally beats Big Tech in court}}} & \textcolor{gg}{\footnotesize \it Politico} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://t3n.de/news/hugging-face-experten-warnen-ki-agenten-kontrolle-1679713/?utm_source=rss&utm_medium=feed&utm_campaign=news}{\textcolor{awesome}{\textbf{Hugging-face experts warn: We shouldn't give AI agents full control}}} & \textcolor{gg}{\scriptsize \it T3N (German)} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://t3n.de/news/hugging-face-experten-warnen-ki-agenten-kontrolle-1679713/?utm_source=rss&utm_medium=feed&utm_campaign=news}{\textcolor{awesome}{\textbf{Hugging-face experts warn: We shouldn't give AI agents full control}}} & \textcolor{gg}{\footnotesize \it T3N (German)} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.technologyreview.com/2025/03/24/1113647/why-handing-over-total-control-to-ai-agents-would-be-a-huge-mistake/}{\textcolor{awesome}{\textbf{Why handing over total control to AI agents would be a huge mistake}}} & \textcolor{gg}{\scriptsize \it MIT Technology Review Op-Ed} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.technologyreview.com/2025/03/24/1113647/why-handing-over-total-control-to-ai-agents-would-be-a-huge-mistake/}{\textcolor{awesome}{\textbf{Why handing over total control to AI agents would be a huge mistake}}} & \textcolor{gg}{\footnotesize \it MIT Technology Review Op-Ed} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.businessinsider.com/openai-chatgpt-brainstorming-addiction-dependence-negative-consequences-mit-research-2025-3}{\textcolor{awesome}{\textbf{The hidden cost of brainstorming with ChatGPT}}} & \textcolor{gg}{\scriptsize \it Business Insider} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.businessinsider.com/openai-chatgpt-brainstorming-addiction-dependence-negative-consequences-mit-research-2025-3}{\textcolor{awesome}{\textbf{The hidden cost of brainstorming with ChatGPT}}} & \textcolor{gg}{\footnotesize \it Business Insider} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.snexplores.org/article/deepseek-ai-reasoning-agents}{\textcolor{awesome}{\textbf{DeepSeek pioneers a new way for AI to 'reason'}}} & \textcolor{gg}{\scriptsize \it Science News Explores} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.snexplores.org/article/deepseek-ai-reasoning-agents}{\textcolor{awesome}{\textbf{DeepSeek pioneers a new way for AI to 'reason'}}} & \textcolor{gg}{\footnotesize \it Science News Explores} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.businessinsider.com/ai-agents-jobs-board-ad-replacing-human-skills-2025-2}{\textcolor{awesome}{\textbf{Two founders built a jobs board for Al agents. Humans need not apply — but their skills are still required.}}} & \textcolor{gg}{\scriptsize \it Business Insider} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.businessinsider.com/ai-agents-jobs-board-ad-replacing-human-skills-2025-2}{\textcolor{awesome}{\textbf{Two founders built a jobs board for Al agents. Humans need not apply — but their skills are still required.}}} & \textcolor{gg}{\footnotesize \it Business Insider} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.techcircle.in/2025/02/19/why-truly-open-source-ai-remains-out-of-reach}{\textcolor{awesome}{\textbf{Why truly open-source AI remains out of reach}}} & \textcolor{gg}{\scriptsize \it HT TechCircle} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.techcircle.in/2025/02/19/why-truly-open-source-ai-remains-out-of-reach}{\textcolor{awesome}{\textbf{Why truly open-source AI remains out of reach}}} & \textcolor{gg}{\footnotesize \it HT TechCircle} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.businessinsider.com/openai-stargate-project-moat-deepseek-2025-1}{\textcolor{awesome}{\textbf{What does OpenAI get from Stargate? A \$500 billion chance to build a whole new moat.}}} & \textcolor{gg}{\scriptsize \it Business Insider} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://www.businessinsider.com/openai-stargate-project-moat-deepseek-2025-1}{\textcolor{awesome}{\textbf{What does OpenAI get from Stargate? A \$500 billion chance to build a whole new moat.}}} & \textcolor{gg}{\footnotesize \it Business Insider} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://fortune.com/2025/01/22/openai-stargate-ai-sam-altman-donald-trump/}{\textcolor{awesome}{\textbf{OpenAI's Stargate may be tech's biggest gamble ever, but here's what's really at stake}}} & \textcolor{gg}{\scriptsize \it Fortune} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://fortune.com/2025/01/22/openai-stargate-ai-sam-altman-donald-trump/}{\textcolor{awesome}{\textbf{OpenAI's Stargate may be tech's biggest gamble ever, but here's what's really at stake}}} & \textcolor{gg}{\footnotesize \it Fortune} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://evijit.io/assets/img/Epaper_194_2025-01-03_9.jpeg}{\textcolor{awesome}{\textbf{AI will transform everything from daily life to businesses}}} & \textcolor{gg}{\scriptsize \it Dainik Bhaskar Op-ed (Hindi)} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2025}} & \href{https://evijit.io/assets/img/Epaper_194_2025-01-03_9.jpeg}{\textcolor{awesome}{\textbf{AI will transform everything from daily life to businesses}}} & \textcolor{gg}{\footnotesize \it Dainik Bhaskar Op-ed (Hindi)} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.wired.com/story/plaud-note-pin-ai-wearable/}{\textcolor{awesome}{\textbf{This Wearable AI Notetaker Will Transcribe Your Meetings — and Someday, Your Entire Life}}} & \textcolor{gg}{\scriptsize \it Wired} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.wired.com/story/plaud-note-pin-ai-wearable/}{\textcolor{awesome}{\textbf{This Wearable AI Notetaker Will Transcribe Your Meetings — and Someday, Your Entire Life}}} & \textcolor{gg}{\footnotesize \it Wired} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.lesechos.fr/tech-medias/intelligence-artificielle/en-californie-la-loi-de-protection-contre-lia-amendee-pour-apaiser-la-silicon-valley-2114566}{\textcolor{awesome}{\textbf{In California, the controversial AI protection law is about to be passed}}} & \textcolor{gg}{\scriptsize \it Les Echos (French)} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.lesechos.fr/tech-medias/intelligence-artificielle/en-californie-la-loi-de-protection-contre-lia-amendee-pour-apaiser-la-silicon-valley-2114566}{\textcolor{awesome}{\textbf{In California, the controversial AI protection law is about to be passed}}} & \textcolor{gg}{\footnotesize \it Les Echos (French)} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.technologyreview.com/2024/08/22/1097224/we-finally-have-a-definition-for-open-source-ai/}{\textcolor{awesome}{\textbf{We finally have a definition for open-source AI}}} & \textcolor{gg}{\scriptsize \it MIT Technology Review} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.technologyreview.com/2024/08/22/1097224/we-finally-have-a-definition-for-open-source-ai/}{\textcolor{awesome}{\textbf{We finally have a definition for open-source AI}}} & \textcolor{gg}{\footnotesize \it MIT Technology Review} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://fortune.com/2024/08/12/defcon-gen-ai-bug-bounty-cybersecurity-vulnerabilities/?987123}{\textcolor{awesome}{\textbf{World's biggest hacker fest spotlights AI's soaring importance in the high-stakes cybersecurity war—and its vulnerability}}} & \textcolor{gg}{\scriptsize \it Fortune} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://fortune.com/2024/08/12/defcon-gen-ai-bug-bounty-cybersecurity-vulnerabilities/?987123}{\textcolor{awesome}{\textbf{World's biggest hacker fest spotlights AI's soaring importance in the high-stakes cybersecurity war—and its vulnerability}}} & \textcolor{gg}{\footnotesize \it Fortune} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.bhaskar.com/opinion/news/avijit-ghoshs-column-ai-full-of-bias-is-both-a-challenge-and-an-opportunity-for-india-133333195.html}{\textcolor{awesome}{\textbf{AI full of prejudices both a challenge and an opportunity for India}}} & \textcolor{gg}{\scriptsize \it Dainik Bhaskar Op-ed (Hindi)} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.bhaskar.com/opinion/news/avijit-ghoshs-column-ai-full-of-bias-is-both-a-challenge-and-an-opportunity-for-india-133333195.html}{\textcolor{awesome}{\textbf{AI full of prejudices both a challenge and an opportunity for India}}} & \textcolor{gg}{\footnotesize \it Dainik Bhaskar Op-ed (Hindi)} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.fastcompany.com/91131154/image-search-results-bias-research}{\textcolor{awesome}{\textbf{Common image search results are overwhelmingly white, a new study finds}}} & \textcolor{gg}{\scriptsize \it Fast Company} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.fastcompany.com/91131154/image-search-results-bias-research}{\textcolor{awesome}{\textbf{Common image search results are overwhelmingly white, a new study finds}}} & \textcolor{gg}{\footnotesize \it Fast Company} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.theguardian.com/technology/2024/mar/16/ai-racism-chatgpt-gemini-bias}{\textcolor{awesome}{\textbf{As AI tools get smarter, they're growing more covertly racist, experts find}}} & \textcolor{gg}{\scriptsize \it The Guardian} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.theguardian.com/technology/2024/mar/16/ai-racism-chatgpt-gemini-bias}{\textcolor{awesome}{\textbf{As AI tools get smarter, they're growing more covertly racist, experts find}}} & \textcolor{gg}{\footnotesize \it The Guardian} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/}{\textcolor{awesome}{\textbf{LLMs become more covertly racist with human intervention}}} & \textcolor{gg}{\scriptsize \it MIT Technology Review} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2024}} & \href{https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/}{\textcolor{awesome}{\textbf{LLMs become more covertly racist with human intervention}}} & \textcolor{gg}{\footnotesize \it MIT Technology Review} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://www.indiatimes.com/trending/spectrum/how-can-ai-affect-queer-people-in-india-617408.html}{\textcolor{awesome}{\textbf{How Can AI Affect LGBTQIA+ People In India? Three Indian-Origin Queer Researchers Explain}}} & \textcolor{gg}{\scriptsize \it IndiaTimes} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://www.indiatimes.com/trending/spectrum/how-can-ai-affect-queer-people-in-india-617408.html}{\textcolor{awesome}{\textbf{How Can AI Affect LGBTQIA+ People In India? Three Indian-Origin Queer Researchers Explain}}} & \textcolor{gg}{\footnotesize \it IndiaTimes} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://news.northeastern.edu/2023/09/06/ethical-ai-development/}{\textcolor{awesome}{\textbf{He hacked AI chatbots to find flaws and vulnerabilities. Now Northeastern's Avijit Ghosh is writing a report on combating these problems}}} & \textcolor{gg}{\scriptsize \it Northeastern Global News} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://news.northeastern.edu/2023/09/06/ethical-ai-development/}{\textcolor{awesome}{\textbf{He hacked AI chatbots to find flaws and vulnerabilities. Now Northeastern's Avijit Ghosh is writing a report on combating these problems}}} & \textcolor{gg}{\footnotesize \it Northeastern Global News} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://www.kpcc.org/podcast/airtalk/hurricane-hilary-is-barreling-towards-socal-what-can-we-expect}{\textcolor{awesome}{\textbf{Radio Interview - AirTalk}}} & \textcolor{gg}{\scriptsize \it LAIST/NPR} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://www.kpcc.org/podcast/airtalk/hurricane-hilary-is-barreling-towards-socal-what-can-we-expect}{\textcolor{awesome}{\textbf{Radio Interview - AirTalk}}} & \textcolor{gg}{\footnotesize \it LAIST/NPR} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://www.cbc.ca/radio/asithappens/the-aih-transcript-for-august-16-2023-1.6939160}{\textcolor{awesome}{\textbf{Radio Interview - As It Happens}}} & \textcolor{gg}{\scriptsize \it CBC Canada} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://www.cbc.ca/radio/asithappens/the-aih-transcript-for-august-16-2023-1.6939160}{\textcolor{awesome}{\textbf{Radio Interview - As It Happens}}} & \textcolor{gg}{\footnotesize \it CBC Canada} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://www.nytimes.com/2023/08/16/technology/ai-defcon-hackers.html}{\textcolor{awesome}{\textbf{When Hackers Descended to Test A.I., They Found Flaws Aplenty}}} & \textcolor{gg}{\scriptsize \it The New York Times} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://www.nytimes.com/2023/08/16/technology/ai-defcon-hackers.html}{\textcolor{awesome}{\textbf{When Hackers Descended to Test A.I., They Found Flaws Aplenty}}} & \textcolor{gg}{\footnotesize \it The New York Times} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://passionfru.it/ai-sxsw-2023-3434/}{\textcolor{awesome}{\textbf{From accessibility efforts to ethical concerns, here are our AI takeaways from SXSW content creators should consider}}} & \textcolor{gg}{\scriptsize \it Passionfruit} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2023}} & \href{https://passionfru.it/ai-sxsw-2023-3434/}{\textcolor{awesome}{\textbf{From accessibility efforts to ethical concerns, here are our AI takeaways from SXSW content creators should consider}}} & \textcolor{gg}{\footnotesize \it Passionfruit} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2021}} & \href{https://apnews.com/article/technology-business-race-and-ethnicity-racial-injustice-artificial-intelligence-2fe8d3ef7008d299d9d810f0c0f7905d}{\textcolor{awesome}{\textbf{NYC aims to be first to rein in AI hiring tools}}} & \textcolor{gg}{\scriptsize \it Associated Press} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2021}} & \href{https://apnews.com/article/technology-business-race-and-ethnicity-racial-injustice-artificial-intelligence-2fe8d3ef7008d299d9d810f0c0f7905d}{\textcolor{awesome}{\textbf{NYC aims to be first to rein in AI hiring tools}}} & \textcolor{gg}{\footnotesize \it Associated Press} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2021}} & \href{https://www.technologyreview.com/2021/02/11/1017955/auditors-testing-ai-hiring-algorithms-bias-big-questions-remain/}{\textcolor{awesome}{\textbf{Auditors are testing hiring algorithms for bias, but there's no easy fix}}} & \textcolor{gg}{\scriptsize \it MIT Technology Review} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2021}} & \href{https://www.technologyreview.com/2021/02/11/1017955/auditors-testing-ai-hiring-algorithms-bias-big-questions-remain/}{\textcolor{awesome}{\textbf{Auditors are testing hiring algorithms for bias, but there's no easy fix}}} & \textcolor{gg}{\footnotesize \it MIT Technology Review} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2021}} & \href{https://www.wired.com/story/new-york-city-proposes-regulating-algorithms-hiring/}{\textcolor{awesome}{\textbf{New York City Proposes Regulating Algorithms Used in Hiring}}} & \textcolor{gg}{\scriptsize \it Wired} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2021}} & \href{https://www.wired.com/story/new-york-city-proposes-regulating-algorithms-hiring/}{\textcolor{awesome}{\textbf{New York City Proposes Regulating Algorithms Used in Hiring}}} & \textcolor{gg}{\footnotesize \it Wired} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2021}} & \href{https://www.federalreserve.gov/newsevents/speech/brainard20210112a.htm}{\textcolor{awesome}{\textbf{Supporting Responsible Use of AI and Equitable Outcomes in Financial Services}}} & \textcolor{gg}{\scriptsize \it The Federal Reserve} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2021}} & \href{https://www.federalreserve.gov/newsevents/speech/brainard20210112a.htm}{\textcolor{awesome}{\textbf{Supporting Responsible Use of AI and Equitable Outcomes in Financial Services}}} & \textcolor{gg}{\footnotesize \it The Federal Reserve} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2019}} & \href{https://www.propublica.org/article/facebook-ads-can-still-discriminate-against-women-and-older-workers-despite-a-civil-rights-settlement}{\textcolor{awesome}{\textbf{Facebook Ads Can Still Discriminate Against Women and Older Workers, Despite a Civil Rights Settlement}}} & \textcolor{gg}{\scriptsize \it Propublica} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2019}} & \href{https://www.propublica.org/article/facebook-ads-can-still-discriminate-against-women-and-older-workers-despite-a-civil-rights-settlement}{\textcolor{awesome}{\textbf{Facebook Ads Can Still Discriminate Against Women and Older Workers, Despite a Civil Rights Settlement}}} & \textcolor{gg}{\footnotesize \it Propublica} \\[0.5ex]
 
-\makebox[\pubtagwidth][l]{\yearpill{2019}} & \href{https://www.motherjones.com/politics/2019/12/facebook-agreed-not-to-let-its-ads-discriminate-but-they-still-can/}{\textcolor{awesome}{\textbf{Facebook Agreed Not to Let Its Ads Discriminate. But They Still Can.}}} & \textcolor{gg}{\scriptsize \it Mother Jones} \\[0.5ex]
+\makebox[\pubtagwidth][l]{\yearpill{2019}} & \href{https://www.motherjones.com/politics/2019/12/facebook-agreed-not-to-let-its-ads-discriminate-but-they-still-can/}{\textcolor{awesome}{\textbf{Facebook Agreed Not to Let Its Ads Discriminate. But They Still Can.}}} & \textcolor{gg}{\footnotesize \it Mother Jones} \\[0.5ex]
 
 \end{longtable}
 }
