@@ -17,6 +17,7 @@ nav_order: 9
 
 ### 2026
 
+- May 2026, Speaker at [Innovations in Biological Intelligence & Machine Agency](https://thedivinityschool.endemic.org/events/anthology-irl-01), The Divinity School's New Science Series, Cambridge, MA
 - Mar 2026, ["Evaluation Reporting in the Age of Agentic AI"](https://www.youtube.com/live/UxMZfbWI3LY) at the Agentic Evaluations Workshop on the Hugging Face YouTube channel
 - Mar 2026, "What if AI Systems Weren't Chatbots?" at the PLAMADISO talk series, Weizenbaum Institute, Berlin
 - Feb 2026, Opening panelist at IASEAI 2026 in Paris; fireside chat at the IASEAI Open-Weight AI Risk Management workshop
