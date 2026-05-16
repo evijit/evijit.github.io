@@ -220,6 +220,7 @@ blockquote {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.008em;
+    white-space: nowrap;
 
     &:hover {
       color: var(--global-hover-color);
