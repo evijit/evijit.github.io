@@ -1,3 +1,6 @@
+            {%- if site.email -%}
+            <a href="#" class="buttonmodal" title="email"><i class="fa-solid fa-envelope"></i></a>
+            {% endif %}
             <!-- {%- if site.email -%}
             <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fa-solid fa-envelope"></i></a>
             {% endif %} -->
@@ -125,7 +128,3 @@
             {%- if site.scholar_userid -%}
             <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
             {% endif %}  
-            {%- if site.email -%}
-            <a href="#" class="buttonmodal" title="email"><i class="fa-solid fa-envelope"></i></a>
-            {% endif %} 
-           
