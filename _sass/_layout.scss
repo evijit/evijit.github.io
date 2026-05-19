@@ -299,6 +299,14 @@ body.sticky-bottom-footer {
 
 @media (max-width: 576px) {
   .news {
+    .table-responsive {
+      // Overrides inline max-height: 45vw which is too short on mobile;
+      // JS replaces this with the exact height for 3 items + half of the 4th.
+      max-height: 65vw !important;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
     table,
     tbody {
       display: block;
