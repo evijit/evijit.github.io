@@ -1,13 +1,16 @@
 function adjustMobileNewsHeight() {
     if ($(window).width() > 576) return;
     var $container = $('#news-scroll');
-    if (!$container.length) return;
+    if (!$container.hasClass('news-scrollable')) return;
     var $rows = $container.find('tr');
     if ($rows.length < 4) return;
 
+    // Temporarily lift max-height so all rows report their natural height
+    $container.css('max-height', 'none');
+
     var height = 0;
     $rows.slice(0, 3).each(function() {
-        height += $(this).outerHeight(true); // includes margins
+        height += $(this).outerHeight(true); // height + padding + border + margin
     });
     // Half the 4th row peeks out to signal more content below
     height += $rows.eq(3).outerHeight() * 0.5;
