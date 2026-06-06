@@ -30,6 +30,7 @@
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{ragged2e}
+\usepackage{xstring}
 
 \setlength{\LTpre}{0pt}
 \setlength{\LTpost}{0pt}
@@ -102,7 +103,7 @@
 }
 
 \newcommand{\pubtype}[1]{%
-\vspace{0.4em}\par\noindent\acadtag{#1}\vspace{0.25em}\par%
+\vspace{0.4em}\par\noindent\cvtag{#1}\vspace{0.25em}\par%
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -224,11 +225,35 @@
 \newlength{\listrailinset}
 \setlength{\listrailinset}{0pt}
 
-\newcommand{\paper}[4]{
+% #1=title, #2=venue (may embed a 'YY year, e.g. "ICML '26"), #3=authors, #4=location.
+% The year is parsed out of #2 and shown as a grey pill on the left (harmonizing
+% with the rest of the CV); the bare venue abbr sits top-right with the location
+% as smaller grey text beneath it.
+\newcommand{\paper}[4]{%
+  \IfSubStr{#2}{'}{%
+    \StrBefore{#2}{'}[\pvabbr]%
+    \StrBehind{#2}{'}[\pvyy]%
+    \edef\pvyear{20\pvyy}%
+  }{%
+    \def\pvabbr{#2}%
+    \def\pvyear{}%
+  }%
+  % Split workshop@conf venues: name + "@" stay grey, conf name turns blue.
+  \expandarg
+  \IfSubStr{\pvabbr}{@}{%
+    \StrBefore{\pvabbr}{@}[\pvws]%
+    \StrBehind{\pvabbr}{@}[\pvconf]%
+    \def\pvabbrfmt{{\color{gg}\pvws @}{\color{awesome}\pvconf}}%
+  }{%
+    \def\pvabbrfmt{{\color{awesome}\pvabbr}}%
+  }%
+  \noexpandarg
   \vspace{-3pt}\item
-    \begin{tabularx}{\linewidth}[t]{@{}>{\RaggedRight\arraybackslash}p{\pubtagwidth}@{\hspace{\railgap}}Y@{\hspace{0.3em}}>{\raggedleft\arraybackslash}p{2.1cm}@{}}
-      \makebox[\pubtagwidth][l]{\pubtagpill{#2}} & {\textbf{\small#1}\par\vspace{-1pt}\textit{\color{awesome}\footnotesize#3}} & {\vphantom{\textbf{\small Xy}}\color{gg}\fontsize{7.5pt}{9pt}\selectfont\itshape #4} \\
-    \end{tabularx}\vspace{-5pt}
+    \begin{tabularx}{\linewidth}[t]{@{}>{\RaggedRight\arraybackslash}p{\pubtagwidth}@{\hspace{\railgap}}Y@{\hspace{0.3em}}>{\raggedleft\arraybackslash\hspace{0pt}}p{2.5cm}@{}}
+      \makebox[\pubtagwidth][l]{\ifx\pvyear\empty\else\raisebox{0.2ex}{\datepill{\pvyear}}\fi}
+      & {\textbf{\small#1}\par\vspace{-1pt}\textit{\color{awesome}\footnotesize#3}}
+      & {{\bfseries\small\pvabbrfmt}\if\relax\detokenize{#4}\relax\else\par\vspace{-1pt}{\color{gg}\fontsize{7.5pt}{9pt}\selectfont\itshape #4}\fi} \\
+    \end{tabularx}\vspace{-5pt}%
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -313,7 +338,7 @@
 \end{center}
 
 \begin{center}
-\vspace{0.3em}{\bfseries\color{gg}\fontsize{7.5pt}{1em}{\foreach \n [count=\i] in {Responsible AI, Machine Learning, AI Policy, AI for Science, AI Governance}{\ifnum\i>1\hspace{0.5em}\fi\cvtag{\n}}}}
+\vspace{0.3em}{\bfseries\color{gg}\fontsize{7.5pt}{1em}{\foreach \n [count=\i] in {Machine Learning, Responsible AI, AI Evaluation, AI for Science, AI Policy}{\ifnum\i>1\hspace{0.5em}\fi\cvtag{\n}}}}
 \end{center}
 
 
@@ -333,7 +358,7 @@
   \expentry{Hugging Face}{Lead Technical AI Policy Researcher}{\rolepill{Industry}}{New York, NY}{2024 -- Now}{\textit{Promoted: Applied $\to$ Technical $\to$ Lead.} Lead HF's external technical-policy engagement, briefing US, UK, EU, and Singapore legislators and regulators on open-source AI governance, evaluation standards, and third-party flaw disclosure.}
 
     \subExpListStart
-      \subexpentry{\href{https://evalevalai.com/}{\color{maintext}EvalEval Coalition}}{Founder \& Lead}{}{}{2024 -- Now}{Multi-stakeholder coalition of 500+ members producing research to bring rigor, accountability, and standards to the field of AI Evaluations; convened the NeurIPS '24, UC San Diego '25, and ACL '26 workshops on AI evaluation methodology.}
+      \subexpentry{\href{https://evalevalai.com/}{\color{maintext}EvalEval Coalition}}{Founder \& Lead}{}{}{2024 -- Now}{Multi-stakeholder coalition of 500+ members producing research to bring rigor, accountability, and standards to the field of AI Evaluations; convened the NeurIPS '24, UC San Diego '25, and ACL '26 workshops on AI evaluation methodology. Created \href{https://evalcards.evalevalai.com/}{\color{awesome}Evaluation Cards} and \href{https://evalevalai.com/projects/every-eval-ever/}{\color{awesome}Every Eval Ever}.}
 
       \subexpentry{\href{https://huggingscience.co/}{\color{maintext}Hugging Science}}{Co-Founder \& Lead (Policy)}{}{}{2025 -- Now}{AI-for-Science initiative; Georgia Channing leads hub curation while I lead the policy track on how scientific AI tools are evaluated, governed, and disclosed across astronomy, biology, climate, and materials science.}
     \subExpListEnd
@@ -546,35 +571,35 @@
     \paper
         {\href{https://openreview.net/forum?id=2ToECBOs50}{Intelligence Is Not the Bottleneck: Structural Barriers to Automating Alignment Research}
         }
-        {TAIGR '26}
+        {TAIGR@ICML '26}
         {Aidan Kierans, Stephen Casper, {\bf Avijit Ghosh}}
         {Seoul, KR}
 
     \paper
         {\href{https://openreview.net/forum?id=SqxApLlGP9}{Position: Evaluations of AI Moral Reasoning Still Miss Half of the Picture}
         }
-        {EvalEval '26}
+        {EvalEval@ACL '26}
         {Aidan Kierans, Ritam Dutt, Kaley Rittichier, Shiri Dori-Hacohen, {\bf Avijit Ghosh}}
         {San Diego, US}
 
     \paper
         {\href{https://arxiv.org/pdf/2502.12447}{Protecting Human Cognition in the Age of AI}
         }
-         {T4T '25}
+         {T4T@CHI '25}
         {Anjali Singh, Karan Taneja, Zhitong Guan, {\bf Avijit Ghosh}}
         {Yokohama, JP}
 
     \paper
         {\href{https://arxiv.org/pdf/2410.12104}{To Err is AI: A Case Study Informing LLM Flaw Reporting Practices}
         }
-         {IAAI '25}
+         {IAAI@AAAI '25}
         {Sean McGregor, Allyson Ettinger, Nick Judd, Paul Albee, Liwei Jiang, Kavel Rao, Will Smith, Shayne Longpre, {\bf Avijit Ghosh}, Christopher Fiorelli, Michelle Hoang, Sven Cattell, Nouha Dziri}
         {Philadelphia, US}
 
      \paper
         {\href{https://arxiv.org/abs/2209.07667}{Can There be Art Without an Artist?}
         }
-        {HEGM '22}
+        {HEGM@NeurIPS '22}
         {{\bf Avijit Ghosh}, Genoveva Fossas}
         {New Orleans, US}
 
@@ -583,12 +608,12 @@
       {{\bf Avijit Ghosh}, Lea Genuit, Mary Reagan}{Vancouver, CA}
 
     \paper
-      {\href{https://www.ieee-security.org/TC/SPW2019/ConPro/papers/ghosh-conpro19.pdf}{Analyzing Political Advertisers' Use of Facebook's Targeting Features}}{ConPro '19}
+      {\href{https://www.ieee-security.org/TC/SPW2019/ConPro/papers/ghosh-conpro19.pdf}{Analyzing Political Advertisers' Use of Facebook's Targeting Features}}{Conpro@S\&P '19}
       {{\bf Avijit Ghosh}, Giridhari Venkatadri, Alan Mislove}{San Francisco, US}
 
     \paper
     {\href{https://dl.acm.org/doi/10.1145/3184558.3191623}{SAVITR: A System for Real-time Location Extraction from Microblogs during Emergencies}}
-    {SMERP '18}
+    {SMERP@WWW '18}
     {Ritam Dutt, Kaustubh Hiware, {\bf Avijit Ghosh}, Rameshwar Bhaskaran}
     {Lyon, FR}
 
@@ -607,7 +632,7 @@
     \paper
     {\href{https://doi.org/10.1093/oxfordhb/9780198940272.013.0025}{Evaluating the social impact of generative AI systems in systems and society}
     }
-    {Chapter}
+    {Chapter '25}
     {I. Solaiman, Z. Talat, W. Agnew, L. Ahmad, D. Baker, S. Blodgett, C. Chen, H. Daumé, J. Dodge, I. Duan, E. Evans, F. Friedrich, {\bf Avijit Ghosh}, U. Gohar, S. Hooker, Y. Jernite, R. Kalluri, A. Lusoli, A. Leidinger, M. Lin, X. Lin, S. Luccioni, J. Mickel, M. Mitchell, J. Newman, A. Ovalle, M. Png, S. Singh, A. Strait, L. Struppek, A. Subramonian.}
     {Oxford Handbook on Generative AI}
     \resumeSubHeadingListEnd
@@ -618,64 +643,133 @@
     \paper
     {Evaluation Cards: An Interpretive Layer for AI Evaluation Reporting
     }
-    {Preprint}
+    {Preprint '26}
     {{\bf Avijit Ghosh}, A. Reuel, W. M. Kennedy, J. Chim, Y. Huang, S. Yadav, A. Kornilova, D. Stachura, K. Klyman, J. Mickel, F. Friedrich, M. Lamparth, J. Batzner, A. Mishra, J. Sania, E. Habba, N. Heath, S. Rismani, U. Gohar, A. Loehr, D. Manheim, R. Dhar, S. H. Nelaturu, A. Sinha, L. Choshen, Y. Hao, Y. Long, A. Tran, D. Sharma, I. Khire, A. Saha, S. Sahoo, M. Hardy, M. A. Riegler, K. Manghnani, M. Lin, Y. Jiang, A. Yehudai, N. Moniz, Y. Jernite, Z. Talat, S. Biderman, M. Akhtar, J. Ji, A. Hofmann, M. Kochenderfer, S. Koyejo, I. Solaiman}
     {}
 
     \paper
     {Every Eval Ever: A Unifying Schema and Community Repository for AI Evaluation Results
     }
-    {Preprint}
+    {Preprint '26}
     {J. Batzner, S. H. Nelaturu, D. Stachura, A. Kornilova, Y. Mai, T. Cerruti, J. Crall, S. Ahuja, A. Yehudai, M. Šuppa, Y. Long, J. Ganhotra, J. P. Lalor, E. Habba, A. M. Bean, C. Liu, S. Land, S. Dillmann, A. Garikaparthi, E. Bandel, J. Edgell, W. M. Kennedy, J. Chim, O. Olowe, V. R. K. Chundi, P. Meusling, M. Patwardhan, A. Cohan, A. Kaeberlein, M. Ku, S. Imai, A. Meek, L. Knauer, B. Wingenroth, S. Yadav, F. Friedrich, U. Gohar, M. Lin, J. Mickel, Z. Talat, A. Reuel, B. H. Hu, I. Solaiman, M. Akhtar, S. Biderman, G. Kasneci, {\bf Avijit Ghosh}, L. Choshen}
     {}
 
     \paper
     {AI Agents Push Humans Out of the Loop
     }
-    {Preprint}
+    {Preprint '25}
     {M. Mitchell, {\bf Avijit Ghosh}, S. Passi}
     {}
 
     \paper
     {\href{https://arxiv.org/abs/2512.03073}{Economies of Open Intelligence: Tracing Power \& Participation in the Model Ecosystem}
     }
-    {Preprint}
+    {Preprint '25}
     {S. Longpre, C. Akiki, C. Lund, A. Kulkarni, E. Chen, I. Solaiman, {\bf Avijit Ghosh}, Y. Jernite, L. Kaffee}
     {}
 
     \paper
     {\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5399451}{Position: Aligning AI Requires Automating Reasoning Norms}
     }
-    {Preprint}
+    {Preprint '25}
     {A. Kierans, {\bf Avijit Ghosh}, S. Dori-Hacohen}
     {}
 
     \paper
     {\href{https://arxiv.org/abs/2502.02649}{Fully Autonomous AI Agents Should Not be Developed}
     }
-    {Preprint}
+    {Preprint '25}
     {Margaret Mitchell, {\bf Avijit Ghosh}, Alexandra Sasha Luccioni, Giada Pistilli}
     {}
 
     \paper
     {\href{https://arxiv.org/pdf/2308.04448.pdf}{Dual Governance: The intersection of centralized regulation and crowdsourced safety mechanisms for Generative AI}
     }
-    {Preprint}
+    {Preprint '23}
     {{\bf Avijit Ghosh}, Dhanya Lakshmi}
     {}
 
     \paper
     {\href{https://arxiv.org/pdf/1912.07579.pdf}{Unified Shapley Framework to Explain Prediction Drift}
     }
-    {Preprint}
+    {Preprint '21}
     {Aalok Shanbhag*, {\bf Avijit Ghosh*}, Josh Rubin*}
     {}
 
     \paper
     {\href{https://evijit.github.io/docs/Supervised_extraction_of_catchphrases_from_legal_documents.pdf}{Supervised extraction of catchphrases from legal documents}
     }
-    {Preprint}
+    {Preprint '18}
     {{\bf Avijit Ghosh*}, Prerit Gupta*, Ritam Dutt, Kaustubh Hiware, Arpan Mandal, Kripabandhu Ghosh, Saptarshi Ghosh}
+    {}
+
+    \resumeSubHeadingListEnd
+
+    \vspace{0.4em}
+    \pubtype{Select Technical Blogs}
+    \resumeSubHeadingListStart
+
+    \paper
+    {\href{https://huggingface.co/spaces/hfpolicy/ai-hardware-analysis}{AI Hardware Choices are Highly Variable and Sparsely Disclosed}
+    }
+    {HF Blog '26}
+    {F. R\'ios, I. Reynolds, R. Praas, {\bf Avijit Ghosh}, I. Solaiman}
+    {}
+
+    \paper
+    {\href{https://evalevalai.com/research/2026/04/29/eval-costs-bottleneck/}{AI evals are becoming the new compute bottleneck}
+    }
+    {EvalEval Blog '26}
+    {{\bf Avijit Ghosh}, Y. Mai, G. Channing, L. Choshen}
+    {}
+
+    \paper
+    {\href{https://evalevalai.com/infrastructure/2026/02/17/everyevalever-launch/}{Every Eval Ever: Toward a Common Language for AI Eval Reporting}
+    }
+    {EvalEval Blog '26}
+    {J. Batzner, L. Choshen, {\bf Avijit Ghosh}, S. H. Nelaturu, A. Kornilova, D. Stachura, Y. Mai, A. Yehudai, A. Reuel, I. Solaiman, S. Biderman}
+    {}
+
+    \paper
+    {\href{https://evijit.substack.com/p/ai-for-everyone-else}{AI for Everyone Else}
+    }
+    {Substack '26}
+    {{\bf Avijit Ghosh}}
+    {}
+
+    \paper
+    {\href{https://huggingface.co/blog/gaia2}{Gaia2 and ARE: Empowering the Community to Evaluate Agents}
+    }
+    {HF Blog '25}
+    {C. Fourrier, G. Mialon, M. Lecanu, {\bf Avijit Ghosh}}
+    {}
+
+    \paper
+    {\href{https://evalevalai.com/documentation/2025/08/09/blog-chart-crisis/}{The AI Evaluation Chart Crisis}
+    }
+    {EvalEval Blog '25}
+    {A. Tran, L. Choshen, J. Mickel, {\bf Avijit Ghosh}}
+    {}
+
+    \paper
+    {\href{https://huggingface.co/blog/evijit/smollm-deepseek-bias-eval}{Smol but Mighty: Can Small Models Reason well?}
+    }
+    {HF Blog '25}
+    {{\bf Avijit Ghosh}}
+    {}
+
+    \paper
+    {\href{https://huggingface.co/blog/ethics-soc-7}{AI Agents Are Here. What Now?}
+    }
+    {HF Blog '25}
+    {M. Mitchell, {\bf Avijit Ghosh}, S. Luccioni, G. Pistilli}
+    {}
+
+    \paper
+    {\href{https://medium.com/@evijit/analysis-of-ai-generated-images-of-indian-people-for-colorism-and-sexism-b80ff946759f}{An Investigation of Colorism and Gender Imbalance in AI in the Indian Context}
+    }
+    {Medium '24}
+    {{\bf Avijit Ghosh}}
     {}
 
     \resumeSubHeadingListEnd
