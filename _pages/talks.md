@@ -55,7 +55,9 @@ nav_order: 9
 ### 2026
 
 - Jul 2026, [AI's Top Startups Are Barely Publishing Their Research](https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research) - Science Magazine
+- Jul 2026, [All of AI benchmarking at your fingertips](https://research.ibm.com/blog/every-evaluation-ever) - IBM Research
 - Jul 2026, [You Can Now Sound the Alarm on AI Behaving Badly](https://www.wired.com/story/flare-website-ai-flaw-reporting-safety/) - Wired
+- Jun 2026, [From Evaluation to Guardrails: What We Brought to ACM FAccT 2026](https://blog.mozilla.ai/from-evaluation-to-guardrails-what-we-brought-to-acm-facct-2026/) - Mozilla.ai
 - Mar 2026, [Sarvam AI models excel in Indic, lag frontier systems](https://www.linkedin.com/feed/update/urn:li:activity:7440356914250747904/) - Financial Express India
 - Mar 2026, [Deutsche Telekom Wants AI Agents to Talk on Your Phone for You](https://www.wired.com/story/deutsche-telekom-elevenlabs-ai-phone-calls-mwc-2026/) - Wired
 
