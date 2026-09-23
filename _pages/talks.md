@@ -17,6 +17,7 @@ nav_order: 9
 
 ### 2026
 
+- Sep 2026, Panel: "The New Shape of Power: Leadership, Technology and Accountability" at the [Out in Tech Leadership Institute 2026](https://events.outintech.com/e/2026-leadership-institute/page/agenda), New York, NY
 - May 2026, Speaker at [Innovations in Biological Intelligence & Machine Agency](https://thedivinityschool.endemic.org/events/anthology-irl-01), The Divinity School's New Science Series, Cambridge, MA
 - Mar 2026, ["Evaluation Reporting in the Age of Agentic AI"](https://www.youtube.com/live/UxMZfbWI3LY) at the Agentic Evaluations Workshop on the Hugging Face YouTube channel
 - Mar 2026, "What if AI Systems Weren't Chatbots?" at the PLAMADISO talk series, Weizenbaum Institute, Berlin
@@ -54,6 +55,8 @@ nav_order: 9
 
 ### 2026
 
+- Sep 2026, [Meta's Muse Is Better at Surveilling Than Helping Me](https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/) - Wired, citing our paper [AI Agents Push Humans Out of the Loop](https://arxiv.org/abs/2608.23642)
+- Sep 2026, [The Watchdog Problem: AI Agents Are Dulling the Humans Meant to Catch Their Mistakes](https://aifront-page.com/ai-agents-human-in-the-loop-oversight-study/) - AI FrontPage, on our paper [AI Agents Push Humans Out of the Loop](https://arxiv.org/abs/2608.23642)
 - Jul 2026, [AI's Top Startups Are Barely Publishing Their Research](https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research) - Science Magazine
 - Jul 2026, [You Can Now Sound the Alarm on AI Behaving Badly](https://www.wired.com/story/flare-website-ai-flaw-reporting-safety/) - Wired
 - Mar 2026, [Sarvam AI models excel in Indic, lag frontier systems](https://www.linkedin.com/feed/update/urn:li:activity:7440356914250747904/) - Financial Express India
