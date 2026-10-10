@@ -16,8 +16,9 @@ nav_order: 7
 
 <h2 id="awards" class="page-section-title">Awards & Honors</h2>
 
-### 2022–2025
+### 2022–2026
 
+- **Spotlight Paper** — NeurIPS 2026 ([Evaluation Cards: An Interpretive Layer for AI Evaluation Reporting](https://arxiv.org/abs/2606.09809))
 - **Spotlight Poster** — ICML 2025
 - **Best AI Art** — CVPR 2024
 - **Best Paper** — ACM FAccT 2023
