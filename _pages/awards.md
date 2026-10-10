@@ -45,6 +45,7 @@ nav_order: 7
 
 ### 2025–2026
 
+- **[Open Benchmarks Grant](https://benchmarks.snorkel.ai/)** — Snorkel AI (2026). *[HumanOversight Bench](https://www.frontierdatasummit.ai/)*, Co-Project Lead with Joachim Baumann (Stanford NLP).
 - **SFA Research Grant** ($9K) — UConn School of Fine Arts (2026). *Co·Agents: The Filipino Diaspora Pilot — A Multi-Agent System for Cross-Cultural Democratic Deliberation.*
 - **UCHI AI Seed Fund** ($6K) — UConn Humanities Institute (2025). *Beyond Polarization: Fostering Plurality in Large Language Model Design and Development.*
 
