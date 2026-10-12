@@ -31,7 +31,7 @@ Working with students is one of the most rewarding parts of research. Here are t
 
 <h2 id="labs" class="page-section-title">Labs & Initiatives</h2>
 
-- [Pluralistic AI Lab (PAL)](https://pluralistic-ai.github.io/lab/), University of Connecticut — Co-Founder with [Dr. Zhenzhen Qi](https://zhenzhenqi.info/) (2026–present). Researching multi-persona and multi-agent systems that surface diverse and conflicting perspectives, moving beyond single-chatbot interfaces and supporting marginalized communities in democratic deliberation.
+- [Pluralistic AI Lab (PAL)](https://pluralistic-ai-lab.github.io/), University of Connecticut — Co-Founder with [Dr. Zhenzhen Qi](https://zhenzhenqi.info/) (2026–present). Researching multi-persona and multi-agent systems that surface diverse and conflicting perspectives, moving beyond single-chatbot interfaces and supporting marginalized communities in democratic deliberation.
 - [Reducing Information Ecosystem Threats (RIET) Lab](https://infothreats.cse.uconn.edu/), University of Connecticut — Co-Advisor (2024–present). Co-advise students with [Prof. Shiri Dori-Hacohen](https://shiri.cse.uconn.edu/) on disinformation, weaponized controversy, trust erosion, and sociotechnical AI alignment.
 - [Hugging Science](https://huggingscience.co/) — Co-Founder & Lead, Policy (2025–present). AI-for-Science initiative covering how scientific AI tools are evaluated, governed, and disclosed across astronomy, biology, climate, and materials science.
 - [EvalEval Coalition](https://evalevalai.com/) — Founder & Lead (2024–present). Multi-stakeholder coalition of 500+ members producing research to bring rigor, accountability, and standards to AI evaluations.
