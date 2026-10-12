@@ -55,6 +55,7 @@ nav_order: 9
 
 ### 2026
 
+- Oct 2026, [Attempts to Keep Humans in the AI Loop May Actually Push Them Out](https://spectrum.ieee.org/agentic-ai-humans-in-loop) - IEEE Spectrum, on our paper [AI Agents Push Humans Out of the Loop](https://arxiv.org/abs/2608.23642)
 - Sep 2026, [America's AI Giants Want Safety Controls. China's Open Models Complicate That](https://www.scientificamerican.com/article/chinas-open-ai-models-are-testing-americas-approach-to-ai-safety/) - Scientific American
 - Sep 2026, [Meta's Muse Is Better at Surveilling Than Helping Me](https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/) - Wired, citing our paper [AI Agents Push Humans Out of the Loop](https://arxiv.org/abs/2608.23642)
 - Sep 2026, [The Watchdog Problem: AI Agents Are Dulling the Humans Meant to Catch Their Mistakes](https://aifront-page.com/ai-agents-human-in-the-loop-oversight-study/) - AI FrontPage, on our paper [AI Agents Push Humans Out of the Loop](https://arxiv.org/abs/2608.23642)
